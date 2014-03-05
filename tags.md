@@ -2,7 +2,6 @@
 layout: default
 title: Tags
 ---
-<div id="home">
 <ul class="posts">
 {% for tag in site.tags %} <a name="{{ tag[0] }}"></a>
 <h3>{{ tag[0] }}({{ tag[1].size }})</h3>
@@ -11,4 +10,3 @@ title: Tags
 {% endfor %}
 {% endfor %}
 </ul>
-</div>
