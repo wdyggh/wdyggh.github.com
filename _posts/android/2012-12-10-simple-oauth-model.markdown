@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "基于Android+WebView的OAuth2.0认证过程分析及简单模型实现"
-tags: [Android,OAuth2.0,WebView]
+tags: [Android,OAuth2.0]
 ---
 
 A simple oauthv2 model for android by webview

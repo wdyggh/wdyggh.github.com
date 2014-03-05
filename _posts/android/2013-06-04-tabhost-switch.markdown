@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "TabActivity子Activity以代码进行切换"
-tags: [Android,TabActivity,代码切换]
+tags: [Android,TabActivity]
 ---
 TabActivity子Activity直接以startActivity方式切换子Activity时会有些问题，不过可以这样解决：
 

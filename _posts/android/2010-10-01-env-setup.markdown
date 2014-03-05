@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Android开发环境搭建 "
-tags: [Android,开发环境搭建 ]
+tags: [Android]
 ---
 几个月前就想试一试Android开发环境，当时觉得麻烦就没有动手。现在闲时把所用文件下载之后安装了一下，原来事实并没有想像中的那样烦琐。
 
