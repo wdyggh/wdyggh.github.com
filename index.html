@@ -2,8 +2,7 @@
 layout: page
 title: "Steven Pan's Blog."
 ---
-
-   {% for post in paginator.posts %} 
+{% for post in paginator.posts %} 
   <div class="blog-post"> 
    <h2 class="blog-post-title"><a href="{{ post.url }}">{{ post.title }}</a></h2> 
    <p class="blog-post-meta">{{ post.date }} by {{ site.author}}</p> {{ post.content }} 
