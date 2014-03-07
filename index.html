@@ -1,13 +1,19 @@
 ---
-layout: default
-title: "Steven.Pan's blog!"
+layout: page
 ---
-<div>
-  <ul>
-    {% for post in site.posts limit:20 %}
-		<li><span>{{ post.date | date_to_string }}</span>&raquo;<a href="{{ post.url }}">{{ post.title }}</a></li>
-    {% endfor %}
-	</ul>
-		&nbsp;&nbsp;<a href="/archives.html">Click to Read More...</a>
-	<br/>
-</div>
+
+   {% for post in paginator.posts %} 
+  <div class="blog-post"> 
+   <h2 class="blog-post-title"><a href="{{ post.url }}">{{ post.title }}</a></h2> 
+   <p class="blog-post-meta">{{ post.date }} by {{ site.author}}</p> {{ post.content }} 
+  </div> 
+  <!-- /.blog-post --> {% endfor %} 
+  <ul class="pager">
+    {% if paginator.previous_page %} {% if paginator.previous_page == 1 %} 
+   <li><a href="{{ site.url }}/">Previous</a></li> {% else %} 
+   <li><a href="{{ site.url }}/page{{ paginator.previous_page }}">Previous</a></li> {% endif %} {% else %} 
+   <span class="previous">Previous</span> {% endif %} 
+   <span class="page_number ">Page: {{ paginator.page }} of {{ paginator.total_pages }}</span> {% if paginator.next_page %} 
+   <li><a href="{{ site.url }}/page{{ paginator.next_page }}">Next</a></li> {% else %} 
+   <span class="next ">Next</span> {% endif %} 
+  </ul> 

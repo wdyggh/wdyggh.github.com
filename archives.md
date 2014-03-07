@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: page
 title: "Archives"
 ---
 <div>
@@ -17,4 +17,4 @@ title: "Archives"
 		<li><span>{{ post.date | date_to_string }}</span>&raquo;<a href="{{ post.url }}">{{ post.title }}</a></li>
     {% endfor %}
   </ul>
-</div>
+ </div>

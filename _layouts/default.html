@@ -1,77 +1,49 @@
-<!--?xml version="1.0" encoding="UTF-8" ?--><!DOCTYPE html PUBLIC "-//WAPFORUM//DTD XHTML Mobile 1.0//EN" "http://www.wapforum.org/DTD/xhtml-mobile10.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
- <head> 
-  <meta charset="utf-8" /> 
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" /> 
-  <title>
-            {{page.title}}
-        </title> 
-  <meta name="description" content="{{ page.summary }}" /> 
-  <meta name="keywords" content="{{ page.keywords}}" /> 
-  <meta name="author" content="Steven Pan" /> 
-  <link rel="stylesheet" href="/css/foundation.css" /> 
-  <script src="/js/js.js">
-        </script> 
- </head> 
- <body> 
-  <!--Nav Bar--> 
-  <div class="row"> 
-   <div class="large-12 columns"> 
-    <div class="nav-bar right"> 
-     <ul class="button-group"> 
-      <li> <a href="/" class="button"> Home </a> </li> 
-      <li> <a href="/categories.html" class="button"> Categories </a> </li> 
-	  <li> <a href="/archives.html" class="button"> Archives </a> </li>
-	  <li> <a href="/comment.html" class="button"> Comment </a> </li> 
-     </ul> 
-    </div> 
-    <h1> Steven.Pan<small></small> </h1> 
-    <hr /> 
-   </div> 
-  </div> 
-  <!--End Nav--> 
-  <!--Main Page Content and Sidebar--> 
-  <div class="row"> 
-   <!--Main Blog Content--> 
-   <div class="large-9 columns" role="content">
-     {{content}} 
-   </div> 
-   <!--End Main Content--> 
-   <!--Sidebar--> 
-   <aside class="large-3 columns"> 
-    <div class="panel"> 
-     <h3> Categories </h3> 
-     <ul> 
-	 	{% for category in site.categories %}
-		 <li> <a href="/categories.html#{{ category[0] }}">{{ category[0] }}</a> </li> 
-		{% endfor %}
-     </ul> 
-    </div> 
-    <script async="" src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js">
-                </script> 
-    <!--blogadd--> 
-    <ins class="adsbygoogle" style="display:inline-block;width:200px;height:200px" data-ad-client="ca-pub-3557776493079475" data-ad-slot="2741314005"> 
-    </ins> 
-    <script>
-                    (adsbygoogle = window.adsbygoogle || []).push({});
-                </script> 
-    <div style="margin-top:10px"> 
-    </div> 
-   </aside> 
-   <!--End Sidebar--> 
-  </div> 
-  <!--End Main Content and Sidebar--> 
-  <!--Footer--> 
-  <footer class="row"> 
-   <div class="large-12 columns"> 
-    <hr /> 
-    <div class="row"> 
-     <div class="large-8 columns"> 
-      <p> &copy; <a href="/"> www.stevenpan.me </a> | <a href="http://resume.github.io/?panxw">resume</a> | <a href="https://github.com/panxw/panxw.github.com"> fork this project</a> | <a href="/atom.xml"> rss</a></p>
-     </div> 
-    </div> 
-   </div> 
-  </footer> 
-  <!--End Footer-->  
- </body>
-</html>
+<!DOCTYPE html>
+<html lang="en" class=""><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="">
+
+    <title>{{ page.title}}</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="/css/blog.css" rel="stylesheet">
+
+    <!-- Just for debugging purposes. Don't actually copy this line! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  <style id="holderjs-style" type="text/css"></style><link type="text/css" rel="stylesheet" charset="UTF-8" href="./Blog Template for Bootstrap_files/translateelement.css"></head>
+
+  <body>
+
+    <div class="blog-masthead">
+      <div class="container">
+        <nav class="blog-nav">
+          <a class="blog-nav-item active" href="/">Home</a>
+          <a class="blog-nav-item" href="/archives.html">Archives</a>
+          <a class="blog-nav-item" href="/categories.html">Categries</a>
+          <a class="blog-nav-item" href="/about.html">About</a>
+        </nav>
+      </div>
+    </div>
+
+    <div class="container">
+		{{ content }}
+    </div><!-- /.container -->
+
+    <div class="blog-footer">
+      <p>Blog by Jekyll, steven.</p>
+    </div>
+
+</body></html>

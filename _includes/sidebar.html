@@ -1,0 +1,15 @@
+          <div class="sidebar-module">
+            <h4>Category</h4>
+            <ol class="list-unstyled">
+			{% for category in site.categories %}
+				<li> <a href="/categories.html#{{ category[0] }}">{{ category[0] }}</a> </li> 
+			{% endfor %}
+            </ol>
+          </div>
+          <div class="sidebar-module">
+            <h4>Links</h4>
+            <ol class="list-unstyled">
+              <li><a href="https://github.com/panxuewen">GitHub</a></li>
+              <li><a href="http://www.google.com/">Google</a></li>
+            </ol>
+          </div>

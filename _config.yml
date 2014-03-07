@@ -1,16 +1,26 @@
-source:      .
-destination: ./_site
-plugins:     ./_plugins
-layouts:     ./_layouts
+markdown: redcarpet
+permalink: /:title.html
+url: 
+lsi: false
 pygments: true
+safe: true
+auto: true
 
-paginate: 5
+paginate: 8
 paginate_path: "page:num"
 
-kramdown:
-  auto_ids: true
-  footnote_nr: 1
-  entity_output: as_char
-  toc_levels: 1..6
-  smart_quotes: lsquo,rsquo,ldquo,rdquo
-  use_coderay: false
+# presonal config
+title: Steven Pan's Blog
+description: testing...
+feed: http://www.stevenpan.me/atom.xml
+comments: disqus
+
+author: Steven Pan
+
+seo: 
+  keyword: 
+  description: 
+config:
+  js_dir:
+  img_dir:
+  css_dir:
