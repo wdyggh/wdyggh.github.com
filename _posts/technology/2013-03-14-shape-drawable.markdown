@@ -1,7 +1,7 @@
 ---
 layout: post
 category: "android"
-title:  "背景为shape\selector的drawable的问题"
+title:  "背景为shape selector的drawable的问题"
 tags: [Android,selector]
 ---
 背景为selector(item state_pressed="false" shape)时，里面的条目只能为selector(item state_pressed="true" shape)，否则选中无效果。

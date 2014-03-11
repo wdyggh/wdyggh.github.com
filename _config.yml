@@ -4,7 +4,7 @@ url:
 lsi: false
 pygments: true
 safe: true
-auto: true
+auto: false 
 
 paginate: 8
 paginate_path: "page:num"
