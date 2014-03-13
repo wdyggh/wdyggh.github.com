@@ -12,7 +12,6 @@ sudo apt-get install git
 {% endhighlight %}
 
 #### 一、安装C/C++开发环境
-{% endhighlight %}
 {% highlight bash %}
 sudo apt-get install build-essential
 {% endhighlight %}
@@ -23,8 +22,7 @@ sudo apt-get install ruby irb rdoc ruby-dev
 {% endhighlight %}
 
 #### 四、安装ruby gem
-安装好ruby的基本开发环境后，就可以安装ruby gem了，如jekyll：
+安装好ruby的基本开发环境后，就可以安装ruby gem了，如jekyll：<br/>
 {% highlight bash %}
 sudo gem install rdiscount ruby redcarpet
 {% endhighlight %}
-
