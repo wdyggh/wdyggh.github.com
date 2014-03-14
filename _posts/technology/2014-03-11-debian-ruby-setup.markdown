@@ -11,7 +11,7 @@ tags: [linux,Debian,ruby]
 sudo apt-get install git
 {% endhighlight %}
 
-#### 一、安装C/C++开发环境
+#### 二、安装C/C++开发环境
 {% highlight bash %}
 sudo apt-get install build-essential
 {% endhighlight %}
