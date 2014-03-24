@@ -6,11 +6,11 @@ tags: [android,cocos2dx]
 ---
 可能用到JDK，Python，Eclipse建议先行安装与配置好，在此不再多述。最好将adt-bundle-windows，android-ndk-r9c，cocos2dx2.2解压到同一目录下，如D:\cocos2dx。以下主要讨论Windows下NDK环境编译cocos2d-x工程的步骤。
 
-#####一、工程创建
+####一、工程创建
 cmd进入cocos2d-x2.2目录的tools\project-creator，执行: python create_project.py -project helloworld -package com.allthelucky.game -language cpp<br/>
 末尾出现Have Fun!时，表示工程创建成功，在D:\cocos2dx\cocos2d-x-2.2.2\projects\helloworld可看到各平台对应项目，包括Android平台的pro.android，然后就是程序编写或编译了。
 
-#####二、Android工程编译
+####二、Android工程编译
 1)单独NDK编译方法：<br/>
 1)添加NDK路径D:\cocos2dx\android-ndk-r9c Path。<br/>
 2)添加环境变量NDK_MODULE_PATH，其值为D:\cocos2dx\cocos2d-x-2.2.2;D:\cocos2dx\cocos2d-x-2.2.2\cocos2dx\platform\third_party\android\prebuilt。<br/>
@@ -22,12 +22,12 @@ cmd进入cocos2d-x2.2目录的tools\project-creator，执行: python create_proj
 3)最后Clean一下工程，再运行Android程序即开始编译了。<br/>
 4)查看cocos2dx代码：Preference->Workspace->Linked Resources添加COCOS2DX变量及值D:\cocos2dx\cocos2d-x-2.2.2
 
-#####三、Win32工程编译
+####三、Win32工程编译
 1)环境WIN7+VS2012，方便代码查看或输入，建议安装Visual Assist X插件<br/>
 2)进入目录,运行build-win32.bat编译cocos2d-x库。<br/>
 3)vs2012打开cocos2d-win32.vc2012.sln,然后Build Solution编译工程。
 
-#####四、演示项目
+####四、演示项目
 <https://github.com/panxuewen/android-cocos2dx-tutorial>
 
 #####五、其它问题
