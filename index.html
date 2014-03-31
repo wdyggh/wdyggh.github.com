@@ -4,7 +4,7 @@ title: "Steven Pan's Blog."
 ---
 {% for post in paginator.posts %} 
   <div class="blog-post"> 
-   <h2 class="blog-post-title"><a href="{{ post.url }}" sytle="text-decoration:none">{{ post.title }}</a></h2> 
+   <h2 class="blog-post-title"><a href="{{ post.url }}" style="text-decoration:none">{{ post.title }}</a></h2> 
    <p class="blog-post-meta">{{ post.date | date_to_string }}, by {{ site.author}}</p> {{ post.content }} 
   </div> 
   <!-- /.blog-post --> {% endfor %} 
