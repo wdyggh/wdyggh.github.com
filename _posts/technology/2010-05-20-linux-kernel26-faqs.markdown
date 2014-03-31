@@ -11,7 +11,7 @@ tags: [linux,内核驱动]
 2.6中的irqreturn函数中只有两个参数了，原来的irqreturn_t int_interrupt(int irq,void * dev_id,struct pt_regs *regs)；应该是irqreturn_t int_interrupt(int irq,void * dev_id)；
  
 ####三、2.6内核高版本中的frags值发生变化
-原来头文件里没有SA_INTERRUPT了，一般使用IRQF_SHARED 了。  
+原来头文件里没有SA_INTERRUPT了，一般使用IRQF_SHARED了。  
 rquest_irq(PRINT_IRQ,int_interrupt,IRQF_SHARED,INT_DEV_NAME,NULL);
  
 ####四、中断所需的头文件不同
@@ -24,10 +24,10 @@ rquest_irq(PRINT_IRQ,int_interrupt,IRQF_SHARED,INT_DEV_NAME,NULL);
  
 ####六、printk函数输出
 1输出可标记等级，默认为KERN_WARNNING，等同于下面几句：
-<pre> 
-printk("<4>" "system ok\n");  
-printk("<4> system ok\n");  
-printk("system ok\n");  
+<pre>
+printk("<4>" "system ok\n");
+printk("<4> system ok\n");
+printk("system ok\n");
 </pre>
 2.必须使用“\n”字符，否则调试过程混乱。当不使用它时，下一条输出会紧接着前一句，而且会输出标记级别。  
 如printk("hello world");printk("goodbye\n");则输出时为hello world<6>goodbye.
