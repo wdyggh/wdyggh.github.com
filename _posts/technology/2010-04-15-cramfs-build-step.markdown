@@ -9,7 +9,7 @@ tags: [Cramfs,linux]
 1.下载Cramfs，去这个地址：http://sourceforge.net/projects/cramfs/，或  
 <pre>
 $wget http://downloads.sourceforge.net/project/cramfs/cramfs/1.1/cramfs-1.1.tar.gz
-</pre>  
+</pre>
 
 2.解压编译
 <pre>
@@ -25,7 +25,6 @@ $make
 <pre>
 $./mkcramfs rootfs Cramfs.img
 </pre>  
-
 文件系统镜像Cramfs.img就可以烧写到目标板了。  
 对于Jffs文件系统则类似的用mkfs.jffs2工具制作，Yaffs文件系统则需从网站：http://www.aleph1.co.uk/cgi-bin/viewcvs.cgi/下载，并配置内核，在fs中入对yaffs2编译选项，添加分区等。
 
