@@ -1,7 +1,7 @@
 ---
 layout: post
 category: "network"
-title:  "url收藏帖（留言本打造）"
+title:  "url收藏帖（由留言本打造）"
 tags: [url]
 ---
 1,Markdown语法  
@@ -14,5 +14,5 @@ tags: [url]
 Git分支管理策略: <http://www.ruanyifeng.com/blog/2012/07/git.html>  
 Git查看、删除、重命名远程分支和tag: <http://zengrong.net/post/1746.htm>
 
-更多请看留言，欢迎你来盖楼！
+更多请看本文评论，欢迎来盖楼！
 
