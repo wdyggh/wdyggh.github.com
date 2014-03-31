@@ -23,10 +23,12 @@ rquest_irq(PRINT_IRQ,int_interrupt,IRQF_SHARED,INT_DEV_NAME,NULL);
 2.主设备号10的次设备号中240~255范围也用在测试或特定平台上。
  
 ####六、printk函数输出
-1输出可标记等级，默认为KERN_WARNNING，等同于下面几句：  
+1输出可标记等级，默认为KERN_WARNNING，等同于下面几句：
+<pre> 
 printk("<4>" "system ok\n");  
 printk("<4> system ok\n");  
 printk("system ok\n");  
+</pre>
 2.必须使用“\n”字符，否则调试过程混乱。当不使用它时，下一条输出会紧接着前一句，而且会输出标记级别。  
 如printk("hello world");printk("goodbye\n");则输出时为hello world<6>goodbye.
  

@@ -6,7 +6,7 @@ tags: [Cramfs,linux]
 ---
 当我们用Busybox制作好文件系统后，就可以用Cramfs工具制作自己的文件Cramfs文件系统了。
 ####一、主要步骤
-1.下载Cramfs，去这个地址：http://sourceforge.net/projects/cramfs/，或  
+1.下载Cramfs，去这个地址：http://sourceforge.net/projects/cramfs/，或
 <pre>
 $wget http://downloads.sourceforge.net/project/cramfs/cramfs/1.1/cramfs-1.1.tar.gz
 </pre>
@@ -21,7 +21,7 @@ $make
 到此生成了mkcramfs和cramfsck，分别用于分创建Cramfs文件系统和进行Cramfs文件系统的解释及检查。
 
 3.制作Cramfs文件系统  
-把用Busybox制作好的文件系统目录（rootfs）复制到本目录，然后执行  
+把用Busybox制作好的文件系统目录（rootfs）复制到本目录，然后执行
 <pre>
 $./mkcramfs rootfs Cramfs.img
 </pre>
