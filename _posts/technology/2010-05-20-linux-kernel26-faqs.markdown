@@ -1,7 +1,7 @@
 ---
 layout: post
 category: "linux"
-title:  "测试2.6内核驱动程序所遇问题解 "
+title:  "2.6内核驱动编译程序所遇问题解 "
 tags: [linux,内核驱动]
 ---
 ####一、write ioctl 警告:从不兼容的指针类型初始化
@@ -35,4 +35,25 @@ printk("system ok\n");
 测试解决了，在root用户下将设备文件访问权限改为666，再就可以了。  
 2.一个设备文件，不能同时被两个设备同时使用。先打开的成功，后打开的出错。
 
+####八、交叉编译
+1解压好2.6.18内核，并修改内核目录inux-2.6.18下的Makefile，更改ARCH,和CROSS_COMPILE值。
+<pre>
+ARCH := arm
+CROSS_COMPILE := /usr/local/arm/3.4.1/bin/arm-linux-
+</pre>
+如果没有设置好，在编译驱动的时候将会出错。并且先进行make modules之后再编译驱动.  
+2编译好驱动代码后写一个Makefie，注意加上COSS_ARCH变量，其中包含了两个选项，即ARCH,和CROSS_COMPILE
 
+####九、驱动Makefile
+<pre>
+#Makefile for linux 2.6 kernel
+obj-m+=hello.o
+KDIR :=/home/ok/kernel/linux-2.6.18
+PWD:=$(shell pwd)
+#KERNELHEAD := /home/ok/kernel/linux-2.6.18/include，2.6核不用到。
+CROSS_ARCH := ARCH=arm CROSS_COMPILE=arm-linux-
+default:
+   $(MAKE) $(CROSS_ARCH) -C $(KDIR) SUBDIRS=$(PWD) modules
+clean:
+   rm -rf *.cmd *.o *.mod.c *.ko
+</pre>
