@@ -2,7 +2,7 @@
 layout: post
 category: "linux"
 title:  "测试2.6内核驱动程序所遇问题解 "
-tags: [tag]
+tags: [linux,内核驱动]
 ---
 ####一、write ioctl 警告:从不兼容的指针类型初始化
 原因在于:write中的char *buf应该为const char *buf；ioctl中的long data为unsigned long data

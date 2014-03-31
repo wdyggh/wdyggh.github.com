@@ -17,14 +17,14 @@ $tar zxvf cramfs-1.1.tar.gz
 $mv cramfs-1.1 cramfs
 $cd cramfs
 $make
-</pre>  
+</pre>
 到此生成了mkcramfs和cramfsck，分别用于分创建Cramfs文件系统和进行Cramfs文件系统的解释及检查。
 
 3.制作Cramfs文件系统  
 把用Busybox制作好的文件系统目录（rootfs）复制到本目录，然后执行  
 <pre>
 $./mkcramfs rootfs Cramfs.img
-</pre>  
+</pre>
 文件系统镜像Cramfs.img就可以烧写到目标板了。  
 对于Jffs文件系统则类似的用mkfs.jffs2工具制作，Yaffs文件系统则需从网站：http://www.aleph1.co.uk/cgi-bin/viewcvs.cgi/下载，并配置内核，在fs中入对yaffs2编译选项，添加分区等。
 
