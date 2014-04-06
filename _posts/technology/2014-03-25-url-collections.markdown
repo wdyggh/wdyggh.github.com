@@ -1,7 +1,7 @@
 ---
 layout: post
 category: "network"
-title:  "url收藏帖（由留言本打造）"
+title:  "url收藏帖"
 tags: [url]
 ---
 1,Markdown语法  
