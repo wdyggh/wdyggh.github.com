@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en" class="">
+ <head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /> 
+  <meta charset="utf-8" /> 
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" /> 
+  <meta name="viewport" content="width=device-width, initial-scale=1" /> 
+  <meta name="description" content="" /> 
+  <meta name="author" content="" /> 
+  <link rel="shortcut icon" href="" /> 
+  <title>Steven Pan's Blog.</title> 
+  <!-- Bootstrap core CSS --> 
+  <link href="/css/bootstrap.min.css" rel="stylesheet" /> 
+  <!-- Custom styles for this template --> 
+  <link href="/css/blog.css" rel="stylesheet" /> 
+  <!-- Just for debugging purposes. Don't actually copy this line! --> 
+  <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]--> 
+  <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries --> 
+  <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]--> 
+  <style id="holderjs-style" type="text/css"></style>
+  <link type="text/css" rel="stylesheet" charset="UTF-8" href="./Blog Template for Bootstrap_files/translateelement.css" />
+ </head> 
+ <body> 
+  <div class="blog-masthead"> 
+   <div class="container"> 
+    <nav class="blog-nav"> 
+     <a class="blog-nav-item" href="/">Home</a> 
+     <a class="blog-nav-item" href="/archives.html">Archives</a> 
+     <a class="blog-nav-item" href="/categories.html">Categries</a> 
+     <a class="blog-nav-item" href="/about.html">About</a> 
+    </nav> 
+   </div> 
+  </div> 
+  <div class="container">
+      <div class="blog-header"> 
+   <!--<h1 class="blog-title">Steven Pan's Blog</h1>--> 
+   <!--<p class="lead blog-description">testing...</p>--> 
+  </div> 
+  <div class="row"> 
+   <div class="col-sm-8 blog-main">
+		 
+  <div class="blog-post"> 
+   <h2 class="blog-post-title"><a href="/network/java-sdk-source.html">java sdk 非官方下载地址</a></h2> 
+   <p class="blog-post-meta">12 Mar 2014, by Steven Pan</p> <p>Oracle现在真是恶心，下载个Java SDK还非得让登陆不可。只好再找下载地址了：<br/>
+<a href="http://ghaffarian.net/downloads/Java/JDK/">http://ghaffarian.net/downloads/Java/JDK/</a></p>
+ 
+  </div> 
+  <!-- /.blog-post -->  
+  <div class="blog-post"> 
+   <h2 class="blog-post-title"><a href="/network/git-learn-resource.html">git文章收藏</a></h2> 
+   <p class="blog-post-meta">12 Mar 2014, by Steven Pan</p> <p>Git分支管理策略: <a href="http://www.ruanyifeng.com/blog/2012/07/git.html">http://www.ruanyifeng.com/blog/2012/07/git.html</a><br/>
+Git查看、删除、重命名远程分支和tag: <a href="http://zengrong.net/post/1746.htm">http://zengrong.net/post/1746.htm</a></p>
+ 
+  </div> 
+  <!-- /.blog-post -->  
+  <div class="blog-post"> 
+   <h2 class="blog-post-title"><a href="/linux/debian-ruby-setup.html">Debian/Linux ruby setup</a></h2> 
+   <p class="blog-post-meta">11 Mar 2014, by Steven Pan</p> <p>有别于Windows下的rubyinstall+devkit安装与配置。Debian/Linux下方便多了。</p>
+
+<h4>一、安装Git</h4>
+
+<div class="highlight"><pre><code class="bash">sudo apt-get install git
+</code></pre></div>
+
+<h4>一、安装C/C++开发环境</h4>
+
+<div class="highlight"><pre><code class="bash">sudo apt-get install build-essential
+</code></pre></div>
+
+<h4>三、安装ruby开发环境</h4>
+
+<div class="highlight"><pre><code class="bash">sudo apt-get install ruby irb rdoc ruby-dev
+</code></pre></div>
+
+<h4>四、安装ruby gem</h4>
+
+<p>安装好ruby的基本开发环境后，就可以安装ruby gem了，如jekyll：<br/></p>
+
+<div class="highlight"><pre><code class="bash">sudo gem install rdiscount ruby redcarpet
+</code></pre></div>
+ 
+  </div> 
+  <!-- /.blog-post -->  
+  <div class="blog-post"> 
+   <h2 class="blog-post-title"><a href="/linux/install-debian-windows.html">Windows安装Debian Linux步骤</a></h2> 
+   <p class="blog-post-meta">10 Mar 2014, by Steven Pan</p> <p>本文中使用Win7，Xp应该类似；Debian使用7.4。</p>
+
+<h4>　一、下载文件</h4>
+
+<p>下载debian-7.4.0-i386-CD-1.iso,(http://cdimage.debian.org/debian-cd/7.4.0/i386/iso-cd/debian-7.4.0-i386-CD-1.iso)<br/>
+下载vmlinuxz,initrid.gz,boot.img.gz(http://ftp.debian.org/debian/dists/Debian7.4/main/installer-i386/20130613+deb7u1+b2/images/hd-media/)</p>
+
+<h4>　二、准备FAT32分区及Debian文件系统空间</h4>
+
+<p>备份F备数据并删除该盘，再重建一FAT32新F盘，用于存放debian-7.4.0-i386-CD-1.iso安装文件，并留多数空闲空间用作Debian文件系统空间。<br/>
+考备下载好的debian-7.4.0-i386-CD-1.iso文件到F盘，Daemon tool加载iso并运行setup.exe，选择常规模式(注意，最后一步先不忙立即重启)。<br/>
+考备下载的vmlinuxz,initrid.gz,boot.img.gz，到C:\win32-loader目录，替换原有文件之后再重启。</p>
+
+<h4>　三、系统安装</h4>
+
+<p>重启进入引导入时，选择Continue to install process，即开始进入Debian图形化安装流程了。<br/>
+如果可连网，建议选择安装Gome等必须组件，否则安装完成只有基本系统了。</p>
+
+<h4>　四、部分问题</h4>
+
+<p>debian-7.4.0-i386-CD-1.iso必须存放在FAT32文件系统根目录下(DVD格式iso过大，FAT32文件系统不支持)。<br/>
+不能使用debian-7.4.0-i386-CD-1.iso自身解压出来的vmlinuxz,initrid.gz,boot.img.gz，必须替换。</p>
+ 
+  </div> 
+  <!-- /.blog-post -->  
+  <div class="blog-post"> 
+   <h2 class="blog-post-title"><a href="/network/oray-win7-try.html">Win7花生壳公网映射80端口的问题</a></h2> 
+   <p class="blog-post-meta">05 Mar 2014, by Steven Pan</p> <p>之前在一台Win XP上开启Tomcat(80端口)，选择花生壳“开启外网HTTP80端口”，映射完成后，通过域名是可以正常访问的。</p>
+
+<p>但换了台Win7，同样的方法却失效了，提示“很抱歉，您访问的花生壳动态域名不在线，请稍后再尝试访问！”。可是，当不选择“开启外网HTTP80端口”，通过每次映射自动生成的端口号，则域名可以访问了。</p>
+
+<p>搜索找到了解决办法：<a href="http://blog.csdn.net/dahaidao/article/details/6442537">http://blog.csdn.net/dahaidao/article/details/6442537</a></p>
+
+<p>这样一来，“开启外网HTTP80端口”又有效了。</p>
+ 
+  </div> 
+  <!-- /.blog-post -->  
+  <div class="blog-post"> 
+   <h2 class="blog-post-title"><a href="/android/project-startup.html">Android必要模块－－升级与公告</a></h2> 
+   <p class="blog-post-meta">04 Mar 2014, by Steven Pan</p> <p>基于Webservice api的Android有必要初期就为其设计好升级和公告功能：</p>
+
+<p>1,APP一旦被用户安装上，如果没有升级功能，那就难于受控了，升级功能的重要性就不用多说了。</p>
+
+<p>2,公告的功能也是很重要的，在对Webservice进行维护升级时，难免影响当时正在使用的用户。如果有公告模块，便可提前告知用户相关事宜了。</p>
+
+<p>3,创建打包签名的key，并妥善保管好。</p>
+ 
+  </div> 
+  <!-- /.blog-post -->  
+  <div class="blog-post"> 
+   <h2 class="blog-post-title"><a href="/life/work-notes.html">工作两年后的一点感悟</a></h2> 
+   <p class="blog-post-meta">03 Nov 2013, by Steven Pan</p> <p>成长最快的时候，往往在自己刚工作，或是新接触一个领域的那个阶段，因为有很多新的知识或技能需要现学现用。过程虽然比较艰辛，但不知不觉中一段时间后，发现进步很大。 然后，慢慢地适应了工作，各种问题似乎都不在话下，到了见招拆招的阶段。如不警觉，随着时间的流逝，某一天却实然发现没有多少新的收获了。 最近看了些个人时间管理类书籍，让我在长时间没有多少进步后有了一点新的认识，那就是多花时间做一些有利于长期职业发展的事情，即重要但不紧急的事－－相关知识的积累，某方面知识的深入，工作所用的技能，未来潜在创业伙伴的培养等等。</p>
+
+<p>新发展任务：<br/>
+1,一如继往提升Android应用开发方面的技能。<br/>
+2,加大Android底层方面(c/c++/嵌入式linux)实践。<br/>
+3,巩固Servlet/ibatis接口开发实践。<br/>
+4,尝试移动互联网商业应用开发及运营。<br/>
+5,多读书，多总结。</p>
+ 
+  </div> 
+  <!-- /.blog-post -->  
+  <div class="blog-post"> 
+   <h2 class="blog-post-title"><a href="/android/listview-selector.html">Android GridView去边距</a></h2> 
+   <p class="blog-post-meta">20 Oct 2013, by Steven Pan</p> <p>为GridView添加android:listSelector=&quot;@null&quot;可去掉其与item的间距。</p>
+
+<p>当动态为item设置背景时，用android:listSelector=&quot;@null&quot;时，条目的选中效果不是自己所设置的，各种尝试后，发现设置成@android:color/transparent又正常了。</p>
+
+<p>难道&quot;@android:color/transparent&quot;和&quot;@null&quot;不都是表示透明吗？</p>
+ 
+  </div> 
+  <!-- /.blog-post -->  
+  <ul class="pager">
+     
+   <span class="previous">Previous</span>  
+   <span class="page_number ">Page: 1 of 7</span>  
+   <li><a href="/page2">Next</a></li>  
+  </ul> 
+
+   </div>
+   <!-- /.blog-main --> 
+   <div class="col-sm-3 col-sm-offset-1 blog-sidebar">
+               <div class="sidebar-module sidebar-module-inset">
+            <h4>About</h4>
+            <p>Steven Pan's <em>personal Blog,</em> welcome!</p>
+          </div>
+           <div class="sidebar-module">
+            <h4>Categories</h4>
+            <ol class="list-unstyled">
+			
+				<li> <a href="/categories.html#reading">reading</a> </li> 
+			
+				<li> <a href="/categories.html#linux">linux</a> </li> 
+			
+				<li> <a href="/categories.html#android">android</a> </li> 
+			
+				<li> <a href="/categories.html#network">network</a> </li> 
+			
+				<li> <a href="/categories.html#life">life</a> </li> 
+			
+            </ol>
+          </div>
+          <div class="sidebar-module">
+            <h4>Links</h4>
+            <ol class="list-unstyled">
+              <li><a href="https://github.com/panxuewen">GitHub</a></li>
+              <li><a href="http://www.google.com/">Google</a></li>
+            </ol>
+          </div>
+ 
+   </div>
+   <!-- /.blog-sidebar --> 
+  </div>
+  <!-- /.row -->  
+  </div>
+  <!-- /.container --> 
+  <div class="blog-footer"> 
+   <p>This blog is maintained by Steven Pan, powered by Jekyll.</p> 
+  </div> 
+ </body>
+</html>
