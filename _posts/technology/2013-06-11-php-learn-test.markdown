@@ -4,10 +4,9 @@ category: "network"
 title:  "PHP学习入门级练习"
 tags: [PHP,服务器,Mysql]
 ---
-**一、PHP基础操作**
-
+####一、PHP基础操作
 1,基本语法：
-{% highlight php %}
+<pre>
 <?php
 	echo '---------------start--------------';
 	echo "<br/>";
@@ -92,8 +91,12 @@ tags: [PHP,服务器,Mysql]
 	echo md5($str);//md5加密
 	echo "<br/>";
 	echo sha1($str);//sha1加密
-	
-	class User {//使用类
+</pre>
+
+2,使用类：
+<pre>
+<?php
+	class User {
 		public $name="savant";
 		public $age ="age";
 		
@@ -111,10 +114,10 @@ tags: [PHP,服务器,Mysql]
 	echo "<br/>";
 	echo '---------------end--------------';
 ?>
-{% endhighlight %}
+</pre>
 
-2,表单操作
-{% highlight php %}
+3,表单操作
+<pre>
 <?php	
 	echo '---------------start--------------';
 	echo "<br/>";
@@ -134,6 +137,10 @@ tags: [PHP,服务器,Mysql]
 	echo "<br/>";
 	echo '---------------end--------------';
 ?>
+</pre>
+
+HTML代码
+<pre>
 <html>
 <body>
 <form name="data" method="post" action="test.php" enctype="multipart/form-data" >
@@ -150,26 +157,25 @@ tags: [PHP,服务器,Mysql]
 </form>
 </body>
 </html>
-{% endhighlight %}
+</pre>
 
-**二、数据库MySql简单操作练习**
-
+####二、数据库MySql简单操作练习
 1,MySql服务启动和停止
-{% highlight bash %}
+<pre>
 net start mysql
 net stop mysql
-{% endhighlight %}
+</pre>
 
 2,数据库操作
-{% highlight bash %}
+<pre>
 create database USER_DB;//创建数据库
 show databases;//查看数据库
 use USER_DB;//选择数据库
 drop database DBNAME;//删除数据库
-{% endhighlight %}
+</pre>
 
 3,表格操作
-{% highlight bash %}
+<pre>
 create table if not exists USER(id int auto_increment primary key, user varchar(20) not null, password varchar(40) not null, createtime datetime);//创建表格
 rename table USER to USERS;//改表格名
 drop table if exists USER;//删除表格
@@ -179,4 +185,4 @@ insert into admin(user,password) values("pan","123456");//添加记录到表格
 select * from USER;//查询表格记录
 update USER set passowrd="111111";//更新表格记录
 delete from USER where user="abc";//删除记录
-{% endhighlight %}
+</pre>
