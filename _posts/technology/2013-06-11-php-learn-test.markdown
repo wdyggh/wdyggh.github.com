@@ -84,7 +84,7 @@ tags: [PHP,服务器,Mysql]
 
 3,表单操作
 <pre>
-<?php	
+<?php
 	echo '---------------start--------------';
 	echo 'name'.$_GET['name'];//get参数
 	echo 'age'.$_GET['age'];
