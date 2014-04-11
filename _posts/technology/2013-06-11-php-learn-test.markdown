@@ -36,7 +36,6 @@ tags: [PHP,服务器,Mysql]
 	$a=10;
 	$b=20;
 	echo 'result='.mult($a,$b);//调用函数
-	echo "<br/>";
 	$c=20;
 	if ($c == 20) {//if else 语句
 		echo 'yes';
@@ -46,15 +45,14 @@ tags: [PHP,服务器,Mysql]
 	$num=1;
 	while($num < 10) {//while循环
 		echo 'num='.$num;
-		echo "<br/>";
 		$num+=1;
 	}
 	$array=array('1'=>'hellsf','2'=>'sadfadfsd','3'=>'asdfasdfasdfsdf');
 	foreach($array as $key=>$value) {//foreach 语句，输出key,value
-		echo $key.'='.$value."<br/>";
+		echo $key.'='.$value;
 	}
 	foreach($array as $value) {//foreach语句，只输出值 
-		echo $value."<br/>";
+		echo $value;
 	}
 	print_r($array);
 	$str = ' asdf safsd ';
@@ -80,7 +78,6 @@ tags: [PHP,服务器,Mysql]
 	}
 	$user = new User('hello world', 26);
 	$user->show();
-	echo "<br/>";
 	echo '---------------end--------------';
 ?>
 </pre>
