@@ -98,10 +98,8 @@ tags: [PHP,服务器,Mysql]
 ?>
 </pre>
 
-HTML代码
+FORM代码
 <pre>
-<html>
-<body>
 <form name="data" method="post" action="test.php" enctype="multipart/form-data" >
 	name:<input name="name" type="text" value=""></input>
 	<br/>
@@ -113,8 +111,6 @@ HTML代码
 	<br/>
 	<input name="submit" type="submit"></input>
 </form>
-</body>
-</html>
 </pre>
 
 ####二、数据库MySql简单操作练习
