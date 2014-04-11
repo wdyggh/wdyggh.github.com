@@ -12,44 +12,35 @@ tags: [PHP,服务器,Mysql]
 	echo "<br/>";
 	echo __FILE__;
 	echo "<br/>";//打印预定义常量
-	
 	echo "Hello world";//一般打印
 	echo "<br/>";
-	
 	define('SCHOOL',"YANTZE UNIVERSITY");//定义常量
 	echo SCHOOL;//打印常量
 	echo "<br/>";
-	
 	$name="savant";//name
 	$age=28;
 	echo 'name='.$name.',age='.$age;//打印变量，字符串连接
 	echo "<br/>";
-	
 	$array=array('name'=>'allthelucky','age'=>28);//定义数组
 	echo json_encode($array);//转成json输出
 	echo "<br/>";
-	
 	$array=array(array("id"=>'1',"name"=>'hello'),array("id"=>'2',"name"=>'world'));
 	echo json_encode($array);//转成jsonarray输出
 	echo "<br/>";
-	
 	$array=array('this','is','php','test');//定义数组
 	echo($array[0]);//打印第一个元素
 	echo "<br/>";
 	print_r($array);//全打印
 	echo "<br/>";
-	
 	$have=true;//定义boolean
 	echo($have);
 	echo "<br/>";
-	
 	function show($result) {//定义函数
 		echo 'result is:'.$result;
 	}
 	$result='number 1';
 	show($result);//调用函数
 	echo "<br/>";
-
 	function mult($a, $b) {//定义带返回值函数
 		return $a*$b;
 	}
@@ -57,7 +48,6 @@ tags: [PHP,服务器,Mysql]
 	$b=20;
 	echo 'result='.mult($a,$b);//调用函数
 	echo "<br/>";
-	
 	$c=20;
 	if ($c == 20) {//if else 语句
 		echo 'yes';
@@ -65,14 +55,12 @@ tags: [PHP,服务器,Mysql]
 		echo 'no';
 	}
 	echo "<br/>";
-	
 	$num=1;
 	while($num < 10) {//while循环
 		echo 'num='.$num;
 		echo "<br/>";
 		$num+=1;
 	}
-	
 	$array=array('1'=>'hellsf','2'=>'sadfadfsd','3'=>'asdfasdfasdfsdf');
 	foreach($array as $key=>$value) {//foreach 语句，输出key,value
 		echo $key.'='.$value."<br/>";
@@ -81,13 +69,11 @@ tags: [PHP,服务器,Mysql]
 		echo $value."<br/>";
 	}
 	print_r($array);
-	
 	$str = ' asdf safsd ';
 	echo trim($str);//trim函数
 	echo "<br/>";
 	echo strlen($str);//strlen函数
 	echo "<br/>";
-	
 	echo md5($str);//md5加密
 	echo "<br/>";
 	echo sha1($str);//sha1加密
@@ -99,12 +85,10 @@ tags: [PHP,服务器,Mysql]
 	class User {
 		public $name="savant";
 		public $age ="age";
-		
 		public function __construct($name, $age) {//构造方法
 		$this->name=$name;
 		$this->age=$age;
 		}
-		
 		public function show() {//成员函数
 		echo 'name='.$this->name.',age='.$this->age;
 		}
@@ -124,7 +108,6 @@ tags: [PHP,服务器,Mysql]
 	echo 'name'.$_GET['name'];//get参数
 	echo "<br/>";
 	echo 'age'.$_GET['age'];
-	
 	echo 'name='.$_POST['name'];//post参数
 	echo "<br/>";
 	echo 'password='.$_POST['password'];
