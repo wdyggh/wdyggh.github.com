@@ -2,12 +2,12 @@
 layout: default
 title: "Steven Pan's Blog."
 ---
+<ul>
 {% for post in paginator.posts %} 
-  <div class="blog-post"> 
-   <h2 class="blog-post-title"><a href="{{ post.url }}" style="text-decoration:none">{{ post.title }}</a></h2> 
-   <p class="blog-post-meta">{{ post.date | date_to_string }}, by {{ site.author}}</p> 
-  </div> 
-  <!-- /.blog-post --> {% endfor %} 
+    <h3>{{ post.date | date: '%Y' }}</h3> 
+    <li><span>{{ post.date | date_to_string }}</span>&raquo;<a href="{{ post.url }}">{{ post.title }}</a></li> {% endfor %} 
+{% endfor %} 
+</ul> 
   <ul class="pager">
     {% if paginator.previous_page %} {% if paginator.previous_page == 1 %} 
    <li><a href="{{ site.url }}/">Previous</a></li> {% else %} 
