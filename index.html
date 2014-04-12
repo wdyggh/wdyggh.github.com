@@ -7,6 +7,7 @@ title: "Steven Pan's Blog."
     <li><span>{{ post.date | date_to_string }}</span>&raquo;<a href="{{ post.url }}">{{ post.title }}</a></li>
 {% endfor %} 
 </ul> 
+<div class="pager">
     {% if paginator.previous_page %} {% if paginator.previous_page == 1 %} 
    <a href="{{ site.url }}/">上页</a> {% else %} 
    <a href="{{ site.url }}/page{{ paginator.previous_page }}">上页</a> {% endif %} {% else %} 
@@ -14,3 +15,4 @@ title: "Steven Pan's Blog."
    <span class="page_number ">当前: {{ paginator.page }} / {{ paginator.total_pages }}</span> {% if paginator.next_page %} 
    <a href="{{ site.url }}/page{{ paginator.next_page }}">下页</a> {% else %} 
    <span class="next"></span> {% endif %} 
+</div>
