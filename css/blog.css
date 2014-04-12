@@ -19,6 +19,10 @@ h6, .h6 {
   color: #333;
 }
 
+ul{
+margin-left: 5px;margin-bottom: 0px;
+} 
+
 ul li{ 
 list-style-type:none; 
 }
