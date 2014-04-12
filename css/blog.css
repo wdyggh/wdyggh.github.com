@@ -27,11 +27,6 @@ ul li{
 list-style-type:none; 
 }
 
-.pager{
-clear:both;
-float:left;
-margin:8px;
-}
 /*
  * Override Bootstrap's default container.
  */
@@ -134,7 +129,7 @@ margin:8px;
 
 /* Pagination */
 .pager {
-  margin-bottom: 60px;
+  margin:8px;
   text-align: left;
 }
 .pager > li > a {
