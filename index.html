@@ -2,11 +2,11 @@
 layout: default
 title: "Steven Pan's Blog."
 ---
-<ol>
+<ul>
 {% for post in paginator.posts %} 
     <li><span>{{ post.date | date_to_string }}</span>&raquo;<a href="{{ post.url }}">{{ post.title }}</a></li>
 {% endfor %} 
-</ol> 
+</ul> 
     {% if paginator.previous_page %} {% if paginator.previous_page == 1 %} 
    <a href="{{ site.url }}/">上页</a> {% else %} 
    <a href="{{ site.url }}/page{{ paginator.previous_page }}">上页</a> {% endif %} {% else %} 
