@@ -88,5 +88,3 @@ tags: [Jekyll,列表,标签,代码]
   {% endif %}
 </div>
 <% endhighlight %>
-
-</pre>
