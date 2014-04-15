@@ -4,7 +4,7 @@ category: "network"
 title:  "Jekyll常用列表，标签代码"
 tags: [Jekyll,列表,标签,代码]
 ---
-<pre>
+<% highlight html %>
 <h1>分类(Categorys)</h1>
 	{% for category in site.categories %}
 				<a href="/categories.html#{{ category[0] }}">
@@ -29,7 +29,9 @@ tags: [Jekyll,列表,标签,代码]
 	{% endif %}
 	{% endfor %}
 </div>
+<% endhighlight %>
 
+<% highlight html %>
 <h1>标签(Tags)</h1>		
 	{% for tag in site.tags %}
 				<a href="/tags.html#{{ tag[0] }}">
@@ -42,14 +44,18 @@ tags: [Jekyll,列表,标签,代码]
 				<sup>[{{ tag[1].size }}]</sup>
 			,
 	{% endfor %}
+<% endhighlight %>
 
+<% highlight html %>
 <h1>Recent Posts</h1>
   <ul class="posts">
     {% for post in site.posts limit:10 %}
     <li><span>{{ post.date | date_to_string }}</span>&raquo;<a href="{{ post.url }}">{{ post.title }}</a></li>
     {% endfor %}
 </ul>
+<% endhighlight %>
 
+<% highlight html %>
 分页显示
 <!-- This loops through the paginated posts -->
 {% for post in paginator.posts %}
@@ -81,5 +87,6 @@ tags: [Jekyll,列表,标签,代码]
     <span class="next ">Next</span>
   {% endif %}
 </div>
+<% endhighlight %>
 
 </pre>
