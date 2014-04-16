@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "About"
+title: "关于：About"
 ---
 ###简介
 计算机应用技术硕士研究生，主修嵌入式Linux系统的移植、构建及其应用开发。  
