@@ -6,14 +6,13 @@ pygments: true
 safe: true
 auto: false 
 
-paginate: 16
+paginate: 20
 paginate_path: "page:num"
 
 # presonal config
 title: Steven Pan's Blog
-description: testing...
+description: Steven Pan's Blog, powered by Jekyll...
 feed: http://www.stevenpan.me/atom.xml
-comments: disqus
 
 author: Steven Pan
 
