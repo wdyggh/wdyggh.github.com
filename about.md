@@ -29,3 +29,6 @@ title: "关于：About"
 
 ###Github
 <https://github.com/panxuewen>
+
+###项目展示
+<http://www.stevenpan.me/resume/demos.mht>
