@@ -31,4 +31,4 @@ title: "关于：About"
 <https://github.com/panxuewen>
 
 ###项目展示
-<http://www.stevenpan.me/resume/demos.mht>
+<http://www.stevenpan.me/resume/demos.htm>
