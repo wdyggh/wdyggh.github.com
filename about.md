@@ -31,4 +31,4 @@ title: "关于：About"
 <https://github.com/panxuewen>
 
 ###负责开发过的项目
-<http://www.stevenpan.me/resume/demos.htm>
+<http://www.stevenpan.me/resume/demos.html>
