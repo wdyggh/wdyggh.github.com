@@ -8,8 +8,8 @@ tags: [单例]
 <pre>
 public class Singleton {
 	private volatile static Singleton instance=null;
-	
-	private Singleton(){}
+	private Singleton(){
+	}
 	
 	public static Singleton getInstance(){
 		if(null == instance) {
@@ -20,7 +20,6 @@ public class Singleton {
 			}
 		}
 	}
-
 }
 </pre>
 
