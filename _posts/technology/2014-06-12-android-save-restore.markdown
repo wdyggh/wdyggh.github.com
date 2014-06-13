@@ -4,8 +4,7 @@ category: "android"
 title:  "Android数据保存与恢复"
 tags: [数据恢复]
 ---
-Android onSaveInstanceState onRestoreInstanceState的作用不必多说，使用时要稍注意一下。  
-示例中可以看到，没在onRestoreInstanceState方法中直接恢复数据，这是因为Activity重新onCreate时，数据可能还没恢复完毕，onCreate就开始使用data了，从而导致异常（特别在savedInstanceState中要恢复很多数据时）。  
+在一个项目中，我使用onSaveInstanceState和onRestoreInstanceState中对数据做了保存与恢复，但应用被91助手等清理后重新进入，还是偶有Activity报空指针错误的情况。查看LOG发现onCreate使用数据代码行，在onRestoreInstanceState数据恢复之前就已执行了。后来换成在onCreate中进行数据恢复，就没再出现这种情况了。  
 
 示例代码：
 {% highlight java %}
@@ -35,5 +34,5 @@ Android onSaveInstanceState onRestoreInstanceState的作用不必多说，使用
 	}
 {% endhighlight %}
 
-参考文章：<http://blog.csdn.net/lamp_zy/article/details/10156369>
+参考文章：<http://blog.csdn.net/lixiang0522/article/details/7565401>
 
