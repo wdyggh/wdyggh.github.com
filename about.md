@@ -3,7 +3,7 @@ layout: default
 title: "关于：About"
 ---
 ##简介
-Steven Pan(潘学文)，非资深码农，现居武汉，从事Android应用开发。  
+Steven Pan(潘学文)，码农（软件攻城师），现居武汉，从事Android应用开发。  
 计算机应用技术硕士研究生，主修嵌入式Linux系统的移植、构建及其应用开发。  
 机械设计制造及其自动化本科，对计算机比较感兴趣。  
 Github：<https://github.com/panxuewen>
@@ -30,4 +30,4 @@ Github：<https://github.com/panxuewen>
 8)具备较强的分析、解决问题能力。
 
 ##负责开发过的项目
-<http://www.stevenpan.me/resume/demos.html>
+<http://panxuewen.github.io/resume/demos.html>
