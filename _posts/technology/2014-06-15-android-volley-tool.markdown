@@ -16,7 +16,7 @@ tags: [Android,Volley]
 
 ####二、基于Volley的网络请求工具
 在Volley基础上进行了封装，方便使用。  
-工程地址：<https://github.com/panxuewen/android-volley-toolkit>
+工程地址：<https://github.com/panxuewen/android-volley-improved>
 
 ####三、早期使用的android-async-http改进型
 工程地址：<https://github.com/panxuewen/android-async-http>
