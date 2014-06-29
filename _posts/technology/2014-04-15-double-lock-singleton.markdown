@@ -19,6 +19,7 @@ public class Singleton {
 				}
 			}
 		}
+		return instance;
 	}
 }
 {% endhighlight %}
