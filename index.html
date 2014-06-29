@@ -1,18 +1,21 @@
----
-layout: default
-title: "潘学文：Steven Pan's Blog~"
----
-<ul>
-{% for post in paginator.posts %} 
-    <li><span>{{ post.date | date_to_string }}</span>&raquo;<a href="{{ post.url }}">{{ post.title }}</a></li>
-{% endfor %} 
-</ul> 
-<div class="pager">
-    {% if paginator.previous_page %} {% if paginator.previous_page == 1 %} 
-   <a href="{{ site.url }}/">上页</a> {% else %} 
-   <a href="{{ site.url }}/page{{ paginator.previous_page }}">上页</a> {% endif %} {% else %} 
-   <span class="previous"></span> {% endif %} 
-   <span class="page_number ">当前: {{ paginator.page }} / {{ paginator.total_pages }}</span> {% if paginator.next_page %} 
-   <a href="{{ site.url }}/page{{ paginator.next_page }}">下页</a> {% else %} 
-   <span class="next"></span> {% endif %} 
+<html>
+<head>
+<title>steven-pan:home page.</title>
+</head>
+<body>
+
+<div style="height:300px;width:auto;float:none; text-align:center;padding-top:80px">
+Welcome!
+<br/>
+<img src="./avater.jpg" width="250px"/>
+<br/>
+<a href="https://github.com/panxuewen" title="visit my github">Github>></a>
+<br/>
+<a href="http://panxuewen.github.io/" title="visit my blog">Blog>></a>
+<br/>
+<a href="http://panxuewen.github.io/resume/index.html" title="visit my personal resume">Resume>></a>
+
 </div>
+
+</body>
+</html>
