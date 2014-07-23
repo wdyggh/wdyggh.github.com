@@ -2,14 +2,14 @@
 layout: default
 title: "潘学文：Steven Pan's Blog~"
 ---
-Latest posts:  
+.  Posts:  
 <ul>
      {% for post in site.posts limit:10 %} 
 		<li><span>{{ post.date | date_to_string }}</span>&raquo;<a href="{{ post.url }}">{{ post.title }}</a></li> 
 	 {% endfor %} 
 </ul> 
 <br/>
-Open projects:  
+.  Projects:  
 <ul>
 		<li><span>2014-07</span>&raquo;<a href="https://github.com/winfirm/android-json-parser">android-json-parser</a></li> 
 		<li><span>2014-06</span>&raquo;<a href="https://github.com/winfirm/android-quick-library">android-quick-library</a></li> 
