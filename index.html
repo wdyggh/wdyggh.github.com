@@ -1,25 +1,21 @@
-<html>
-<head>
-<title>steven-pan: personal home page</title>
-</head>
-<body>
-
-<div style="height:300px;width:auto;float:none; text-align:center;padding-top:80px">
-
-<font size="5px">Welcome!</font>
+---
+layout: default
+title: "潘学文：Steven Pan's Blog~"
+---
+Latest posts:  
+<ul>
+     {% for post in site.posts limit:10 %} 
+		<li><span>{{ post.date | date_to_string }}</span>&raquo;<a href="{{ post.url }}">{{ post.title }}</a></li> 
+	 {% endfor %} 
+</ul> 
 <br/>
-<img src="./avater.jpg" width="200px"/>
-<br/>
-<a href="https://github.com/winfirm" title="visit my github">Github>></a>
-<br/>
-<a href="http://winfirm.github.io/blog.html" title="visit my blog">Blog>></a>
-<br/>
-<!-- <a href="http://panxuewen.github.io/resume/index.html" title="visit my personal resume">Resume>></a> -->
-
-<br/>
-<br/>
-<font size="4px">&copy</font>
-</div>
-
-</body>
-</html>
+Open projects:  
+<ul>
+		<li><span>2014-07</span>&raquo;<a href="https://github.com/winfirm/android-json-parser">android-json-parser</a></li> 
+		<li><span>2014-06</span>&raquo;<a href="https://github.com/winfirm/android-quick-library">android-quick-library</a></li> 
+		<li><span>2014-06</span>&raquo;<a href="https://github.com/winfirm/android-volley-manager">android-volley-manager</a></li> 
+		<li><span>2013-11</span>&raquo;<a href="https://github.com/winfirm/android-image-indicator">android-image-indicator</a></li> 
+		<li><span>2013-06</span>&raquo;<a href="https://github.com/winfirm/android-viewpager-indicator">android-viewpager-indicator</a></li>
+		<li><span>2013-09</span>&raquo;<a href="https://github.com/winfirm/android-mybatis-server">android-mybatis-server</a></li> 
+		<li><span>2012-12</span>&raquo;<a href="https://github.com/winfirm/android-oauthv2-model">android-oauthv2-model</a></li> 
+</ul> 
