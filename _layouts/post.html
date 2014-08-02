@@ -3,20 +3,14 @@ layout: default
 --- 
 <!-- Blog Post -->
 <!-- Title -->
-<h2>
+<h2><span>
   {{ page.title }}
+  <div style="float:right; padding:5px;font-size:12px">
+	<span class="glyphicon glyphicon-time"></span>
+	{{ page.date | date_to_string }}
+  </div>
 </h2>
 <!-- Author -->
-<p class="lead">
-  Posted by
-  <a href="https://github.com/winfirm">
-    Steven Pan
-  </a>
-  ,
-  <span class="glyphicon glyphicon-time">
-  </span>
-  {{ page.date | date_to_string }}
-</p>
 <hr>
 {{ content }}
 <br/>
