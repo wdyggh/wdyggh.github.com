@@ -1,6 +1,6 @@
 ---
 layout: post
-category: "network"
+category: "web"
 title:  "Appfog Java Web操作指南"
 tags: [Appfog, Java Web]
 ---

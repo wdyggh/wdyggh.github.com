@@ -1,6 +1,6 @@
 ---
 layout: post
-category: "network"
+category: "web"
 title:  "web标准设计规范(XHTML+CSS)"
 tags: [Web,CSS]
 ---

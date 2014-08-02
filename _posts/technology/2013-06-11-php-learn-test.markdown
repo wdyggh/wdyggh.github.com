@@ -1,6 +1,6 @@
 ---
 layout: post
-category: "network"
+category: "web"
 title:  "PHP学习入门级练习"
 tags: [PHP,服务器,Mysql]
 ---

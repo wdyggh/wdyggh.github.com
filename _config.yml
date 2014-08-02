@@ -12,7 +12,7 @@ paginate_path: "page:num"
 # presonal config
 title: Steven Pan's Blog
 description: Steven Pan's Blog, powered by Jekyll...
-feed: http://www.stevenpan.me/atom.xml
+feed: http://www.winfirm.cn/atom.xml
 
 author: Steven Pan
 
