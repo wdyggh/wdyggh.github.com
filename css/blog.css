@@ -11,3 +11,10 @@ body {
 footer {
     margin: 50px 0;
 }
+
+.post-date{
+	float:right;
+	padding:5px;
+	font-size:12px
+}
+
