@@ -1,25 +1,52 @@
----
-layout: default
-title: "Winfirm: Steven's blog~"
----
-.  Recent Posts:  
-<ul>
-     {% for post in site.posts limit:10 %} 
-		<li><span>{{ post.date | date_to_string }}</span>&raquo;<a href="{{ post.url }}">{{ post.title }}</a></li> 
-	 {% endfor %} 
-</ul> 
-<br/>
-.  My Projects:  
-<ul>
-
-		<li><a href="https://github.com/winfirm/winfirm.github.com">winfirm.github.com</a> - Personal Blog powered by Jekyll&Gitpage.</li> 
-		<li><a href="https://github.com/winfirm/android-json-parser">android-json-parser</a> - Parser can transform JSONObject to Java bean.</li> 
-		<li><a href="https://github.com/winfirm/android-quick-library">android-quick-library</a> - Quick develop library for Android app development.</li> 
-		<li><a href="https://github.com/winfirm/android-volley-manager">android-volley-manager</a> - Android network manager based on Volley.</li> 
-		<li><a href="https://github.com/winfirm/android-image-indicator">android-image-indicator</a> - Android image indicator easy to use.</li> 
-		<li><a href="https://github.com/winfirm/android-viewpager-indicator">android-viewpager-indicator</a> - Android tab indicator easy to use.</li>
-		<li><a href="https://github.com/winfirm/android-mybatis-server">android-mybatis-server</a> - Server for Android client implements by MyBatis.</li> 
-		<li><a href="https://github.com/winfirm/android-share-sdk">android-share-sdk</a> - Android share sdk for Sina/Tecent weibo.</li>
-		<li><a href="https://github.com/winfirm/android-oauthv2-model">android-oauthv2-model</a> - Simple oauthv2 model for android client.</li>
-</ul> 
-<br/>
+--- 
+layout: default 
+title: Winfirm's Blog - by Steven Pan.
+--- 
+<h1 class="page-header">
+  Winfirm's Blog
+  <small>
+    You are welcome!
+  </small>
+</h1>
+{% for post in paginator.posts %}
+<h2>
+  <a href="{{ post.url }}">
+    {{ post.title }}
+  </a>
+</h2>
+<p class="lead">
+  Posted by
+  <a href="https://github.com/winfirm">
+    Steven Pan
+  </a>
+  , 
+  <span class="glyphicon glyphicon-time">
+  </span>
+  {{ post.date | date_to_string }}
+</p>
+<hr>
+{{ post.content }}
+<hr>
+{% endfor %}
+<!-- Pager -->
+<ul class="pager">
+  {% if paginator.previous_page %} {% if paginator.previous_page == 1 %}
+  <li class="previous">
+    <a href="{{ site.url }}/">
+      &larr; Older
+    </a>
+  </li>
+  {% else %}
+  <li class="previous">
+    <a href="{{ site.url }}/page{{ paginator.previous_page }}">
+      &larr; Older
+    </a>
+  </li>
+  {% endif %} {% endif %} {% if paginator.next_page %}
+  <li class="next">
+    <a href="{{ site.url }}/page{{ paginator.next_page }}">
+      Newer &rarr;
+    </a>
+  </li>
+  {% endif %}
+</ul>

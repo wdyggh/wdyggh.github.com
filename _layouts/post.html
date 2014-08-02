@@ -1,9 +1,49 @@
 --- 
 layout: default 
 --- 
-    <h2 class="blog-post-title">{{ page.title }}</h2> {{ content }} 
-    <div style="margin-top:10px;margin-bottom:10px">
-      {%if page.previous%} 
-     <span class="next">上篇：<a href="{{page.previous.url}}">{{page.previous.title}}</a></span> {%endif%} {%if page.next%} 
-     <span class="prev">下篇：<a href="{{page.next.url}}">{{page.next.title}}</a></span> {%endif%} 
-    </div> {% include comment.html %} 
+<!-- Blog Post -->
+<!-- Title -->
+<h2>
+  {{ page.title }}
+</h2>
+<!-- Author -->
+<p class="lead">
+  Posted by
+  <a href="https://github.com/winfirm">
+    Steven Pan
+  </a>
+  , 
+  <span class="glyphicon glyphicon-time">
+  </span>
+  {{ page.date | date_to_string }}
+</p>
+<hr>
+{{ content }}
+<br/>
+<div style="margin-top:10px;margin-bottom:10px">
+  {%if page.previous%}
+  <span class="next">
+    上篇：
+    <a href="{{page.previous.url}}">
+      {{page.previous.title}}
+    </a>
+  </span>
+  {%endif%} {%if page.next%}
+  <span class="prev">
+    下篇：
+    <a href="{{page.next.url}}">
+      {{page.next.title}}
+    </a>
+  </span>
+  {%endif%}
+</div>
+<hr>
+<!-- Blog Comments -->
+<div class="media">
+  <!-- UY BEGIN -->
+  <div id="uyan_frame">
+  </div>
+  <script type="text/javascript" src="http://v2.uyan.cc/code/uyan.js?uid=1511840">
+  </script>
+  <!-- UY END -->
+</div>
