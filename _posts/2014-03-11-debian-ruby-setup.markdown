@@ -24,5 +24,5 @@ sudo apt-get install ruby irb rdoc ruby-dev
 ####四、安装ruby gem
 安装好ruby的基本开发环境后，就可以安装ruby gem了，如jekyll：<br/>
 {% highlight bash %}
-sudo gem install rdiscount ruby redcarpet
+sudo gem install rdiscount jekyll redcarpet
 {% endhighlight %}
