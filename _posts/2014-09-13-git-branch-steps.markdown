@@ -12,7 +12,7 @@ cd ./test
 ####2、建立目标分支进行开发
 git checkout -b dev-branch master  
 经过对本地dev-branch开发后...  
-git add .
+git add .  
 git commit -am "feature adding and bugs fixing"
 
 ####3、合并本地分支(dev-branch)到master分支
