@@ -7,12 +7,12 @@ tags: [git]
 ####1、克隆远程版本库。
 git clone git@github.com:youth168/test.git  
 输入密码:git，等待完成。  
-cd ./ottClient
+cd ./test
 
 ####2、建立目标分支进行开发
 git checkout -b dev-branch master  
-git branch  
 经过对本地dev-branch开发后...  
+git add .
 git commit -am "feature adding and bugs fixing"
 
 ####3、合并本地分支(dev-branch)到master分支
