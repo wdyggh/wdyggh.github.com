@@ -27,4 +27,10 @@ git checkout dev-branch
 不再基于dev-branch开发了，删除之  
 git branch -d dev-branch
 
-注：基于远程分支开发同以上操作。
+####6、设置Tag(快照)
+git tag v1.0 '新建本地tag  
+git tag -d v1.0 '删除本地tag  
+git push --tag 'push本地tag到远程  
+git push origin --delete tag v1.0 '删除远程tag  
+
+注：基于远程子分支开发同以上操作。
