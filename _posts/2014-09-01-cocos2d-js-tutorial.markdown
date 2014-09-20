@@ -1,6 +1,6 @@
 ---
 layout: post
-category: "other"
+category: "cocos2d"
 title:  "Cocos2d-JS steps under web and Android Platform."
 tags: [Cocos2d]
 ---
