@@ -19,7 +19,8 @@ title: "Winfirm's Blog - by Steven Pan(潘学文)"
   </div>
 </h2>
 <hr>
-{{ post.content }}
+{{ post.excerpt }}
+	<p> <a href="{{ post.url }}"><span >阅读全文 &raquo; </span></a></p>
 <hr>
 {% endfor %}
 <!-- Pager -->
