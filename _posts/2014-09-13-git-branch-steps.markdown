@@ -17,8 +17,9 @@ git commit -am "feature adding and bugs fixing"
 
 ####3、合并本地分支(dev-branch)到master分支
 git checkout master  
+git merge dev-branch  
 git push origin master  
-或者：  
+或者在dev-branch分支下执行：  
 git push origin dev-branch:master
 
 再次对dev-branch开发：  
