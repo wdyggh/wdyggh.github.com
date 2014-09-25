@@ -1,6 +1,6 @@
 ---
 layout: post
-category: "android"
+category: "cocos2d"
 title:  "Android Cocos2dx 编译过程"
 tags: [android,cocos2dx]
 ---
