@@ -9,7 +9,7 @@ git clone git@github.com:youth168/test.git
 输入密码:git，等待完成。  
 cd ./test
 
-####2、建立目标分支进行开发
+####2、建立本地分支进行开发
 git checkout -b dev-branch master‘ 子分支时为git checkout -b dev-branch origin/develop  
 经过对本地dev-branch开发后...  
 git add .  
@@ -18,7 +18,7 @@ git commit -am "feature adding and bugs fixing"
 ####3、合并本地分支(dev-branch)到master分支
 git checkout master  
 git merge dev-branch  
-git push origin master  
+git push origin master‘推送到远程  
 或者在dev-branch分支下执行：  
 git push origin dev-branch:master
 
