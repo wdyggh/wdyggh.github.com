@@ -14,7 +14,7 @@ tags: [Cocos2d IDE]
 3、构建调试Android应用  
 1)Cocos Tools>>Build Custom Runtime>>...build sucess.  
 2)Run Configurations>>Android ADB Mode>>Runtime path: Browse>>Project-debug.apk>>Apply.  
-3)or Run as Cocos JSBinding..  
+3)Run as Cocos JSBinding..  
 
 ####三、命令行模式
 1、新建：cocos new MyGame -l js  
