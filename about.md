@@ -28,8 +28,6 @@ Android Development Engineer
 ####Links
 Blog    <http://www.winfirm.cn/>  
 GitHub  <https://github.com/panxw>  
-Douban  <http://www.douban.com/people/38430153>  
-Cublog  <http://blog.chinaunix.net/uid/22985736.html>  
 
 <!-- Blog Comments -->
 <div class="media">
