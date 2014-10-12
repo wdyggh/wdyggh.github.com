@@ -28,7 +28,7 @@ cmd进入cocos2d-x2.2目录的tools\project-creator，执行: python create_proj
 3)vs2012打开cocos2d-win32.vc2012.sln,然后Build Solution编译工程。
 
 ####四、演示项目
-<https://github.com/winfirm/android-cocos2dx-tutorial>
+<https://github.com/panxw/android-develop-toolkit/tree/master/AndroidCocos2dx>
 
 #####五、其它问题
 fatal error: AppDelegate.h: No such file or directory，原因可能是pro.android已不在D:\cocos2dx\cocos2d-x-2.2.2\projects\helloworld目录下了。
