@@ -1,8 +1,0 @@
----
-layout: nil
----
-
-[{% for post in paginator.posts %}
-,
-{% endfor %}
-]
