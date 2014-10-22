@@ -3,10 +3,6 @@ layout: nil
 ---
 
 [{% for post in paginator.posts %}
-    {
-        "title":"{{post.title}}",
-        "url":"{{post.url}}",
-        "date":"{{post.date|date_to_string}}"
-    },
+,
 {% endfor %}
 ]
