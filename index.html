@@ -8,6 +8,8 @@ title: "Xuewen Pan's Blog - powered by Jekyll & GitPages."
   </small>
 </h1>
 {% include recommend.html %} 
+
+<!-- Loop output paged posts -->
 {% for post in paginator.posts %}
 <h2>
   <a href="{{ post.url }}">
@@ -23,7 +25,8 @@ title: "Xuewen Pan's Blog - powered by Jekyll & GitPages."
 	<p> <a href="{{ post.url }}"><span >阅读全文 &raquo; </span></a></p>
 <hr>
 {% endfor %}
-<!-- Pager -->
+
+<!-- Pager indicator -->
 <ul class="pager">
   {% if paginator.previous_page %} {% if paginator.previous_page == 1 %}
   <li class="previous">
