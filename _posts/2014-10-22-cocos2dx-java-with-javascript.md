@@ -7,8 +7,9 @@ tags: ["cocos2d"]
 libcocos2dx工程中添加Cocos2dxJavascriptJavaBridge.java  
 该文件在frameworks\js-bindings\bindings\manual\platform\android\java\src\org\cocos2dx\lib中。  
 
-java代码：//cn.winfirm.tools.JavascriptHelper.java  
-	public static JavascriptHelper {
+java代码：//cn.winfirm.tools.JavascriptHelper.java
+
+	public class JavascriptHelper {
 		//method to call javascript
 		public static final void callJavascriptMethod() {//【java调用javascript方法】
 			final String jsCallStr = String.format("JavaHelper.javascriptMethod('%s')", "hello world, from javascript");
@@ -25,7 +26,8 @@ java代码：//cn.winfirm.tools.JavascriptHelper.java
 		}
 	}
 
-javascript代码：//JavaHelper.js  
+javascript代码：//JavaHelper.js
+
 	var JavaHelper = JavaHelper||{};
 	JavaHelper.callClassName = "cn/winfirm/tools/JavascriptHelper";
 
