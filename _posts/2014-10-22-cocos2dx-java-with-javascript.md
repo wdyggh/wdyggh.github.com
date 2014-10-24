@@ -4,7 +4,7 @@ category: "cocos2d"
 title: "cocos2dx javascript与java互相调用途径"
 tags: ["cocos2d"]
 ---
-libcocos2dx工程中添加Cocos2dxJavascriptJavaBridge.java.  
+libcocos2dx工程中添加Cocos2dxJavascriptJavaBridge.java  
 该文件在frameworks\js-bindings\bindings\manual\platform\android\java\src\org\cocos2dx\lib中。  
 
 java代码：//cn.winfirm.tools.JavascriptHelper.java  
