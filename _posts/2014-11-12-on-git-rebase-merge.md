@@ -1,11 +1,12 @@
 ---
 layout: post
 category: "git"
-title: "Git的Merge和Rebase"
+title: "Git的Merge和Rebase（蛋碎~）"
 tags: ["git"]
 ---
 ####一、特定分支下Rebase
 git branch//确认在master分支下  
+*master  
 git pull  
 bit rebase  
 solve conflict//遇到冲突，要解决...  
@@ -20,7 +21,7 @@ over when arrive "master"//到master为止
 git clone git@git.abc.com:user/space/A.git //准备A库代码  
 cd A  
 git branch //确保在master分支下  
-master*  
+*master  
 
 
 git remote add B git@git.abc.com:user/space/B.git //设置B库  
