@@ -39,6 +39,8 @@ tags: ["git"]
     git clean -i: clean untracked files  
     git remote //show branches  
     git remote -v //show branches details  
-    git remote show player //show player info  
+    git remote show B //show B info  
+    git reset --hard //rest to latest commit status
+    git stash //save eidit status, back to latest commit status
 
 （完~）
