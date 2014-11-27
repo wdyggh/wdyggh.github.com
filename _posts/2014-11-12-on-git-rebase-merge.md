@@ -1,7 +1,7 @@
 ---
 layout: post
 category: "git"
-title: "Git的Merge和Rebase（蛋碎~）"
+title: "Git的Merge和Rebase"
 tags: ["git"]
 ---
 ####一、特定分支下Rebase
