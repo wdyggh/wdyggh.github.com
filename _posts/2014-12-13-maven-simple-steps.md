@@ -1,6 +1,6 @@
 ---
 layout: post
-category: "manven"
+category: "java"
 title: "Manven构建基本步骤"
 tags: ["manven"]
 ---
