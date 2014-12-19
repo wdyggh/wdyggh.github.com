@@ -36,7 +36,7 @@ eclipse 提示tools.jar找不到，则检查下jre环境。
 		<dependency>
 		  <groupId>junit</groupId>
 		  <artifactId>junit</artifactId>
-		  <version>{latestVersion}</version>
+		  <version>{latest-version}</version>
 		  <scope>test</scope>
 		</dependency>
 	  </dependencies>
