@@ -7,9 +7,11 @@ tags: ["manven"]
 ####主要步骤
 1, download and install maven。  
 2, mvn archetype:create -DgroupId=com.mycompany.app -DartifactId=my-app 创建新工程。  
-3, mvn package 将代码打包到输出目录，一般在target下面。  
+3, mvn package 将代码打包到输出到target目录。
+4, mvn test 将测试代码到包输出到target目录。
 4, mvn clean 清理target目录。  
 5, mvn install 将打包好的jar包安装到本地库中，一般没默认是在用户目录下的.m2\目录。  
+6, mvn deploy 发布到nexus远程仓库。  
 
 ####报错
 eclipse 提示tools.jar找不到，则检查下jre环境。  
