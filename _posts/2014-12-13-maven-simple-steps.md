@@ -13,8 +13,11 @@ tags: ["manven"]
 5, mvn install 将打包好的jar包安装到本地库中，一般没默认是在用户目录下的.m2\目录。  
 6, mvn deploy 发布到nexus远程仓库。  
 
-####报错
-eclipse 提示tools.jar找不到，则检查下jre环境。  
+####其它
+1, eclipse 提示tools.jar找不到，则检查下jre环境。  
+2, maven中心库访问总出现超时问题解决。  
+开源中国提供了镜像（同步于http://mirrors.ibiblio.org/maven2/），使用方法见：http://maven.oschina.net/help.html  
+
 
 ####附pom.xml主要结构：
 
