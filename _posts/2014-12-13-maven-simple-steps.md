@@ -14,10 +14,11 @@ tags: ["manven"]
 6, mvn deploy 发布到nexus远程仓库。  
 
 ####其它
-1, eclipse 提示tools.jar找不到，则检查下jre环境。  
+1, 搜索需要的包：http://mvnrepository.com/  
 2, maven中心库访问总出现超时问题解决。  
 开源中国提供了镜像（同步于http://mirrors.ibiblio.org/maven2/），使用方法见：http://maven.oschina.net/help.html  
 3, Maven报错“未结束的字符串字面值”，参考：http://www.cnblogs.com/yeyong/p/3906371.html  
+4, eclipse 提示tools.jar找不到，则检查下jre环境。  
 
 ####附pom.xml主要结构：
 
