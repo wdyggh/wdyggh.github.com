@@ -20,7 +20,7 @@ git checkout master
 git merge dev-branch  
 git push origin master‘推送到远程  
 或者在dev-branch分支下执行：  
-git push origin dev-branch:master
+git push origin dev-branch:master 'git push orign HEAD:new_branch  
 
 再次对dev-branch开发：  
 git checkout dev-branch  
