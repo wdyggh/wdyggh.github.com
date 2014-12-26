@@ -1,13 +1,13 @@
 ---
 layout: post
 category: "network"
-title:  "推荐一个Chrome浏览器翻墙插件"
-tags: [翻墙插件]
+title:  "推荐几个不错的VPN"
+tags: [VPN,翻墙插件]
 ---
-“红杏”--专为学者、程序员、外贸工作者，打造的上网加速器（适用于Chrome浏览器）。  
-安装简单，资费经济，首次购买10元及以上套餐，可获赠10天VIP的奖励。  
-推荐他人使用还可获更多免费VIP的奖励时间~   
+云梯，每月10元起，不限时，多服务器选择，速度快，强力推荐！  
+<http://protizi.com/?r=3d02a81974887d3a>  
 
+如果仅需浏览器上外网，则推荐一个Chrome浏览器翻墙插件。  
 链接：<http://honx.in/i/U84FRn8mTgLfZ37v>  
 
 （完~）
