@@ -1,3 +1,7 @@
+---
+layout: nil
+title: json
+---
 [{% for post in site.posts limit:10 %}
     {
         "title":"{{post.title}}",
