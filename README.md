@@ -2,7 +2,7 @@ panxw.github.com
 ================
 
 ####Personal blog powered by Jekyll, hosted on GitHub, designed by panxw.  
-Blog Url: http://www.panxw.com/  
+Blog Url: http://www.panxw.com  
 QQ(85902258), email(winfirm#163.com)  
 
 ####Read before you forking:  
