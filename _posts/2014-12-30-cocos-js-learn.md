@@ -1,3 +1,9 @@
+---
+layout: post
+category: "android"
+title: "Cocos JS 布局及控件相关"
+tags: ["cocos2d-js"]
+---
 ####Node显示设置：  
 
     node.setVisible(true);
