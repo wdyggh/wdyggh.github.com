@@ -1,8 +1,8 @@
-panxw.github.com
+我的个人博客
 ================
 
-####我的个人博客
-博客地址: http://www.panxw.com  
+####博客地址
+(http://www.panxw.com)  
 
 ####使用本项目作为模板请注意
 1、修改_config.yaml相关信息成你自己的。  
