@@ -26,9 +26,9 @@ Android Development Engineer
 Android Development Engineer  
 
 ####Links
-Blog    <http://{{site.domain}}>  
-GitHub  <https://github.com/{{site.github}}>  
-
+Blog    <http://{{ site.domain }}>  
+GitHub  <https://github.com/{{ site.github }}>  
+LinkedIn: <http://www.linkedin.com/in/panxw>
 <!-- Blog Comments -->
 <div class="media">
   {% include comment.html %} 
