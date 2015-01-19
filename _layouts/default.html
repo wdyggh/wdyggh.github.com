@@ -5,10 +5,9 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="{{ page.title }} - Panxw's Blog">
-    <meta name="author" content="Xuewen Pan, qq: 85902258">
+    <meta name="description" content="{{ page.title }} - {{ site.title }} - {{ site.author }}({{ site.email }})">
     <title>
-      {{ page.title }}
+      {{ page.title }} - {{ site.title }}
     </title>
     <!-- Bootstrap Core CSS -->
     <link href="/css/bootstrap.min.css" rel="stylesheet">
@@ -48,7 +47,7 @@
             </span>
           </button>
           <a class="navbar-brand" href="/index.html">
-            Panxw's Blog
+            {{ site.title }}
           </a>
         </div>
         <!-- Collect the nav links, forms, and other content for toggling -->

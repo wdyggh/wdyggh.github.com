@@ -1,14 +1,12 @@
 ---
 layout: default
-title: "Panxw's Blog - powered by Jekyll & GitPages."
+title: "首页"
 ---
 <h1 class="page-header">
   <small>
-    Android, Cocos2d, Java, Linux, reading...
+    {{ site.description }}
   </small>
 </h1>
-{% include recommend.html %} 
-
 <!-- Loop output paged posts -->
 {% for post in paginator.posts %}
 <h2>
