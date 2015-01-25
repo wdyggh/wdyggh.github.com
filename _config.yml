@@ -10,9 +10,9 @@ paginate: 8
 paginate_path: "page:num"
 
 # presonal config
-domain: www.panxuewen.com
+domain: www.panxw.com
 title: Panxw's Blog
-description: Android, Cocos2d, Java, Linux, reading...
+description: Android, Cocos2d, Java Web, Linux, reading...
 author: Steven Pan
 email: winfirm#163.com
 github: panxw
