@@ -2,7 +2,7 @@ markdown: redcarpet
 permalink: /:categories/:title.html
 url: 
 lsi: false
-highlighter: true
+pygments: true
 safe: true
 auto: false 
 
