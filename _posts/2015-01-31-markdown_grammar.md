@@ -175,9 +175,6 @@ Markdown支持两种风格的链接：*Inline*和*Reference*。
 	[pic]: /assets/images/ship.jpg "可选的title"
 	HTML示例：<img src="/assets/images/jian.jpg" alt="替代文本" title="标题文本" width="200" />
 
-#### 效果：
-
-<img src="/assets/images/jian.jpg" alt="替代文本" title="标题文本" width="200" />
 
 - - - 
 
