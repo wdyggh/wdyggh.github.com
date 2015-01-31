@@ -2,7 +2,7 @@
 ================
 
 ####博客地址
-wdyggh.github.io
+http://wdyggh.github.io
 
 ####使用本项目作为博客模板，仅需如下几步：
 1,首先Fork或Download一份本项目代码。  
@@ -31,4 +31,5 @@ http://www.malphi.net
 http://happyaround.com  
 http://tencentlocation.github.io  
 http://wtaps.github.io  
+http://wdyggh.github.io  
 (你的位置)  
