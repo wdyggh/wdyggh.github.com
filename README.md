@@ -21,7 +21,7 @@ http://wdyggh.github.io
 如需查看或管理网站统计、评论或广告，请自行注册帐号并修改_includes目录下相关文件。  
 
 ####联系方式
-联系方式：qq 616599972
+联系方式：qq 616599972  
 Email(wdyggh@gmail.com)  
 facebook :https://www.facebook.com/dingyang.wang
 
@@ -37,7 +37,6 @@ http://wdyggh.github.io
 
 ####layout post
 ================
-category: "分类" 
-title: "标题"
-tags: ["标签"]
-================
+category: "分类"  
+title: "标题"  
+tags: ["标签"]  
