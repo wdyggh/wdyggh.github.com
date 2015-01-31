@@ -2,7 +2,7 @@
 ================
 
 ####博客地址
-http://www.panxw.com  
+wdyggh.github.io
 
 ####使用本项目作为博客模板，仅需如下几步：
 1,首先Fork或Download一份本项目代码。  
