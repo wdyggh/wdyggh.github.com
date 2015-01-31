@@ -35,8 +35,7 @@ http://wtaps.github.io
 http://wdyggh.github.io  
 (你的位置)  
 
-####layout post
-================
+####layout post  
 category: "分类"  
 title: "标题"  
 tags: ["标签"]  
