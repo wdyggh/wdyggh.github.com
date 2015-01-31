@@ -21,8 +21,8 @@ http://wdyggh.github.io
 如需查看或管理网站统计、评论或广告，请自行注册帐号并修改_includes目录下相关文件。  
 
 ####联系方式
-联系方式：qq(85902258), email(winfirm#163.com)  
-腾讯微博：http://t.qq.com/allthelucky  
+联系方式：qq(616599972), email(wdyggh@gmail.com)  
+facebook :https://www.facebook.com/dingyang.wang
 
 ####使用本项目作模板的博客链接
 http://www.94geek.com  
