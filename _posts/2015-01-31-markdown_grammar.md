@@ -173,14 +173,14 @@ Markdown支持两种风格的链接：*Inline*和*Reference*。
 	Inline示例：![替代文本](/images/markdown_grammar/hb.jpg "可选的title")
 	Reference示例：![替代文本][pic]
 	[pic]: /images/markdown_grammar/hb.jpg "可选的title"
-	HTML示例：<img src="/images/markdown_grammar/hb.jpg" alt="替代文本" title="标题文本" width="200" />
+	HTML示例：<img src="/images/markdown_grammar/xsjfyzs.jpg" alt="替代文本" title="标题文本" width="200" />
 #### 效果： 
 Inline示例:  
 ![替代文本](/images/markdown_grammar/hb.jpg "可选的title")  
 Reference示例:  
 ![替代文本][pic]  
-[pic]: /images/markdown_grammar/xsjfyzs.jpg "可选的title"  
-HTML示例：<img src="/images/markdown_grammar/win10bg.jpg" alt="替代文本" title="标题文本" width="900" />
+[pic]: /images/markdown_grammar/hb.jpg "可选的title"  
+HTML示例：<img src="/images/markdown_grammar/xsjfyzs.jpg" alt="替代文本" title="标题文本" width="900" />
 
 - - - 
 
