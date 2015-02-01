@@ -4,7 +4,7 @@ category: "转载"
 title: "MarkDown语法"
 tags: ["MarkDown"]
 ---
-##转自： [https://equation85.github.com](https://equation85.github.com "asd")
+##转自： [https://equation85.github.com](https://equation85.github.com "equation85")
 
 ## 什么是Markdown
 Markdown是一个将文本转化为HTML的工具。简单来说，Markdown是一个兼顾可读性与易用性的轻量级标记体系。Markdown并不追求大而全，它只关心HTML里最常用的几个标记，对于一些不常用的标记它允许直接将HTML标记插入文本。
@@ -170,17 +170,17 @@ Markdown支持两种风格的链接：*Inline*和*Reference*。
 *注：Markdown不能设置图片大小，如果必须设置则应使用HTML标记&lt;img&gt;。*   
 #### 语法：
 
-	Inline示例：![替代文本](/images/markdown_grammar/hb.jpg "可选的title")
+	Inline示例：![替代文本](/images/markdown_grammar/hb.jpg "hb.jpg")
 	Reference示例：![替代文本][pic]
-	[pic]: /images/markdown_grammar/hb.jpg "可选的title"
-	HTML示例：<img src="/images/markdown_grammar/xsjfyzs.jpg" alt="替代文本" title="标题文本" width="200" />
+	[pic]: /images/markdown_grammar/hb.jpg "hb.jpg"
+	HTML示例：<img src="/images/markdown_grammar/xsjfyzs.jpg" alt="替代文本" title="xsjfyzs.jpg" width="200" />
 #### 效果： 
 Inline示例:  
-![替代文本](/images/markdown_grammar/hb.jpg "可选的title")  
+![替代文本](/images/markdown_grammar/hb.jpg "hb.jpg")  
 Reference示例:  
 ![替代文本][pic]  
-[pic]: /images/markdown_grammar/hb.jpg "可选的title"  
-HTML示例：<img src="/images/markdown_grammar/xsjfyzs.jpg" alt="替代文本" title="标题文本" width="900" />
+[pic]: /images/markdown_grammar/hb.jpg "hb.jpg"  
+HTML示例：<img src="/images/markdown_grammar/xsjfyzs.jpg" alt="替代文本" title="xsjfyzs.jpg" width="900" />
 
 - - - 
 
