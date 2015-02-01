@@ -6,13 +6,13 @@ pygments: true
 safe: true
 auto: false 
 
-paginate: 8
+paginate: 10
 paginate_path: "page:num"
 
 # presonal config
 domain: wdyggh.github.io
 title: wdyggh's Blog
-description: c, avr, raspberryPi, Linux, reading...
+description: c, avr, embedded, Linux, python ...
 author: wdy
 email: wdyggh@gmail.com
 github: wdyggh
