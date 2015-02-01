@@ -174,7 +174,12 @@ Markdown支持两种风格的链接：*Inline*和*Reference*。
 	Reference示例：![替代文本][pic]
 	[pic]: /images/hb.jpg "可选的title"
 	HTML示例：<img src="/images/hb.jpg" alt="替代文本" title="标题文本" width="200" />
+#### 效果：
 
+Inline示例：![替代文本](/images/hb.jpg "可选的title")
+Reference示例：![替代文本][pic]
+[pic]: /images/win10bg.jpg "可选的title"
+HTML示例：<img src="/images/xsjfyzs.jpg" alt="替代文本" title="标题文本" width="900" />
 
 - - - 
 
