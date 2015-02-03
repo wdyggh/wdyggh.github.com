@@ -1,7 +1,7 @@
 ---
 layout: post
 category: "转载"
-title: "[转载]MarkDown语法"
+title: "[转]MarkDown语法"
 tags: ["MarkDown"]
 ---
 
