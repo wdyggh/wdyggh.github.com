@@ -1,4 +1,4 @@
 #20150203
 > /css/blog.css footer 
-> > color 
+> > color   
 > > background color
