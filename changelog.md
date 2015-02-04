@@ -8,4 +8,8 @@
 
 ##20150204
 /_includes/analytics.html
-> 站长统计 CNZZ网站统计服务
+> 站长统计 CNZZ网站统计服务  
+
+/_includes/comment.html
+/_layouts/default.html
+> 友言 评论
