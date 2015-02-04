@@ -12,4 +12,7 @@
 
 /_includes/comment.html  
 /_layouts/default.html
-> 友言 评论
+> 友言 评论  
+
+/_layouts/links.html
+> chiphell
