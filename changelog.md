@@ -1,4 +1,4 @@
-#20150202
+##20150202
 /_layouts/default.html  
 > icon  
 
@@ -6,6 +6,6 @@
 > color   
 > background color
 
-#20150204
+##20150204
 /_includes/analytics.html
 > 站长统计 CNZZ网站统计服务
