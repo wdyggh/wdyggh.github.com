@@ -216,10 +216,9 @@ Markdown中的转义字符为`\`，可以转义的有：
 - [x] Qt
 - [x] Android
 - [ ] C#
-- [ ] .NET
-- 
+- [ ] .NET  
 
-[回到Markdown  ](#Markdown)  
+[回到Markdown](#Markdown)  
 
 
 ##<a name="code"/>代码高亮
