@@ -55,12 +55,12 @@ Setext方式
 Atx方式   
 # 标题1
 ## 标题2
-###### 标题6
+###### 标题6  
 [回到目录](#index)  
 - - - 
 <a name="huanhang"/>
 ## 换行
-在文字的末尾使用两个或两个以上的空格来表示换行。
+在文字的末尾使用两个或两个以上的空格来表示换行。  
 [回到目录](#index)  
 - - - 
 <a name="yinyong"/>
@@ -77,7 +77,7 @@ Atx方式
 > 这是一个引用，
 > 这里木有换行，   
 > 在这里换行了。
-> > 内部嵌套
+> > 内部嵌套  
 
 [回到目录](#index)  
 - - - 
@@ -123,7 +123,7 @@ __有序列表__使用数字加英文句号加空格表示。
 
 1. Item 1
 2. Item 2
-3. Item 3
+3. Item 3  
 [回到目录](#index)  
 - - - 
 <a name="daima"/>
@@ -142,7 +142,7 @@ __代码段落__则是在每行文字前加4个空格或者1个缩进符表示�
 Bash中可以使用echo来进行输出。
 
 	$ echo 'Something'
-	$ echo -e '\tSomething\n'
+	$ echo -e '\tSomething\n'  
 [回到目录](#index)  
 - - - 
 <a name="qiangdiao"/>
@@ -160,7 +160,7 @@ Markdown使用`\*`或`\_`表示强调。
 单星号 = *斜体*  
 单下划线 = _斜体_  
 双星号 = **加粗**  
-双下划线 = __加粗__  
+双下划线 = __加粗__    
 [回到目录](#index)  
 - - - 
 <a name="lianjie"/>
@@ -179,7 +179,7 @@ Markdown支持两种风格的链接：*Inline*和*Reference*。
 
 这是一个*Inline*[示例](http://equation85.github.com "可选的title")。   
 这是一个*Reference*[示例][ref]。
-[ref]: http://equation85.github.com
+[ref]: http://equation85.github.com   
 [回到目录](#index)  
 - - - 
 <a name="tupian"/>
@@ -198,7 +198,7 @@ Inline示例:
 Reference示例:  
 ![替代文本][pic]  
 [pic]: /images/markdown_grammar/hb.jpg "hb.jpg"  
-HTML示例：<img src="/images/markdown_grammar/xsjfyzs.jpg" alt="替代文本" title="xsjfyzs.jpg" width="750" />
+HTML示例：<img src="/images/markdown_grammar/xsjfyzs.jpg" alt="替代文本" title="xsjfyzs.jpg" width="750" />   
 [回到目录](#index)  
 - - - 
 <a name="qita"/>
@@ -225,7 +225,7 @@ Markdown中的转义字符为`\`，可以转义的有：
 <li>\- 减号</li>
 <li>\. 英文句号</li>
 <li>\! 感叹号</li>
-</ul>    
+</ul>      
 [回到目录](#index)  
 ---
 <a name="fuxuankuang"/>
@@ -237,7 +237,7 @@ Markdown中的转义字符为`\`，可以转义的有：
 - [x] Android
 - [ ] C#
 - [ ] .NET  
-
+  
 [回到目录](#index)  
 
 ---
@@ -257,7 +257,7 @@ document.getElementById("myH1").innerHTML="Welcome to my Homepage"; //javascipt
 ```
 ```cpp
 string &operator+(const string& A,const string& B) //cpp
-```
+```   
 [回到目录](#index)  
 ---
 <a name="biaoge1"/>
@@ -303,8 +303,6 @@ Github的Markdown语法支持添加emoji表情，输入不同的符号码（两�
 具体每一个表情的符号码，可以查询GitHub的官方网页[http://www.emoji-cheat-sheet.com](http://www.emoji-cheat-sheet.com)。
 
 但是这个网页每次都打开**奇慢**。。所以我整理到了本repo中，大家可以直接在此查看[emoji](./emoji.md)。
-
-
 
 [回到目录](#index)  
 - - - 
