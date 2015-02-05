@@ -5,7 +5,7 @@ title: "[转]MarkDown语法"
 tags: ["MarkDown"]
 ---
 
-##<a name="Markdown"/>什么是Markdown
+##什么是Markdown
 
 Markdown是一个将文本转化为HTML的工具。简单来说，Markdown是一个兼顾可读性与易用性的轻量级标记体系。Markdown并不追求大而全，它只关心HTML里最常用的几个标记，对于一些不常用的标记它允许直接将HTML标记插入文本。  
 
@@ -28,7 +28,7 @@ Markdown是一个将文本转化为HTML的工具。简单来说，Markdown是一
 
 - - - 
 <a name="title"/>
-## 标题
+## 标题 
 Markdown提供了两种方式（Setext和Atx）来显示标题。
 #### 语法：
 
@@ -56,14 +56,14 @@ Atx方式
 # 标题1
 ## 标题2
 ###### 标题6
-
+[回到目录](#index)  
 - - - 
-
+<a name="huanhang"/>
 ## 换行
 在文字的末尾使用两个或两个以上的空格来表示换行。
-
+[回到目录](#index)  
 - - - 
-
+<a name="yinyong"/>
 ## 引用
 行首使用`>`加上一个空格表示引用段落，内部可以嵌套多个引用。   
 #### 语法：
@@ -79,6 +79,7 @@ Atx方式
 > 在这里换行了。
 > > 内部嵌套
 
+[回到目录](#index)  
 - - - 
 
 ## 列表
