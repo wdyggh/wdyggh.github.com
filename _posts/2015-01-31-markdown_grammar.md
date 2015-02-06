@@ -7,8 +7,9 @@ tags: ["MarkDown"]
 
 ##什么是Markdown
 
-Markdown是一个将文本转化为HTML的工具。简单来说，Markdown是一个兼顾可读性与易用性的轻量级标记体系。Markdown并不追求大而全，它只关心HTML里最常用的几个标记，对于一些不常用的标记它允许直接将HTML标记插入文本。  
+Markdown是一个将文本转化为HTML的工具。简单来说，Markdown是一个兼顾可读性与易用性的轻量级标记体系。Markdown并不追求大而全，它只关心HTML里最常用的几个标记，对于一些不常用的标记它允许直接将HTML标记插入文本。   
 
+---
 ##<a name="index"/>目录
 * [标题](#title)
 * [换行](#huanhang)
@@ -24,7 +25,6 @@ Markdown是一个将文本转化为HTML的工具。简单来说，Markdown是一
 * [显示表格](#biaoge1)
 * [添加表情](#biaoqing)
 * [结语](#jieyu)
-
 
 - - - 
 <a name="title"/>
@@ -56,6 +56,7 @@ Atx方式
 # 标题1
 ## 标题2
 ###### 标题6  
+
 [回到目录](#index)  
 - - - 
 <a name="huanhang"/>
@@ -126,8 +127,7 @@ __有序列表__使用数字加英文句号加空格表示。
 3. Item 3  
 
 [回到目录](#index)  
-- - - 
-
+- - -
 <a name="daima"/>
 ## 代码区域
 __行内代码__使用**反斜杠**<code>`</code>表示。   
@@ -135,7 +135,7 @@ __代码段落__则是在每行文字前加4个空格或者1个缩进符表示�
 
 #### 语法：
 
-	Bash中可以使用echo来进行输出。
+    Bash中可以使用echo来进行输出。
 		$ echo 'Something'
 		$ echo -e '\tSomething\n'
 
@@ -146,6 +146,7 @@ Bash中可以使用echo来进行输出。
 	$ echo 'Something'
 	$ echo -e '\tSomething\n'  
 [回到目录](#index)  
+
 - - - 
 <a name="qiangdiao"/>
 ## 强调
@@ -199,8 +200,10 @@ Inline示例:
 ![替代文本](/images/markdown_grammar/hb.jpg "hb.jpg")  
 Reference示例:  
 ![替代文本][pic]  
-[pic]: /images/markdown_grammar/hb.jpg "hb.jpg"  
-HTML示例：<img src="/images/markdown_grammar/xsjfyzs.jpg" alt="替代文本" title="xsjfyzs.jpg" width="750" />   
+[pic]: /images/markdown_grammar/hb.jpg "hb.jpg"   
+HTML示例：  
+<img src="/images/markdown_grammar/xsjfyzs.jpg" alt="替代文本" title="xsjfyzs.jpg" width="750" />   
+
 [回到目录](#index)  
 - - - 
 <a name="qita"/>
@@ -260,8 +263,9 @@ document.getElementById("myH1").innerHTML="Welcome to my Homepage"; //javascipt
 ```cpp
 string &operator+(const string& A,const string& B) //cpp
 ```   
-[回到目录](#index)  
----
+[回到目录](#index)
+
+---  
 <a name="biaoge1"/>
 ##显示表格
 表头1  | 表头2
@@ -295,6 +299,7 @@ Content Cell  | Content Cell
 | zebra stripes | are neat        |    $1 |
 
 [回到目录](#index)  
+
 ---
 <a name="biaoqing"/>
 ##<a name="emoji"/>添加表情
@@ -307,9 +312,10 @@ Github的Markdown语法支持添加emoji表情，输入不同的符号码（两�
 但是这个网页每次都打开**奇慢**。。所以我整理到了本repo中，大家可以直接在此查看[emoji](./emoji.md)。
 
 [回到目录](#index)  
+
 - - - 
 <a name="jieyu"/>
 ## 结语
 Markdown语法很大程度上减少了编辑的成本，但是在写作这篇文章的时候也发现某些标记对中文的支持似乎并不完美，虽然这些缺陷可以通过直接插入HTML代码解决（但这么做一点都不漂亮）。总的来说，能够在离线状态下使用命令行模式进行写作还是很爽的，相比在线写作模式精力可以更专注。   
 
-> ##转自： [https://equation85.github.com](https://equation85.github.com "equation85")
+> ##部分转自： [https://equation85.github.com](https://equation85.github.com "equation85")
