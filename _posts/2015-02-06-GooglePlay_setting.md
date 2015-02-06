@@ -16,7 +16,7 @@ tags: ["BB10"]
 
 ###3. open `Blackberry Google ID` then `OBTAIN A GOOGLE ID`    
   <img src="/images/google_play_setting/IMG_20150206_150745.png" alt="替代文本" title="IMG_20150206_150745.png" width="750" />  
-  ###and login in with your google id and then `CHECK IN`  
+###and login in with your google id and then `CHECK IN`  
   <img src="/images/google_play_setting/IMG_20150206_150750.png" alt="替代文本" title="IMG_20150206_150750.png" width="750" />
   <img src="/images/google_play_setting/IMG_20150206_150813.png" alt="替代文本" title="IMG_20150206_150813.png" width="750" />  
 ###4. ok you will see your `Google  Services Framework ID`  
