@@ -2,7 +2,7 @@
 layout: post
 category: "blackberry"
 title: "Passport GooglePlay setting"
-tags: ["BB10""googleplay"]
+tags: ["BB10","googleplay"]
 ---
 
 ##Install Google Play store on BB10
