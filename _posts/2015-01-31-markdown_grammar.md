@@ -8,8 +8,7 @@ tags: ["MarkDown"]
 ##什么是Markdown
 
 Markdown是一个将文本转化为HTML的工具。简单来说，Markdown是一个兼顾可读性与易用性的轻量级标记体系。Markdown并不追求大而全，它只关心HTML里最常用的几个标记，对于一些不常用的标记它允许直接将HTML标记插入文本。   
-
----
+- - -
 ##<a name="index"/>目录
 * [标题](#title)
 * [换行](#huanhang)
@@ -163,9 +162,10 @@ Markdown使用`\*`或`\_`表示强调。
 单星号 = *斜体*  
 单下划线 = _斜体_  
 双星号 = **加粗**  
-双下划线 = __加粗__    
-[回到目录](#index)  
-- - - 
+双下划线 = __加粗__   
+
+[回到目录](#index)
+- - -
 <a name="lianjie"/>
 ## 链接
 Markdown支持两种风格的链接：*Inline*和*Reference*。 
@@ -182,9 +182,11 @@ Markdown支持两种风格的链接：*Inline*和*Reference*。
 
 这是一个*Inline*[示例](http://equation85.github.com "可选的title")。   
 这是一个*Reference*[示例][ref]。
-[ref]: http://equation85.github.com   
-[回到目录](#index)  
-- - - 
+[ref]: http://equation85.github.com
+
+[回到目录](#index)
+
+- - -
 <a name="tupian"/>
 ## 图片
 图片的使用方法基本上和链接类似，只是在中括号前加**叹号**。   
@@ -205,6 +207,7 @@ HTML示例：
 <img src="/images/markdown_grammar/xsjfyzs.jpg" alt="替代文本" title="xsjfyzs.jpg" width="750" />   
 
 [回到目录](#index)  
+
 - - - 
 <a name="qita"/>
 ## 其他
@@ -230,8 +233,10 @@ Markdown中的转义字符为`\`，可以转义的有：
 <li>\- 减号</li>
 <li>\. 英文句号</li>
 <li>\! 感叹号</li>
-</ul>      
+</ul>
+
 [回到目录](#index)  
+
 ---
 <a name="fuxuankuang"/>
 ### 复选框列表
@@ -242,7 +247,7 @@ Markdown中的转义字符为`\`，可以转义的有：
 - [x] Android
 - [ ] C#
 - [ ] .NET  
-  
+
 [回到目录](#index)  
 
 ---
