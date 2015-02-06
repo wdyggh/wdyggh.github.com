@@ -269,7 +269,7 @@ document.getElementById("myH1").innerHTML="Welcome to my Homepage"; //javascipt
 ```cpp
 string &operator+(const string& A,const string& B) //cpp
 ```   
-<!--lang: java-->
+lang:java  
 public static void main(String[]args){} //Java  
 
 [回到目录](#index)
