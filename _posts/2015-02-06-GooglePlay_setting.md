@@ -5,6 +5,7 @@ title: "Passport GooglePlay setting"
 tags: ["BB10","googleplay"]
 ---
 
+<a name="top"></a>
 ##Install Google Play store on BB10
 - - - 
 ###[Site](https://www.youtube.com/watch?v=NAUj54MKDno)
@@ -25,4 +26,5 @@ tags: ["BB10","googleplay"]
   <img src="/images/google_play_setting/IMG_20150206_150837.png" alt="替代文本" title="IMG_20150206_150837.png" width="750" />  
   <img src="/images/google_play_setting/IMG_20150206_151012.png" alt="替代文本" title="IMG_20150206_151012.png" width="750" />  
   <img src="/images/google_play_setting/IMG_20150206_151226.png" alt="替代文本" title="IMG_20150206_151226.png" width="750" />  
-###6. `google play sevices` doesn't work --! so the`clash of clans`can't play on passport
+###6. `google play sevices` doesn't work --! so the`clash of clans`can't play on passport  
+###[TOP](#top)
