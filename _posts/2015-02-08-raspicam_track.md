@@ -10,8 +10,8 @@ tags: ["raspberrypi","opencv","raspcam"]
 
 - - - 
 * #### step1: install your raspcam on raspberry pi like this and enter the `raspi-config` enable cam
-  > <img src="/images/raspcam_track/1.jpg" alt="替代文本" title="1.jpg" width="750" />  
-  > <img src="/images/raspcam_track/2.jpg" alt="替代文本" title="2.jpg" width="750" />    
+  > <img src="/images/raspcam_track/1.jpg" alt="替代文本" title="1.jpg" width="700" />  
+  > <img src="/images/raspcam_track/2.jpg" alt="替代文本" title="2.jpg" width="700" />    
   
 * #### step2: compilation  
     1. get source code [`here`](https://github.com/raspberrypi/userland)
@@ -52,9 +52,9 @@ tags: ["raspberrypi","opencv","raspcam"]
             make 
             ./YOUR CODE NAME
    4. adjust HSV value
-     > <img src="/images/raspcam_track/4.jpg" alt="替代文本" title="4.jpg" width="750" />    
+     > <img src="/images/raspcam_track/4.jpg" alt="替代文本" title="4.jpg" width="700" />    
    5. it track only one color and one things
-     > <img src="/images/raspcam_track/6.jpg" alt="替代文本" title="6.jpg" width="750" />    
+     > <img src="/images/raspcam_track/6.jpg" alt="替代文本" title="6.jpg" width="700" />    
 
 
 - - - 
