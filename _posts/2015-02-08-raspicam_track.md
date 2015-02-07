@@ -8,7 +8,7 @@ tags: ["raspberrypi","opencv","raspcam"]
 <a name="top"></a>
 #  **raspcam_tracking with opencv**  
 
-
+- - - 
 * #### step1: install your raspcam on raspberry pi like this and enter the `raspi-config` enable cam
   > <img src="/images/raspcam_track/1.jpg" alt="替代文本" title="1.jpg" width="750" />  
   > <img src="/images/raspcam_track/2.jpg" alt="替代文本" title="2.jpg" width="750" />    
