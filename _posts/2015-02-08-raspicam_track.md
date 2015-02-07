@@ -53,8 +53,8 @@ tags: ["raspberrypi","opencv","raspcam"]
             ./YOUR CODE NAME
    4. adjust HSV value
      > <img src="/images/raspcam_track/4.jpg" alt="替代文本" title="4.jpg" width="750" />    
-   5. it track only one color and one things
-      > <img src="/images/raspcam_track/6.jpg" alt="替代文本" title="6.jpg" width="750" />    
+   5. it track only one color and one things  
+       > <img src="/images/raspcam_track/6.jpg" alt="替代文本" title="6.jpg" width="750" />    
 
 
 - - - 
