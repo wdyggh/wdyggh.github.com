@@ -21,19 +21,13 @@ tags: ["raspberrypi","opencv","raspcam"]
     3. go to opt/vc and type : sed -i ‘s/if (DEFINED CMAKE_TOOLCHAIN_FILE)/if (NOT DEFINED CMAKE_TOOLCHAIN_FILE)/g’ makefiles/cmake/arm-linux.cmake
     4. create a build directory and compile (it takes a while)   
 ```bash
-            sudo mkdir build  
-            cd build   
-            sudo cmake -DCMAKE_BUILD_TYPE=Release ..  
-            sudo make  
-            sudo make install  
+sudo mkdir build
+cd build
+sudo cmake -DCMAKE_BUILD_TYPE=Release ..
+sudo make
+sudo make install
 ```
-```bash
-sudo mkdir build  
-cd build   
-sudo cmake -DCMAKE_BUILD_TYPE=Release ..  
-sudo make  
-sudo make install  
-```
+
     5. Binary should be under /opt/vc/bin   
     Go to /opt/vc/bin and test one file typing : ./raspistill -t 3000   
 
