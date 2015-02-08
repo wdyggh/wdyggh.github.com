@@ -27,8 +27,8 @@ body {
 }
 .well{
   /*width: 800px;*/
-  margin: 0 auto;
-  background: #DEDEDE;
+  margin:10px;/*up right bottom left*/
+  background: #E6E6E6;
   -webkit-border-radius: 8px;
   -moz-border-radius: 8px;
   -ms-border-radius: 8px;
