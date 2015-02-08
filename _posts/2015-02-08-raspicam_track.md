@@ -1,12 +1,12 @@
 ---
 layout: post
 category: "embedded"
-title: "raspcam_tracking with opencv"
+title: "raspicam_tracking with opencv"
 tags: ["raspberrypi","opencv","raspcam"]
 ---
 
 <a name="top"></a>
-##  raspcam_tracking with opencv
+##  raspicam_tracking with opencv
 
 - - - 
 * #### step1: install your raspcam on raspberry pi like this and enter the `raspi-config` enable cam
