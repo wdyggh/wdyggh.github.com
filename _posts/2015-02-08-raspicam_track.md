@@ -21,7 +21,7 @@ tags: ["raspberrypi","opencv","raspcam"]
     3. go to opt/vc and type : sed -i ‘s/if (DEFINED CMAKE_TOOLCHAIN_FILE)/if (NOT DEFINED CMAKE_TOOLCHAIN_FILE)/g’ makefiles/cmake/arm-linux.cmake
     4. create a build directory and compile (it takes a while)   
 ```cpp
-string &operator+(const string& A,const string& B) //cpp
+string &operator+(const string& A,const string& B) //cpp TEST
 ```   
 ```
 sudo mkdir build
