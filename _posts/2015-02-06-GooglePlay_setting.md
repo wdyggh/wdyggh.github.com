@@ -1,7 +1,7 @@
 ---
 layout: post
 category: "blackberry"
-title: "Passport GooglePlay setting"
+title: "[BB]Passport GooglePlay setting"
 tags: ["BB10","googleplay"]
 ---
 
