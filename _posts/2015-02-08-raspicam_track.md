@@ -27,7 +27,13 @@ tags: ["raspberrypi","opencv","raspcam"]
             sudo make  
             sudo make install  
 ```
-
+```bash
+sudo mkdir build  
+cd build   
+sudo cmake -DCMAKE_BUILD_TYPE=Release ..  
+sudo make  
+sudo make install  
+```
     5. Binary should be under /opt/vc/bin   
     Go to /opt/vc/bin and test one file typing : ./raspistill -t 3000   
 
