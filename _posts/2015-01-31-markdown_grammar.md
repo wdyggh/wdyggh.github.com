@@ -259,6 +259,18 @@ public static void main(String[]args){} //Java
 ```
 ```c
 int main(int argc, char *argv[]) //C
+#define asd
+typedef struct _ID_INFO {
+	unsigned char id;
+	unsigned long step_cnt;
+}CarInfo;
+if( COMMAND == '1' ) 
+{
+	asd	//sdf
+} else if( step_count<10000 ) {
+	(unsigned char*) buf);
+}
+
 ```
 ```Bash
 echo "hello GitHub"#Bash
