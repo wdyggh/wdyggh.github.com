@@ -6,10 +6,10 @@
 .highlight .l { color: #ae81ff } /* Literal */	/*dan	zi se*/
 .highlight .n { color: #000000 } /* Name */
 .highlight .o { color: #f92672 } /* Operator */	/*粉红*/
-.highlight .p { color: #000000 } /* Punctuation */
-.highlight .cm { color: #75715e } /* Comment.Multiline *//*黄 灰*/
+.highlight .p { color: #f92672 } /* Punctuation */
+.highlight .cm { color: #008000 } /* Comment.Multiline *//*黄 灰*/
 .highlight .cp { color: #75715e } /* Comment.Preproc */
-.highlight .c1 { color: #75715e } /* Comment.Single */
+.highlight .c1 { color: #008000 } /* Comment.Single */
 .highlight .cs { color: #75715e } /* Comment.Special */
 .highlight .ge { font-style: italic } /* Generic.Emph */
 .highlight .gs { font-weight: bold } /* Generic.Strong */
@@ -29,7 +29,7 @@
 .highlight .nd { color: #a6e22e } /* Name.Decorator */
 .highlight .ni { color: #000000 } /* Name.Entity */
 .highlight .ne { color: #a6e22e } /* Name.Exception */
-.highlight .nf { color: #a6e22e } /* Name.Function */
+.highlight .nf { color: #8000FA } /* Name.Function */
 .highlight .nl { color: #000000 } /* Name.Label */
 .highlight .nn { color: #000000 } /* Name.Namespace */
 .highlight .nx { color: #a6e22e } /* Name.Other */
