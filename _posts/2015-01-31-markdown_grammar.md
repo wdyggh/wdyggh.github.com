@@ -284,16 +284,15 @@ string &operator+(const string& A,const string& B) //cpp
 ```   
 
 ```java
-	public void startThreadUseSubClass() {		//java
-		class MyThread extends Thread {
-			public void run() {
-				System.out.println("start thread using Subclass of Thread");
-			}
+public void startThreadUseSubClass() {		//java
+	class MyThread extends Thread {
+		public void run() {
+		System.out.println("start thread using Subclass of Thread");
 		}
-
-		MyThread thread = new MyThread();
-		thread.start();
 	}
+	MyThread thread = new MyThread();
+	thread.start();
+}
 ```
 
 
