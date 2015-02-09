@@ -13,8 +13,8 @@ tags: ["raspberrypi","opencv","raspcam"]
 - - - 
 
 * #### step1: install your raspcam on raspberry pi like this and enter the `raspi-config` enable cam
-  > <img src="/images/raspcam_track/1.jpg" alt="替代文本" title="1.jpg" width="700" />  
-  > <img src="/images/raspcam_track/2.jpg" alt="替代文本" title="2.jpg" width="700" />    
+  > <img src="/images/raspcam_track/1.jpg" alt="替代文本" title="1.jpg" width=auto />  
+  > <img src="/images/raspcam_track/2.jpg" alt="替代文本" title="2.jpg" width=auto />    
   
 * #### step2: compilation  
     1. get source code [`here`](https://github.com/raspberrypi/userland)
