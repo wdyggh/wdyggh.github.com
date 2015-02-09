@@ -12,10 +12,6 @@ tags: ["raspberrypi","opencv","raspcam"]
 
 - - - 
 
-```cpp
-string &operator+(const string& A,const string& B) //cpp TEST
-```  
-
 * #### step1: install your raspcam on raspberry pi like this and enter the `raspi-config` enable cam
   > <img src="/images/raspcam_track/1.jpg" alt="替代文本" title="1.jpg" width="700" />  
   > <img src="/images/raspcam_track/2.jpg" alt="替代文本" title="2.jpg" width="700" />    
@@ -36,6 +32,7 @@ sudo cmake -DCMAKE_BUILD_TYPE=Release ..
 sudo make
 sudo make install
 ```  
+
     5. Binary should be under /opt/vc/bin   
     Go to /opt/vc/bin and test one file typing : ./raspistill -t 3000   
 
