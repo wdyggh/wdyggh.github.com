@@ -270,6 +270,19 @@ document.getElementById("myH1").innerHTML="Welcome to my Homepage"; //javascipt
 string &operator+(const string& A,const string& B) //cpp
 ```   
 
+```java
+	public void startThreadUseSubClass() {
+		class MyThread extends Thread {
+			public void run() {
+				System.out.println("start thread using Subclass of Thread");
+			}
+		}
+
+		MyThread thread = new MyThread();
+		thread.start();
+	}
+```
+
 
 [回到目录](#index)
 
