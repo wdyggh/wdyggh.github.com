@@ -1,13 +1,13 @@
-.highlight .hll { background-color: #49483e }
+.highlight .hll { background-color: #49483e }  /* 黑色 */
 .highlight  {/* background: #3A3C42;*/ color: #000000 }
-.highlight .c { color: #75715e } /* Comment */
-.highlight .err { color: #960050; background-color: #1e0010 } /* Error */
-.highlight .k { color: #8000FA } /* Keyword */
-.highlight .l { color: #ae81ff } /* Literal */
+.highlight .c { color: #D67900 } /* Comment */  /*黄 暗*/
+.highlight .err { color: #960050; background-color: #1e0010 } /* Error */   /*暗红  黑*/
+.highlight .k { color: #8000FA } /* Keyword */  /*紫*/
+.highlight .l { color: #ae81ff } /* Literal */	/*dan	zi se*/
 .highlight .n { color: #000000 } /* Name */
-.highlight .o { color: #f92672 } /* Operator */
+.highlight .o { color: #f92672 } /* Operator */	/*粉红*/
 .highlight .p { color: #000000 } /* Punctuation */
-.highlight .cm { color: #75715e } /* Comment.Multiline */
+.highlight .cm { color: #75715e } /* Comment.Multiline *//*黄 灰*/
 .highlight .cp { color: #75715e } /* Comment.Preproc */
 .highlight .c1 { color: #75715e } /* Comment.Single */
 .highlight .cs { color: #75715e } /* Comment.Special */
@@ -19,10 +19,10 @@
 .highlight .kp { color: #8000FA } /* Keyword.Pseudo */
 .highlight .kr { color: #8000FA } /* Keyword.Reserved */
 .highlight .kt { color: #8000FA } /* Keyword.Type */
-.highlight .ld { color: #e6db74 } /* Literal.Date */
+.highlight .ld { color: #e6db74 } /* Literal.Date */		/*淡黄*/
 .highlight .m { color: #ae81ff } /* Literal.Number */
 .highlight .s { color: #e6db74 } /* Literal.String */
-.highlight .na { color: #a6e22e } /* Name.Attribute */
+.highlight .na { color: #a6e22e } /* Name.Attribute */	/*淡绿*/
 .highlight .nb { color: #000000 } /* Name.Builtin */
 .highlight .nc { color: #a6e22e } /* Name.Class */
 .highlight .no { color: #8000FA } /* Name.Constant */
@@ -38,7 +38,7 @@
 .highlight .nv { color: #000000 } /* Name.Variable */
 .highlight .ow { color: #f92672 } /* Operator.Word */
 .highlight .w { color: #000000 } /* Text.Whitespace */
-.highlight .mf { color: #ae81ff } /* Literal.Number.Float */
+.highlight .mf { color: #ae81ff } /* Literal.Number.Float*/ 
 .highlight .mh { color: #ae81ff } /* Literal.Number.Hex */
 .highlight .mi { color: #ae81ff } /* Literal.Number.Integer */
 .highlight .mo { color: #ae81ff } /* Literal.Number.Oct */
