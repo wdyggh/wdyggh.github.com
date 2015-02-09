@@ -260,6 +260,7 @@ public static void main(String[]args){} //Java
 ```c
 int main(int argc, char *argv[]) //C
 #define asd "1asd"
+#define
 typedef struct _ID_INFO {
 	unsigned char id;
 	unsigned long step_cnt;
