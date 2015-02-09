@@ -2,14 +2,14 @@
 .highlight  {/* background: #3A3C42;*/ color: #000000 }
 .highlight .c { color: #D67900 } /* Comment */  /*黄 暗*/
 .highlight .err { color: #960050; background-color: #1e0010 } /* Error */   /*暗红  黑*/
-.highlight .k { color: #8000FA } /* Keyword */  /*紫*/
+.highlight .k { color: #0000FF } /* Keyword */  /*紫*/
 .highlight .l { color: #ae81ff } /* Literal */	/*dan	zi se*/
 .highlight .n { color: #000000 } /* Name */
 .highlight .o { color: #f92672 } /* Operator */	/*粉红*/
 .highlight .p { color: #f92672 } /* Punctuation */
-.highlight .cm { color: #008000 } /* Comment.Multiline *//*黄 灰*/
+.highlight .cm { color: #059E00 } /* Comment.Multiline */	/*绿*/
 .highlight .cp { color: #75715e } /* Comment.Preproc */
-.highlight .c1 { color: #008000 } /* Comment.Single */
+.highlight .c1 { color: #059E00 } /* Comment.Single */
 .highlight .cs { color: #75715e } /* Comment.Special */
 .highlight .ge { font-style: italic } /* Generic.Emph */
 .highlight .gs { font-weight: bold } /* Generic.Strong */
