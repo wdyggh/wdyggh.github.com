@@ -266,7 +266,7 @@ typedef struct _ID_INFO {
 }CarInfo;
 if( COMMAND == '1' ) 
 {
-	asd	//sdf
+	asd	/*sdf*/
 } else if( step_count<10000 ) {
 	(unsigned char*) buf);
 }
