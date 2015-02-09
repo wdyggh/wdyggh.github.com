@@ -58,13 +58,13 @@ tags: ["raspberrypi","opencv","raspcam"]
             target_link_libraries( `YOUR CODE NAME` /opt/vc/lib/libmmal_core.so /opt/vc/lib/libmmal_util.so /opt/vc/lib/libmmal_vc_client.so /opt/vc/lib/libvcos.so /opt/vc/lib/libbcm_host.so /opt/vc/lib/libGLESv2.so /opt/vc/lib/libEGL.so pthread ${OpenCV_LIBS} )`
    3. compile  
       ```bash
-        cmake .   
-        make    
-        ./YOUR CODE NAME   
+      cmake .   
+      make    
+      ./YOUR CODE NAME   
       ```
    4. adjust HSV value  
   > <img src="/images/raspcam_track/4.jpg" alt="替代文本" title="4.jpg" width=auto />    
-   5. it track only one color and one things
+   5. it track only one color and one things  
   > <img src="/images/raspcam_track/6.jpg" alt="替代文本" title="6.jpg" width=auto />    
 
 
