@@ -38,7 +38,7 @@ body {
   -moz-box-shadow: rgba(0, 0, 0, 0.2) 0 0 0 1px, rgba(0, 0, 0, 0.45) 0 3px 10px;
   box-shadow: rgba(0, 0, 0, 0.2) 0 0 0 1px, rgba(0, 0, 0, 0.45) 0 3px 10px;
 }
-/*.row_categories{width:290px}*/
+.row_categories{width:290px}
 .rowcopyright{margin-right:-15px;margin-left:-15px}
 footer {
     margin: 20px 0;
