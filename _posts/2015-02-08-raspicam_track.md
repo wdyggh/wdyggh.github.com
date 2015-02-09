@@ -11,6 +11,11 @@ tags: ["raspberrypi","opencv","raspcam"]
 ##  raspicam_tracking with opencv
 
 - - - 
+
+```cpp
+string &operator+(const string& A,const string& B) //cpp TEST
+```  
+
 * #### step1: install your raspcam on raspberry pi like this and enter the `raspi-config` enable cam
   > <img src="/images/raspcam_track/1.jpg" alt="替代文本" title="1.jpg" width="700" />  
   > <img src="/images/raspcam_track/2.jpg" alt="替代文本" title="2.jpg" width="700" />    
@@ -20,6 +25,7 @@ tags: ["raspberrypi","opencv","raspcam"]
     2. unzip the file and copy the directory under /opt/vc
     3. go to opt/vc and type : sed -i ‘s/if (DEFINED CMAKE_TOOLCHAIN_FILE)/if (NOT DEFINED CMAKE_TOOLCHAIN_FILE)/g’ makefiles/cmake/arm-linux.cmake
     4. create a build directory and compile (it takes a while)   
+
 ```cpp
 string &operator+(const string& A,const string& B) //cpp TEST
 ```   
