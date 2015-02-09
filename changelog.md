@@ -6,6 +6,10 @@
 > color   
 > background color
 
+##20150203
+/_includes/adsense.html
+> 谷歌广告
+
 ##20150204
 /_includes/analytics.html
 > 站长统计 CNZZ网站统计服务  
