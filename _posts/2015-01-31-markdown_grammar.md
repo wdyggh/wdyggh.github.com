@@ -274,7 +274,7 @@ if( COMMAND == '1' )
 printf("Hello, World! \n");
 ```
 ```Bash
-echo "hello GitHub"#Bash
+echo "hello GitHub"#Bash	//bash
 ```
 ```javascript
 document.getElementById("myH1").innerHTML="Welcome to my Homepage"; //javascipt
@@ -284,7 +284,7 @@ string &operator+(const string& A,const string& B) //cpp
 ```   
 
 ```java
-	public void startThreadUseSubClass() {
+	public void startThreadUseSubClass() {		//java
 		class MyThread extends Thread {
 			public void run() {
 				System.out.println("start thread using Subclass of Thread");
