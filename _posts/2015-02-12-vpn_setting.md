@@ -15,22 +15,26 @@ if you signed up,you get free 500Mb/mon.
 
 ###2. settings on my phone
 vpn is here  
-![here](/images/vpn_setting/1.png "1.png")   
+
+> <img src="/images/vpn_setting/1.jpg" alt="替代文本" title="1.jpg" width="645" />   
 
 and add a setting  
-![add](/images/vpn_setting/2.png "2.png")   
 
-then login and it's all have done
-![all](/images/vpn_setting/3.png "3.png")   
+> <img src="/images/vpn_setting/2.jpg" alt="替代文本" title="2.jpg" width="645" />  
+
+then login and it's all have done  
+
+> <img src="/images/vpn_setting/3.jpg" alt="替代文本" title="3.jpg" width="645" />  
 
 ###3. click connect
 if connected,it will change to green   
 
-![all](/images/vpn_setting/4.png "4.png")   
+> <img src="/images/vpn_setting/4.jpg" alt="替代文本" title="4.jpg" width="645" />   
 
 and you will see a key icon on the rightup in screen  
 
-![all](/images/vpn_setting/5.png "5.png")   
+> <img src="/images/vpn_setting/5.jpg" alt="替代文本" title="5.jpg" width="645" />  
+
 
 - - - 
 
