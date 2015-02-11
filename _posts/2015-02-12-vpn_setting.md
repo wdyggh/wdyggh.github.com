@@ -11,7 +11,7 @@ tags: ["BB10","VPN"]
 ###1. you need to sign up and get server IP address
 ####[Free vpn page](http://www.iqlinkus.net/home.action)
 ####if you signed up,you get free 500Mb/mon.
-####if you go to this page and sign up,i will get 50Mb/mon.Thanks[link](http://www.iqlinkus.com/home?referral=2070DE165E1CF0929B76E6C972CD7BB8)
+####if you go to this page and sign up,i will get 50Mb/mon.Thanks  [link](http://www.iqlinkus.com/home?referral=2070DE165E1CF0929B76E6C972CD7BB8)
 
 ###2. settings on my phone
 vpn is here  
