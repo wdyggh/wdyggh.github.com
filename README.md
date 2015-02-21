@@ -41,4 +41,4 @@ title: "标题"
 tags: ["标签"]  
 
 
-[serach](https://github.com/equation85/equation85.github.com/blob/master/_includes/themes/the-program/default.html)
+[search](https://github.com/equation85/equation85.github.com/blob/master/_includes/themes/the-program/default.html)
