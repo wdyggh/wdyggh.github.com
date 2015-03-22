@@ -1,4 +1,6 @@
 markdown: redcarpet
+redcarpet:
+    extensions: ["tables"]
 permalink: /:categories/:title.html
 url: 
 lsi: false
