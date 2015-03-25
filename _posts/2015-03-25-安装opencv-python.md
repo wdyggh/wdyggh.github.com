@@ -13,6 +13,7 @@ tags: ["raspberrypi","python","opencv"]
 
 
 * 
+
 ```bash
 apt-get install livopencv-dev
 apt-get install python-opencv
