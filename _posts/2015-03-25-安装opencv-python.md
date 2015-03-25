@@ -17,8 +17,8 @@ tags: ["raspberrypi","python","opencv"]
 apt-get install livopencv-dev
 apt-get install python-opencv
 ```
-
-
+在命令行中 输入
+`python` 加载 `import cv2`  判定安装是否成功
 
 
 
