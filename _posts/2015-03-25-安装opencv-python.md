@@ -11,8 +11,11 @@ tags: ["raspberrypi","python","opencv"]
 
 `based on python`
 
+
+* 
 ```bash
 apt-get install livopencv-dev
+apt-get install python-opencv
 ```
 
 
