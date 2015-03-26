@@ -14,7 +14,7 @@ tags: ["raspberrypi","python","opencv"]
 
 * install opencv-python
 
-```bash
+```shell
 apt-get install livopencv-dev
 apt-get install python-opencv
 ```
