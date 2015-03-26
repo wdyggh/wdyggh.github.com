@@ -37,6 +37,19 @@ git clone https://github.com/Itseez/opencv_contrib.git
 cmake -D OPENCV_EXTRA_MODULES_PATH=/opencv_contrib/modules/的目录 CMAKE_BUILD_TYPE=Release -D CMAKE_INSTALL_PREFIX=/usr/local ..
 ```
 
+接下来,这一步需要很长时间
+
+```bash
+make
+```
+
+然后
+
+```bash
+make install
+```
+
+
 
 - - - 
 
