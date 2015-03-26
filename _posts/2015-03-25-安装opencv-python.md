@@ -14,7 +14,7 @@ tags: ["raspberrypi","python","opencv"]
 
 * install opencv-python
 
-```shell
+```bash
 apt-get install livopencv-dev
 apt-get install python-opencv
 ```
@@ -45,7 +45,7 @@ make
 
 然后
 
-```shell
+```bash
 make install
 ```
 
