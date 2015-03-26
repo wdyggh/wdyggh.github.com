@@ -9,7 +9,7 @@ tags: ["raspberrypi","python","opencv"]
 ##Install opencv-python on RaspberryPi
 
 
-`based on python`
+* `based on python`
 
 
 * 
