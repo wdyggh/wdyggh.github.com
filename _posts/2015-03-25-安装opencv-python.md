@@ -45,7 +45,7 @@ make
 
 然后
 
-```bash
+```shell
 make install
 ```
 
