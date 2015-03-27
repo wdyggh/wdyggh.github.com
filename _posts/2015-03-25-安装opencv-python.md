@@ -24,6 +24,25 @@ apt-get install python-opencv
 
 * install opencv
 
+####安装必要的packages
+
+> GCC 4.4.x or later
+> CMake 2.8.7 or higher
+> Git
+> GTK+2.x or higher, including headers (libgtk2.0-dev)
+> pkg-config
+> Python 2.6 or later and Numpy 1.5 or later with developer packages (python-dev, python-numpy)
+> ffmpeg or libav development packages: libavcodec-dev, libavformat-dev, libswscale-dev
+> [optional] libtbb2 libtbb-dev
+> [optional] libdc1394 2.x
+> [optional] libjpeg-dev, libpng-dev, libtiff-dev, libjasper-dev, libdc1394-22-dev
+
+```bash
+[compiler] sudo apt-get install build-essential
+[required] sudo apt-get install cmake git libgtk2.0-dev pkg-config libavcodec-dev libavformat-dev libswscale-dev
+[optional] sudo apt-get install python-dev python-numpy libtbb2 libtbb-dev libjpeg-dev libpng-dev libtiff-dev libjasper-dev libdc1394-22-dev
+```
+
 从github仓库获取代码
 
 ```bash
