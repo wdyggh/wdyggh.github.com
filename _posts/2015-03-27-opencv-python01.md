@@ -2,7 +2,7 @@
 layout: post
 category: "embedded"
 title: "[P]opencv-python01"
-tags: ["raspberrypi","python","raspcam"，"opencv"]
+tags: ["opencv","python","raspcam"]
 ---
 
 <a name="top"></a>
