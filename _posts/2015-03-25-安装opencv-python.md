@@ -10,6 +10,13 @@ tags: ["raspberrypi","python","opencv"]
 
 
 
+## 安装前先执行更新
+
+```bash
+apt-get update
+apt-get upgrade
+rpi-update
+```
 
 ## Install opencv-python
 
