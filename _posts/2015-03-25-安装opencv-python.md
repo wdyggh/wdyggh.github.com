@@ -9,10 +9,11 @@ tags: ["raspberrypi","python","opencv"]
 #Install opencv-python & opencv on RaspberryPi
 
 
-`based on python`
 
 
 ## Install opencv-python
+
+`based on python`
 
 ```bash
 apt-get install livopencv-dev
