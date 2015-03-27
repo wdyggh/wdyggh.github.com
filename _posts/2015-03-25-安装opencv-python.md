@@ -43,26 +43,26 @@ apt-get install python-opencv
 [optional] sudo apt-get install python-dev python-numpy libjpeg-dev libpng-dev libtiff-dev libjasper-dev libdc1394-22-dev
 ```
 
-从github仓库获取代码
+* 从github仓库获取代码
 
 ```bash
 git clone https://github.com/Itseez/opencv.git
 git clone https://github.com/Itseez/opencv_contrib.git
 ```
 
-配置cmake
+* 配置cmake
 
 ```bash
 cmake -D OPENCV_EXTRA_MODULES_PATH=/opencv_contrib/modules/的目录 CMAKE_BUILD_TYPE=Release -D CMAKE_INSTALL_PREFIX=/usr/local ..
 ```
 
-接下来,这一步需要很长时间
+* 接下来,这一步需要很长时间
 
 ```bash
 make
 ```
 
-然后
+* 然后
 
 ```bash
 make install
