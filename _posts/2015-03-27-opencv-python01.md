@@ -9,12 +9,6 @@ tags: ["opencv","python","raspcam"]
 
 
 
----
-啊 :123
-b: 231
-c: 456
----
-
 
 
 > 必要函数 
