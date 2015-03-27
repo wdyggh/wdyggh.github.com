@@ -27,6 +27,14 @@ import cv2
 img = cv2.imread('lena.jpg',0)
 ```
 
+### 02 显示图像
+
+```python
+cv2.imshow('image',img)
+cv2.waitKey(0)
+cv2.destroyAllWindows()
+```
+
 - - - 
 
 ###[TOP](#top)
