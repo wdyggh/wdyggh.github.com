@@ -1,7 +1,7 @@
 ---
 layout: post
 category: "embedded"
-title: "[P]opencv-python01"
+title: "[P]opencv-python_picture"
 tags: ["opencv","python","raspcam"]
 ---
 
