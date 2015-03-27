@@ -9,7 +9,13 @@ tags: ["opencv","python","raspcam"]
 
 
 
-* 必要函数 cv2.imread()， cv2.imshow()， cv2.imwrite()
+> 必要函数 
+
+```python
+cv2.imread()
+cv2.imshow()
+cv2.imwrite()
+```
 
 ### 01 载入图像
 
