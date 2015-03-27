@@ -8,9 +8,6 @@ tags: ["opencv","python","raspcam"]
 <a name="top"></a>
 
 
-
-
-
 > 必要函数 
 
 ```python
