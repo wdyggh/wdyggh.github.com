@@ -6,7 +6,7 @@ tags: ["BB10","VPN"]
 ---
 
 <a name="top"></a>
-##How to use free vpn on passport 
+###How to use free vpn on passport 
 
 ###1. you need to sign up and get server IP address
 ####[Free vpn page](http://www.iqlinkus.net/home.action)
