@@ -6,7 +6,7 @@ tags: ["BB10","googleplay"]
 ---
 
 <a name="top"></a>
-##Install Google Play store on BB10  
+###Install Google Play store on BB10  
 
 - - - 
 ###[Site](https://www.youtube.com/watch?v=NAUj54MKDno)
