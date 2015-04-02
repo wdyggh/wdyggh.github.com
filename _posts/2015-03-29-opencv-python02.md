@@ -1,12 +1,12 @@
 ---
 layout: post
 category: "embedded"
-title: "[P]opencv-python_video"
+title: "[P]opencv-python_02"
 tags: ["opencv","python","raspcam"]
 ---
 
 <a name="top"></a>
-
+##opencv-python_video
 
 
 
