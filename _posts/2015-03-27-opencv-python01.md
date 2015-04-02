@@ -6,7 +6,6 @@ tags: ["opencv","python","raspcam"]
 ---
 
 <a name="top"></a>
-
 opencv-python_picture
 
 > 必要函数 
