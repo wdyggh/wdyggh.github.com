@@ -29,13 +29,13 @@ title: "Blog Home:"
   {% if paginator.previous_page %} {% if paginator.previous_page == 1 %}
   <li class="previous">
     <a href="{{ site.url }}/">
-      &larr; Older
+      &larr; Newer
     </a>
   </li>
   {% else %}
   <li class="previous">
     <a href="{{ site.url }}/page{{ paginator.previous_page }}">
-      &larr; Newer
+      &larr; Older
     </a>
   </li>
   {% endif %} {% endif %} {% if paginator.next_page %}
