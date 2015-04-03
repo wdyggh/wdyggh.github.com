@@ -14,8 +14,6 @@ tags: ["opencv","python","raspcam"]
 ```python
 
 # -*- coding: utf-8 -*-
-
-
 import cv2
 import numpy as np
 #mouse callback function
@@ -40,7 +38,7 @@ cv2.destroyAllWindows()
 * 鼠标按下的状态下 不停的画矩形，圆  不是想象中从鼠标按下的坐标到弹起的坐标画的一个矩形或圆
 
 ```python
-
+# -*- coding: utf-8 -*-
 import cv2
 import numpy as np
 # 当鼠标按下时变为 True
