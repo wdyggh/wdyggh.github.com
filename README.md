@@ -19,7 +19,7 @@ http://wdyggh.github.io
 2,友言的网友评论服务，官网：http://www.uyan.cc  
 3,Google 的Adsense广告，官网：https://www.google.com/adsense/login/zh_CN  
 如需查看或管理网站统计、评论或广告，请自行注册帐号并修改_includes目录下相关文件。  
-
+4,谷歌搜索 提交网址, 官网：https://www.google.com/webmasters/tools/submit-url?pli=1
 ####联系方式
 联系方式：qq 616599972  
 Email(wdyggh@gmail.com)  
