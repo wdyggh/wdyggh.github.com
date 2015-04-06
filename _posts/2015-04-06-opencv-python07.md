@@ -13,9 +13,9 @@ tags: ["opencv","python","raspcam"]
 
 ###Arithmetic Operations on Images 图像的算术运算
 
-`g (x) = (1 − α) * f0(x) + α * f1(x)`
-`α(0~1)`
-`dst = α · img1 + β · img2 + γ`
+`g (x) = (1 − α) * f0(x) + α * f1(x)`  
+`α(0~1)`  
+`dst = α · img1 + β · img2 + γ`  
 
 
 ```python
