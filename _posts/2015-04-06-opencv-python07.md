@@ -17,6 +17,7 @@ tags: ["opencv","python","raspcam"]
 `α(0~1)`  
 `dst = α · img1 + β · img2 + γ`  
 $$g (x) = (1 − α) * f0(x) + α * f1(x)$$ α(0~1)
+
 \\(dst = α · img1 + β · img2 + γ$$\\)
 
 
