@@ -353,7 +353,7 @@ Github的Markdown语法支持添加emoji表情，输入不同的符号码（两�
 
 $$x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}$$  
 
-\\(x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}\\）
+\\(x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}\\)
 
 
 - - - 
