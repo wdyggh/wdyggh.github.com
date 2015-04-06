@@ -359,6 +359,7 @@ $$x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}$$
 
 $$x=a+b^c$$
 
+\\(x=a+b^c\\)
 - - - 
 <a name="jieyu"></a>
 ## 结语
