@@ -349,10 +349,9 @@ Github的Markdown语法支持添加emoji表情，输入不同的符号码（两�
 [回到目录](#index)  
 
 ##使用MathJax引擎
-然后，再使用Tex写公式。$$公式$$表示行间公式，本来Tex中使用\(公式\)表示行内公式，但因为Markdown中\是转义字符，所以在Markdown中输入行内公式使用\\(公式\\)，如下代码：  
+`然后，再使用Tex写公式。$$公式$$表示行间公式，本来Tex中使用\(公式\)表示行内公式，但因为Markdown中\是转义字符，所以在Markdown中输入行内公式使用\\(公式\\)，如下代码：  `
 
-$$x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}$$  
-
+$$x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}$$
 \\(x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}\\)
 
 
