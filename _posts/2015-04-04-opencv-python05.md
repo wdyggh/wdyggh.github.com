@@ -11,6 +11,8 @@ tags: ["opencv","python","raspcam"]
 
 * cv2.getTrackbarPos(), cv2.creatTrackbar()
 
+- - - 
+
 ```python
 import cv2
 import numpy as np
@@ -43,6 +45,8 @@ while(1):
 		img[:]=[r,g,b]
 cv2.destroyAllWindows()
 ```
+
+- - - 
 
 
 ```python
@@ -116,6 +120,8 @@ while(1):
 		break
 
 ```
+
+- - - 
 
 ### 调整hsv 实现追踪相同颜色物体
 
