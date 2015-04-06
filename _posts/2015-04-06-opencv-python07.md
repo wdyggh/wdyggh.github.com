@@ -17,7 +17,7 @@ tags: ["opencv","python","raspcam"]
 `α(0~1)`  
 `dst = α · img1 + β · img2 + γ`  
 
-* 合并2图像
+###合并2图像
 
 ```python
 import cv2
@@ -34,7 +34,7 @@ cv2.destroyAllWindow()
 
 ```
 
-* 合并2图像 透明部分不显示
+###合并2图像 透明部分不显示
 
 ```python
 # -*- coding: utf-8 -*-
