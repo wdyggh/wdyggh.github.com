@@ -15,7 +15,7 @@ tags: ["face","python","raspcam"]
 * NumPy
 * SciPy
 * matplotlib
-* cython?? (忘了到底要不要了 不行就装一下吧 不会怀的)
+* *cython?? (忘了到底要不要了 不行就装一下吧 不会怀的)*
 - - -
 
 ##facerec 安装
