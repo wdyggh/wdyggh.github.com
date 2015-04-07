@@ -9,6 +9,7 @@ tags: ["face","python","raspcam"]
 ###facerec 安装
 
 ##使用facerec要用到以下库：
+http://bytefish.de/dev/facerec/install/index.html
 - - - 
 
 * PIL
