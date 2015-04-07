@@ -81,6 +81,8 @@ while(1):
 cv2.destroyAllWindows()
 ```
 
+- - - 
+
 ###仿射变换
 
 ```python
@@ -98,6 +100,7 @@ plt.subplot(121,plt.imshow(img),plt.title('Output'))
 plt.show()
 ```
 
+- - - 
 
 ###透视变换
 
