@@ -11,11 +11,15 @@ tags: ["opencv","python","raspcam"]
 
 简单阈值，自适应阈值， Otsu’s 二值化等
 
+- - -
+
+###简单阈值
+
 ```python
 # -*- coding: utf-8 -*-
 
 
-#简单阈值
+
 import cv2
 import numpy as np
 from matplotlib import pyplot as plt
@@ -38,8 +42,12 @@ for i in xrange(6):
 plt.show()
 ```
 
+- - -
+
+###自适应阈值
+
 ```python
-#自适应阈值
+
 import cv2
 import numpy as np
 from matplotlib import pyplot as plt
@@ -61,6 +69,10 @@ for i in xrange(4):
 	plt.xticks([]),plt.yticks([])
 plt.show()
 ```
+
+- - -
+
+###Otsu’s 二值化
 
 ```python
 import cv2
