@@ -9,7 +9,7 @@ tags: ["opencv","python","raspcam"]
 ###opencv-python_Canny
 
 
-###在 OpenCV 中只需要一个函数： cv2.Canny()，就可以完成以上几步。让我们看如何使用这个函数。这个函数的第一个参数是输入图像。第二和第三个分别是 minVal 和 maxVal。第三个参数设置用来计算图像梯度的 Sobel卷积核的大小，默认值为 3。最后一个参数是 L2gradient，它可以用来设定求梯度大小的方程。如果设为 True，就会使用我们上面提到过的方程，否则使用方程： Edge−Gradient(G) = |G2 x| + |G2 y| 代替，默认值为 False
+###在 OpenCV 中只需要一个函数： cv2.Canny()，就可以完成以上几步。让我们看如何使用这个函数。这个函数的第一个参数是输入图像。第二和第三个分别是 minVal 和 maxVal。第三个参数设置用来计算图像梯度的 Sobel卷积核的大小，默认值为 3。最后一个参数是 L2gradient，它可以用来设定求梯度大小的方程。如果设为 True，就会使用我们上面提到过的方程，否则使用方程： $$Edge−Gradient(G) = |G2 x| + |G2 y| $$ 代替，默认值为 False
 
 - - -
 
