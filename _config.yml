@@ -5,7 +5,7 @@ permalink: /:categories/:title.html
 url: 
 lsi: false
 pygments: true
-safe: true
+safe: false
 auto: false 
 
 paginate: 10
