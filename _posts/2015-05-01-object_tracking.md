@@ -1,12 +1,12 @@
 ---
 layout: post
 category: "embedded"
-title: "[P]object Tracking with opencv-python"
+title: "[P]Object Tracking with opencv-python"
 tags: ["opencv","python","tracking"]
 ---
 
 <a name="top"></a>
-###object Tracking
+###Object Tracking
 
 
 - - -
