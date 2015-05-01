@@ -9,6 +9,9 @@ tags: ["opencv","python","tracking"]
 ###Object Tracking
 
 
+[上一次](http://wdyggh.github.io/embedded/opencv-python05.html)非常简单对原图像和掩模进行位运算，就能实现单一色目标追踪。
+这次在掩模之后 再腐蚀膨胀腐蚀（去除噪音），然后寻找边界，画出边界的方法，实现了物体跟踪。
+
 - - -
 
 
