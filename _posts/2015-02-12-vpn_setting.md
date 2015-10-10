@@ -13,8 +13,8 @@ tags: ["BB10","VPN"]
 ###1. 注册帐号和得到IP地址（网页打开有点慢，耐心等待。。。）
 ####[Free vpn page](http://www.iqlinkus.net/home.action)
 ####[免费VPN](http://www.iqlinkus.net/home.action)
-####if you signed up,you get free 500Mb/mon.
-####注册成功后会得到每月500MB
+####if you signed up,you get free 250Mb/mon.
+####注册成功后会得到每月250MB
 ####if you go to this page and sign up,i will get 50Mb/mon.Thanks  [link](http://www.iqlinkus.com/home?referral=2070DE165E1CF0929B76E6C972CD7BB8)
 ####如果你点我的推广链接注册，我会每月+50MB，谢谢[链接](http://www.iqlinkus.com/home?referral=2070DE165E1CF0929B76E6C972CD7BB8)
 
