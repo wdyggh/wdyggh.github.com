@@ -6,7 +6,7 @@ tags: [Ubuntu"]
 ---
 
 <a name="top"></a>
-##Ubuntu 下设置开始启动项
+###Ubuntu 下设置开始启动项
 
 
 可以通过一些小工具来管理Ubuntu的启动项：
