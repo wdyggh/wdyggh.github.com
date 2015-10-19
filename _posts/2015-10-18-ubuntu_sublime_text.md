@@ -67,7 +67,9 @@ sublime的默认配置文件在`Preferences->Settings-Default`
 
 * 7 输入中文
     * 1 保存以下代码 存为`sublime-imfix.c`文件
+
         ```c
+
         /*
         sublime-imfix.c
         Use LD_PRELOAD to interpose some function to fix sublime input method support for linux.
@@ -76,6 +78,7 @@ sublime的默认配置文件在`Preferences->Settings-Default`
         gcc -shared -o libsublime-imfix.so sublime-imfix.c `pkg-config --libs --cflags gtk+-2.0` -fPIC
         LD_PRELOAD=./libsublime-imfix.so subl
         */
+
         #include <gtk/gtk.h>
         #include <gdk/gdkx.h>
         typedef GdkSegment GdkRegionBox;
