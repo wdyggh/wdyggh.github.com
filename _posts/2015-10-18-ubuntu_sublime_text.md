@@ -198,6 +198,7 @@ sublime的默认配置文件在`Preferences->Settings-Default`
 
     * 7 修改 /usr/bin/subl 
     打开/usr/bin/subl 
+    
     ```bash
     sudo gedit /usr/bin/subl
     ```
