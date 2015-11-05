@@ -64,7 +64,7 @@ Have a good luck.
 
 
 
-#### How to get ID token
+### How to get ID token
 
 Here is [ID token](https://www.blackberry.com/SignedKeys/codesigning.html)
 
@@ -74,14 +74,29 @@ Here is [ID token](https://www.blackberry.com/SignedKeys/codesigning.html)
 
 ![blackberryIDToken3.png](http://7xifyp.com1.z0.glb.clouddn.com/blackberryIDToken3.png)
 
-#### How to get debug token
+### How to get debug token
 
 Go to `Window`>`Preferences`   
 In Preferences window > `Blackberry`>`Signing`   
 Here maybe requirst your `Device PINs`&`ID Token`    
 That's all
 
+`2015-11-05 updates`
 
+### How to connect device via usb with MomenticsIDE on Ubuntu
+
+when you connect device with computer via usb, it will show a `wired connection`on the internet zone  
+Then, edit the `wired connection` like below:  
+
+![usb_connect_to_IDE1.png](http://7xifyp.com1.z0.glb.clouddn.com/usb_connect_to_IDE1.png)  
+
+* connection method : manual  
+* address: 169.254.0.2  
+* netmask:255.255.255.0  
+* gateway: 169.254.0.1  
+
+Last, pair your device in `device manager`
+![usb_connect_to_IDE2.png](http://7xifyp.com1.z0.glb.clouddn.com/usb_connect_to_IDE2.png)  
 
 
 
