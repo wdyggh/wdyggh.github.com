@@ -171,7 +171,7 @@ sublime的默认配置文件在`Preferences->Settings-Default`
     LD_PRELOAD=./libsublime-imfix.so subl
     ```
 
-    * 5 打开终端 `sudo gedit /usr/share/applications/sublime_text.desktop`修改`Exec`
+    * 5 打开终端 `sudo gedit /usr/share/applications/sublime-text.desktop`修改`Exec`
 
     ```c
     [Desktop Entry]
