@@ -54,6 +54,7 @@ sublime的默认配置文件在`Preferences->Settings-Default`
     "color_scheme": "Packages/User/SublimeLinter/Monokai (SL).tmTheme",  //主题
     "draw_white_space": "all",   //显示空格
     "font_size": 9,    //字体大小
+    "word_wrap": "true", //自动换行
     "ignored_packages":  //忽略的插件
     [
         "Vintage"
