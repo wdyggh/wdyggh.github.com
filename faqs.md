@@ -3,11 +3,13 @@ layout: default
 title: "问答：Faqs"
 ---
 
-####免费书籍
+#### 免费书籍
+ 
+有各种语言的免费[书籍](https://github.com/vhf/free-programming-books)  
+[GFM 与 Redcarpet 的不同点](http://mazhuang.org/2015/12/05/diff-between-gfm-and-redcarpet/)  
+[将 GitHub Pages 从 Redcarpet 切换到 kramdown](http://mazhuang.org/2016/02/04/switch-to-kramdown-from-redcarpet/)  
 
-有各种语言的免费[书籍](https://github.com/vhf/free-programming-books)
-
-####误会
+#### 误会
 
 손톱이 길어지면  
 우리는 손가락을   
@@ -22,11 +24,11 @@ FROM 심재창 교수님
 
 记录工作中遇到的一些小问题及解决办法，以防忘记后重头再找答案。
 
-####格式：
+#### 格式：
 问：Win7下 Eclipse中按"Alt+Ctrl+Down或Alt+Ctrl+Up"时，结果屏幕倒了怎么办？  
 答：是不是和其它应用的快捷键冲突了？比如Intel显卡，则可选择“图形属性”>“选项和支持”，将对应快捷键换掉。参考：http://www.2cto.com/os/201201/116412.html
 
-####或作为url收藏记录
+#### 或作为url收藏记录
 1,Markdown语法：<http://wowubuntu.com/markdown/basic.html>  
 2,Oracle现在真是恶心，下载个Java SDK还非得让登陆不可。只好再找下载地址了: <http://ghaffarian.net/downloads/>  
 3,git文章收藏:  
