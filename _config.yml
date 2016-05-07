@@ -2,7 +2,9 @@
 # redcarpet:
 #     extensions: ["fenced_code_blocks", "tables", "highlight", "with_toc_data", "strikethrough", "underline"]
 markdown: kramdown
-highlighter: rouge
+kramdown:
+     extensions: ["fenced_code_blocks", "tables", "highlight", "with_toc_data", "strikethrough", "underline"]
+#highlighter: rouge
 permalink: /:categories/:title.html
 url: "http://wdyggh.github.io"
 lsi: false
