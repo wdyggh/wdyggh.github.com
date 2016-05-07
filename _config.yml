@@ -3,7 +3,15 @@
 #     extensions: ["fenced_code_blocks", "tables", "highlight", "with_toc_data", "strikethrough", "underline"]
 markdown: kramdown
 kramdown:
-    input: GFM
+  input: GFM
+  extensions:
+    - autolink
+    - footnotes
+    - smart
+  use_coderay: true
+  syntax_highlighter: rouge
+  coderay:
+    coderay_line_numbers:  nil
 highlighter: rouge
 permalink: /:categories/:title.html
 url: "http://wdyggh.github.io"
