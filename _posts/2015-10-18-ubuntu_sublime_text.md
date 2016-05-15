@@ -70,7 +70,7 @@ sublime的默认配置文件在`Preferences->Settings-Default`
 * 6 输入中文  
     * 1 保存以下代码 存为`sublime-imfix.c`文件  
 
-        ```c
+        ```c  
         /*
         sublime-imfix.c
         Use LD_PRELOAD to interpose some function to fix sublime input method support for linux.
@@ -174,7 +174,9 @@ sublime的默认配置文件在`Preferences->Settings-Default`
 
     * 5 打开终端 `sudo gedit /usr/share/applications/sublime-text.desktop`修改`Exec`  
 
-    ```c
+
+    ```c  
+
     [Desktop Entry]
     [...]
     Exec=env LD_PRELOAD=/opt/sublime_text/libsublime-imfix.so /opt/sublime_text/sublime_text %F
@@ -189,6 +191,7 @@ sublime的默认配置文件在`Preferences->Settings-Default`
     [...]
     Exec=env LD_PRELOAD=/opt/sublime_text/libsublime-imfix.so /opt/sublime_text/sublime_text --command new_file
     [...]
+
     ```
 
     * 6 把 `libsublime-imfix.so` 放到 `/opt/sublime_text/` 中
