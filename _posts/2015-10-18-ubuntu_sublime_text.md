@@ -6,6 +6,7 @@ tags: [“Ubuntu”,"IDE"]
 ---
 
 <a name="top"></a>
+
 ### Sublime Text3
 
 `Sublime Text3` 就不多介绍了  
@@ -35,14 +36,14 @@ import urllib.request,os,hashlib; h = '2915d1851351e5ee549c20394736b442' + '8bc5
 
 以上代码会自动创建Installed Packages文件夹，然后使用http下载`Package Control.sublime-package` 等待Package Control安装完成。之后使用`Ctrl + Shift + P`打开命令板，输入PC应出现Package Control等下拉条
 
-* 4 插件安装
+* 3 插件安装  
 成功安装Package Control 后,就能安装中文编码支持,按`ctrl+shift+p`打开命令板输入`pci`选择`package control install package`,在新的面板里输入`ConvertToUTF8`安装一下插件就可以识别了。该插件支持简体中文，繁体中文，日文，韩文等(GB2312,GBK,BIG5,EUC-KR,EUC-JP)
 
     插件推荐:   
     * `Markdown preview` Markdown预览插件
     * `SublimeLinter` 语法高亮插件
 
-* 5 个性化配置
+* 4 个性化配置  
 sublime的默认配置文件在`Preferences->Settings-Default`  
 我们需要的是在sublime的默认配置文件在Preferences->Settings-User中添加  
 比如: 要显示所有空格  
@@ -62,15 +63,14 @@ sublime的默认配置文件在`Preferences->Settings-Default`
 }
 ```
 
-* 6 非主题 安装搜狗输入法
+* 5 非主题 安装搜狗输入法  
 在[官网](http://pinyin.sogou.com/linux/?r=pinyin)下载对应的安装包  
 双击 deb安装包,直接安装搜狗输入法.重启即可  
 
-* 7 输入中文
-    * 1 保存以下代码 存为`sublime-imfix.c`文件
+* 6 输入中文  
+    * 1 保存以下代码 存为`sublime-imfix.c`文件  
 
         ```c
-
         /*
         sublime-imfix.c
         Use LD_PRELOAD to interpose some function to fix sublime input method support for linux.
@@ -172,7 +172,7 @@ sublime的默认配置文件在`Preferences->Settings-Default`
     LD_PRELOAD=./libsublime-imfix.so subl
     ```
 
-    * 5 打开终端 `sudo gedit /usr/share/applications/sublime-text.desktop`修改`Exec`
+    * 5 打开终端 `sudo gedit /usr/share/applications/sublime-text.desktop`修改`Exec`  
 
     ```c
     [Desktop Entry]
@@ -217,9 +217,6 @@ sublime的默认配置文件在`Preferences->Settings-Default`
 
 
 
-
-
-
 - - - 
 
-###[TOP](#top)
+### [TOP](#top)
