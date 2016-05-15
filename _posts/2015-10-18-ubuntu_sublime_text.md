@@ -168,14 +168,14 @@ sublime的默认配置文件在`Preferences->Settings-Default`
 
     * 4 设置 `LD_PRELOAD` 并启动 Sublime Text
 
-    ```bash
+    ``` bash
     LD_PRELOAD=./libsublime-imfix.so subl
     ```
 
     * 5 打开终端 `sudo gedit /usr/share/applications/sublime-text.desktop`修改`Exec`  
 
 
-    ```c  
+    ``` c  
 
     [Desktop Entry]
     [...]
