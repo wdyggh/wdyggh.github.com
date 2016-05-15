@@ -155,64 +155,64 @@ void gtk_im_context_set_client_window (GtkIMContext *context,
 
     * 2 安装C/C++编译环境和GTK libgtk2.0
 
-    ```bash
-    sudo apt-get install build-essential
-    sudo apt-get install libgtk2.0-dev
-    ```
+```bash
+sudo apt-get install build-essential
+sudo apt-get install libgtk2.0-dev
+```
 
     * 3 编译共享内库
 
-    ```bash
-    gcc -shared -o libsublime-imfix.so sublime-imfix.c `pkg-config --libs --cflags gtk+-2.0` -fPIC
-    ```
+```bash
+gcc -shared -o libsublime-imfix.so sublime-imfix.c `pkg-config --libs --cflags gtk+-2.0` -fPIC
+```
 
     * 4 设置 `LD_PRELOAD` 并启动 Sublime Text
 
-    ``` bash
-    LD_PRELOAD=./libsublime-imfix.so subl
-    ```
+``` bash
+LD_PRELOAD=./libsublime-imfix.so subl
+```
 
     * 5 打开终端 `sudo gedit /usr/share/applications/sublime-text.desktop`修改`Exec`  
 
 
-    ``` c  
-    [Desktop Entry]
-    [...]
-    Exec=env LD_PRELOAD=/opt/sublime_text/libsublime-imfix.so /opt/sublime_text/sublime_text %F
-    [...]
-     
-    [Desktop Action Window]
-    [...]
-    Exec=env LD_PRELOAD=/opt/sublime_text/libsublime-imfix.so /opt/sublime_text/sublime_text -n
-    [...]
-     
-    [Desktop Action Document]
-    [...]
-    Exec=env LD_PRELOAD=/opt/sublime_text/libsublime-imfix.so /opt/sublime_text/sublime_text --command new_file
-    [...]
+``` c  
+[Desktop Entry]
+[...]
+Exec=env LD_PRELOAD=/opt/sublime_text/libsublime-imfix.so /opt/sublime_text/sublime_text %F
+[...]
+ 
+[Desktop Action Window]
+[...]
+Exec=env LD_PRELOAD=/opt/sublime_text/libsublime-imfix.so /opt/sublime_text/sublime_text -n
+[...]
+ 
+[Desktop Action Document]
+[...]
+Exec=env LD_PRELOAD=/opt/sublime_text/libsublime-imfix.so /opt/sublime_text/sublime_text --command new_file
+[...]
 
-    ```
+```
 
     * 6 把 `libsublime-imfix.so` 放到 `/opt/sublime_text/` 中
 
-    ```bash
-    mv libsublime-imfix.so /opt/sublime_text/
-    ```
+```bash
+mv libsublime-imfix.so /opt/sublime_text/
+```
 
     * 7 修改 /usr/bin/subl 
     打开/usr/bin/subl 
     
-    ```bash
-    sudo gedit /usr/bin/subl
-    ```
+```bash
+sudo gedit /usr/bin/subl
+```
 
     修改为
 
-    ```bash
-    #!/bin/sh
-    export LD_PRELOAD=/opt/sublime_text/libsublime-imfix.so
-    exec /opt/sublime_text/sublime_text "$@"
-    ```
+```bash
+#!/bin/sh
+export LD_PRELOAD=/opt/sublime_text/libsublime-imfix.so
+exec /opt/sublime_text/sublime_text "$@"
+```
 
     * 8 以图为证
     ![ubuntu_sublime_text3](http://7xifyp.com1.z0.glb.clouddn.com/ubuntu_sublime_text3.png)
