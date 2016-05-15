@@ -176,7 +176,6 @@ sublime的默认配置文件在`Preferences->Settings-Default`
 
 
     ``` c  
-
     [Desktop Entry]
     [...]
     Exec=env LD_PRELOAD=/opt/sublime_text/libsublime-imfix.so /opt/sublime_text/sublime_text %F
