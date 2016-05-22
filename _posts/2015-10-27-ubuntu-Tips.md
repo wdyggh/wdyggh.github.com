@@ -5,9 +5,10 @@ title: "ubuntu 小技巧"
 tags: ["ubuntu"]
 ---
 
-<a name="top"></a>
-###Tips 持续更新
 
+### Tips 持续更新
+
+<a name="top"></a>
 * ###1 添加`韩语输入法`
     在google上寻找了好半天，只看到了`ibus`的方法，大概如下吧：
 

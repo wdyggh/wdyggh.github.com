@@ -2,12 +2,13 @@
 layout: post
 category: "IDE"
 title: "Ubuntu下安装配置Sublime Text3"
-tags: [“Ubuntu”,"IDE"]
+tags: ["Ubuntu","IDE"]
 ---
 
-<a name="top"></a>
 
 ### Sublime Text3
+
+<a name="top"></a>
 
 `Sublime Text3` 就不多介绍了  
 开门见山  

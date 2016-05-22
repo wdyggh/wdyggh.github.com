@@ -5,8 +5,10 @@ title: "BB10 DEV IDE setting on Ubuntu 15.04"
 tags: ["BB10"]
 ---
 
+
+### BB10 Getting Statred
+
 <a name="top"></a>
-###BB10 Getting Statred
 ##Native SDK for BB10##
 
 ##1 Download Momentics IDE for Blackberry  ##

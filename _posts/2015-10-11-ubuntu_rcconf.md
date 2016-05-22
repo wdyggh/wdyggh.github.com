@@ -2,12 +2,13 @@
 layout: post
 category: "ubuntu"
 title: "Ubuntu 下设置开机启动项"
-tags: [Ubuntu"]
+tags: ["Ubuntu"]
 ---
 
-<a name="top"></a>
-###Ubuntu 下设置开始启动项
 
+### Ubuntu 下设置开始启动项
+
+<a name="top"></a>
 
 可以通过一些小工具来管理Ubuntu的启动项：
 
