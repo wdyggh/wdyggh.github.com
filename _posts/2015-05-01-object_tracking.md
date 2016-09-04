@@ -6,7 +6,8 @@ tags: ["opencv","python","tracking"]
 ---
 
 <a name="top"></a>
-###Object Tracking
+
+###　Object Tracking
 
 
 [上一次](http://wdyggh.github.io/embedded/opencv-python05.html)非常简单对原图像和掩模进行位运算，就能实现单一色目标追踪。
@@ -132,11 +133,11 @@ while(1):
 cv2.destroyAllWindows() 
 ```
 
-![objecttracking_trackbar](http://7xifyp.com1.z0.glb.clouddn.com/objecttracking_trackbar.JPG)
+![objecttracking_trackbar](http://7xifyp.com1.z0.glb.clouddn.com/objecttracking_trackbar.JPG){: .center-image }
 
-![objecttracking_res](http://7xifyp.com1.z0.glb.clouddn.com/objecttracking_res.JPG)
+![objecttracking_res](http://7xifyp.com1.z0.glb.clouddn.com/objecttracking_res.JPG){: .center-image }
 
-![objecttracking_frame](http://7xifyp.com1.z0.glb.clouddn.com/objecttracking_frame.JPG)
+![objecttracking_frame](http://7xifyp.com1.z0.glb.clouddn.com/objecttracking_frame.JPG){: .center-image }
 
 
 - - - 
