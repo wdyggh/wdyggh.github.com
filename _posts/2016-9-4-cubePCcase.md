@@ -17,7 +17,7 @@ tags: ["pc","case"]
 除去机箱，电源留在了那，其他的都随着回家的脚步回到了家。  
 从这张乱遭遭的桌面就能找到他的身影  
 
-![dpcase1.PNG](http://7xifyp.com1.z0.glb.clouddn.com/dpcase1.PNG){: .center-image }
+![dpcase1.PNG](http://7xifyp.com1.z0.glb.clouddn.com/dpcase1.jpg){: .center-image }
 
 主要部件都到家了，当然思量着得帮他弄个新壳子。因为是ATX板，又想着机箱能小一点。  
 首先看中了乔思伯的W2,然后再社区又看到了孙总的仿[W2](https://www.chiphell.com/thread-1122370-1-1.html),  
