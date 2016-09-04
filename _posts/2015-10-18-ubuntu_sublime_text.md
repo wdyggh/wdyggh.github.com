@@ -215,7 +215,7 @@ exec /opt/sublime_text/sublime_text "$@"
 ```
 
 * 8 以图为证
-    ![ubuntu_sublime_text3](http://7xifyp.com1.z0.glb.clouddn.com/ubuntu_sublime_text3.png)
+    ![ubuntu_sublime_text3](http://7xifyp.com1.z0.glb.clouddn.com/ubuntu_sublime_text3.png){: .center-image }
 
 
 
