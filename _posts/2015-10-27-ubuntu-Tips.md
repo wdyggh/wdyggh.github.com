@@ -9,7 +9,8 @@ tags: ["ubuntu"]
 ### Tips 持续更新
 
 <a name="top"></a>
-* ###1 添加`韩语输入法`
+
+* ### 1 添加`韩语输入法`
     在google上寻找了好半天，只看到了`ibus`的方法，大概如下吧：
 
     ```bash
@@ -24,7 +25,7 @@ tags: ["ubuntu"]
 
     结果还有用了，不过前提是得先安装好`fcitx`
 
-* ###2 安装 `Adobe Reader`
+* ### 2 安装 `Adobe Reader`
     pdf的话自带的文档查看器已经能满足基本需求了，  
     但是在windows上的习惯，  
     不装个Adobe Reader 试试，是不会甘心的。   
