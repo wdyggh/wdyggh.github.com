@@ -25,7 +25,7 @@ sudo apt-get install rcconf
 sudo rcconf
 ```
 
-![ubuntu_rcconf](http://7xifyp.com1.z0.glb.clouddn.com/ubuntu_rcconf.png)
+![ubuntu_rcconf](http://7xifyp.com1.z0.glb.clouddn.com/ubuntu_rcconf.png){: .center-image }
 
 在选项上按空格，会取消或设置启动项。
 
