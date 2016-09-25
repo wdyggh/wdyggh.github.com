@@ -1,7 +1,7 @@
 ---
 layout: post
 category: "PC"
-title: "CUBE PC case"
+title: "DIY PC case"
 tags: ["pc","case"]
 ---
 
