@@ -3,6 +3,8 @@ layout: default
 title: "问答：Faqs"
 ---
 
+------
+
 #### 免费书籍
  
 有各种语言的免费[书籍](https://github.com/vhf/free-programming-books)  
@@ -47,7 +49,7 @@ Git查看、删除、重命名远程分支和tag: http://zengrong.net/post/1746.
 6,Twitter University: <http://www.bluemobi.cn/>  
 [GFM 与 Redcarpet 的不同点](http://mazhuang.org/2015/12/05/diff-between-gfm-and-redcarpet/)  
 [将 GitHub Pages 从 Redcarpet 切换到 kramdown](http://mazhuang.org/2016/02/04/switch-to-kramdown-from-redcarpet/)  
-
+[Markdown-Cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
 更多请看本文评论，欢迎来盖楼！
 
 <!-- Blog Comments -->
