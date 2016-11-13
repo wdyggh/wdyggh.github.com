@@ -12,7 +12,14 @@ tags: ["serial","matlab"]
 
 <code>MATLAB R2015a</code>
 
-`<MATLAB R2015a>`
+Use `<html>` tags for this.  
+Here is a literal `` ` `` backtick.
+And here is ``  `some`  `` text (note the two spaces so that one is left in the output!).  
+
+This is a ` literal backtick.  
+As \`are\` these!  
+
+This is a Ruby code fragment `x = Class.new`{:.language-ruby}  
 
 讨论一下 matlab中打开serial port后 delay给不给的问题，  
 具体例子如下：  
