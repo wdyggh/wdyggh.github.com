@@ -50,14 +50,18 @@ Git查看、删除、重命名远程分支和tag: http://zengrong.net/post/1746.
 [GFM 与 Redcarpet 的不同点](http://mazhuang.org/2015/12/05/diff-between-gfm-and-redcarpet/)  
 [将 GitHub Pages 从 Redcarpet 切换到 kramdown](http://mazhuang.org/2016/02/04/switch-to-kramdown-from-redcarpet/)  
 [Markdown-Cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)  
+[kramdown和markdown较大的差异比较](http://gohom.win/2015/11/06/Kramdown-note/#fn:1)  
+[kramdown syntax](http://kramdown.gettalong.org/syntax.html)  
 更多请看本文评论，欢迎来盖楼！
 
+
+
 <!-- Blog Comments -->
-<div class="media">
+<!-- <div class="media"> -->
   <!-- UY BEGIN -->
-  <div id="uyan_frame">
-  </div>
-  <script type="text/javascript" src="http://v2.uyan.cc/code/uyan.js?uid=1511840">
-  </script>
+  <!-- <div id="uyan_frame"> -->
+  <!-- </div> -->
+  <!-- <script type="text/javascript" src="http://v2.uyan.cc/code/uyan.js?uid=1511840"> -->
+  <!-- </script> -->
   <!-- UY END -->
-</div>
+<!-- </div> -->
