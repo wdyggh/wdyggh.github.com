@@ -14,7 +14,7 @@ tags: ["serial","matlab"]
 讨论一下 matlab中打开serial port后 delay给不给的问题，  
 具体例子如下：  
 
-```matlab
+~~~matlab
 s=serial('COM12','timeout',15);
 s.BaudRate=9600;
 fopen(s);
@@ -25,7 +25,7 @@ pause(1);	%休息1秒
 fprintf(s,str1);
 tc=fscanf(s,'%s');
 fprintf([tc '\n']);
-```
+~~~
 
 serial 另一端是arduino，接收到消息后，回发一个数字。  
 刚开始写的时候，我也没想到要加一个pause，  
