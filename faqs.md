@@ -26,7 +26,7 @@ FROM 심재창 교수님
 ------
 
 ### 후회
-절대후회하지마라, 좋았다면 추억이고, 나빴다면 경험이다.
+절대후회하지마라, 좋았다면 추억이고, 나빴다면 경험이다.  
 From 金镇镜
 
 ------
@@ -38,24 +38,22 @@ From 金镇镜
 答：是不是和其它应用的快捷键冲突了？比如Intel显卡，则可选择“图形属性”>“选项和支持”，将对应快捷键换掉。参考：http://www.2cto.com/os/201201/116412.html
 
 ### 或作为url收藏记录
-1,Markdown语法：<http://wowubuntu.com/markdown/basic.html>  
-2,Oracle现在真是恶心，下载个Java SDK还非得让登陆不可。只好再找下载地址了: <http://ghaffarian.net/downloads/>  
-3,git文章收藏:  
+* Markdown语法：<http://wowubuntu.com/markdown/basic.html>  
+* git文章收藏:  
 Git分支管理策略: <http://www.ruanyifeng.com/blog/2012/07/git.html>   
 [git](http://equation85.github.io/blog/git-operation-memo/)  
-Git查看、删除、重命名远程分支和tag: http://zengrong.net/post/1746.htm  
-4,Google无障碍浏览链接：<https://github.com/greatfire/wiki>  
-5,在线Android等源码：<http://www.grepcode.com/>, <http://androidxref.com/>  
-6,Twitter University: <http://www.bluemobi.cn/>  
-[GFM 与 Redcarpet 的不同点](http://mazhuang.org/2015/12/05/diff-between-gfm-and-redcarpet/)  
-[将 GitHub Pages 从 Redcarpet 切换到 kramdown](http://mazhuang.org/2016/02/04/switch-to-kramdown-from-redcarpet/)  
-[Markdown-Cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)  
-[kramdown和markdown较大的差异比较](http://gohom.win/2015/11/06/Kramdown-note/#fn:1)  
-[kramdown syntax](http://kramdown.gettalong.org/syntax.html)  
-更多请看本文评论，欢迎来盖楼！
-
-
-
+Git查看、删除、重命名远程分支和tag: <http://zengrong.net/post/1746.html>  
+* Google无障碍浏览链接：<https://github.com/greatfire/wiki>  
+* Twitter University: <http://www.bluemobi.cn/>  
+* [GFM 与 Redcarpet 的不同点](http://mazhuang.org/2015/12/05/diff-between-gfm-and-redcarpet/)  
+* [将 GitHub Pages 从 Redcarpet 切换到 kramdown](http://mazhuang.org/2016/02/04/switch-to-kramdown-from-redcarpet/)  
+* [Markdown-Cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)  
+* [kramdown和markdown较大的差异比较](http://gohom.win/2015/11/06/Kramdown-note/#fn:1)  
+* [kramdown syntax](http://kramdown.gettalong.org/syntax.html)  
+更多请看本文评论，欢迎来盖楼！  
+  
+  
+  
 <!-- Blog Comments -->
 <!-- <div class="media"> -->
   <!-- UY BEGIN -->
