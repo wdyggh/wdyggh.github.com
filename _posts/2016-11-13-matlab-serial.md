@@ -12,6 +12,8 @@ tags: ["serial","matlab"]
 
 <code>MATLAB R2015a</code>
 
+`<MATLAB R2015a>`
+
 讨论一下 matlab中打开serial port后 delay给不给的问题，  
 具体例子如下：  
 
