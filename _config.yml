@@ -11,7 +11,7 @@ kramdown:
   use_coderay: true
   syntax_highlighter: rouge
   coderay:
-    coderay_line_numbers:  inline
+    coderay_line_numbers:  inline  #nil
     coderay_wrap: span  # div
 #highlighter: rouge
 permalink: /:categories/:title.html
