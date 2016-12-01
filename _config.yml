@@ -8,7 +8,8 @@ kramdown:
     - autolink
     - footnotes
     - smart
-  use_coderay: true
+  #use_coderay: true
+  enable_coderay: false
   #syntax_highlighter:  rouge
   coderay:
     coderay_line_numbers:  inline  #nil
@@ -16,7 +17,7 @@ kramdown:
     coderay_tab_width: 4
     coderay_bold_every: 10
     coderay_css: class
-#highlighter: rouge
+highlighter: rouge
 permalink: /:categories/:title.html
 url: "http://wdyggh.github.io"
 lsi: false
