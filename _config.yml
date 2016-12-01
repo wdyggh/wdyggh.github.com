@@ -14,8 +14,8 @@ kramdown:
   syntax_highlighter:  rouge
   syntax_highlighter_opts:
     #default_lang: c
-    #css_class: 'highlight'
-    line_numbers: true
+    css_class: 'highlight'
+    #line_numbers: true
     #start_line: 1
     #inline_theme: colorful
     wrap: true
