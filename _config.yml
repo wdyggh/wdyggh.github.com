@@ -12,7 +12,7 @@ kramdown:
   syntax_highlighter: rouge
   coderay:
     coderay_line_numbers:  inline
-    coderay_wrap: div
+    coderay_wrap: span  # div
 #highlighter: rouge
 permalink: /:categories/:title.html
 url: "http://wdyggh.github.io"
