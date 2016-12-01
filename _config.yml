@@ -9,10 +9,18 @@ kramdown:
     - footnotes
     - smart
   use_coderay: true
-  syntax_highlighter: rouge
-  coderay:
-    coderay_line_numbers:  inline  #nil
-    coderay_wrap: span  # div
+  syntax_highlighter: coderay # rouge
+  syntax_highlighter_opts:
+  block:
+    wrap: div
+    line_numbers: table
+    line_numbers_start:1 #不管用
+    tab_width: 4
+    bold_every: 5
+    css: style
+  #coderay:
+    #coderay_line_numbers:  inline  #nil
+    #coderay_wrap: span  # div
 #highlighter: rouge
 permalink: /:categories/:title.html
 url: "http://wdyggh.github.io"
