@@ -9,15 +9,15 @@ kramdown:
     - autolink
     - footnotes
     - smart
-  use_coderay: true
+  use_coderay: false #true
   #enable_coderay: false
   #syntax_highlighter:  rouge
-  coderay:
-    coderay_line_numbers:  nil #inline  #nil
-    coderay_wrap: div  # div
-    coderay_tab_width: 4
-    coderay_bold_every: 10
-    coderay_css: class
+  #coderay:
+   # coderay_line_numbers:  nil #inline  #nil
+   # coderay_wrap: div  # div
+   # coderay_tab_width: 4
+   # coderay_bold_every: 10
+   # coderay_css: class
 #highlighter: rouge
 permalink: /:categories/:title.html
 url: "http://wdyggh.github.io"
