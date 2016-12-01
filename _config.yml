@@ -11,7 +11,7 @@ kramdown:
   use_coderay: true
   syntax_highlighter: rouge
   coderay:
-    coderay_line_numbers:  nil
+    coderay_line_numbers:  inline
 #highlighter: rouge
 permalink: /:categories/:title.html
 url: "http://wdyggh.github.io"
