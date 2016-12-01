@@ -16,7 +16,7 @@ kramdown:
 permalink: /:categories/:title.html
 url: "http://wdyggh.github.io"
 lsi: false
-pygments: true
+#pygments: true
 safe: false
 auto: false 
 
