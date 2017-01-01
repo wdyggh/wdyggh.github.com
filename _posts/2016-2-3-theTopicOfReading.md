@@ -1,6 +1,6 @@
 ---
 layout: post
-category: "分类"
+category: "转载"
 title: "[转]不要沉溺于碎片知识的获取，要系统化读书"
 tags: ["读书"]
 ---

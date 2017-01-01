@@ -1,6 +1,6 @@
 ---
 layout: post
-category: "embedded"
+category: "opencv_python"
 title: "[P]Install opencv-python on RaspberryPi"
 tags: ["raspberrypi","python","opencv"]
 ---

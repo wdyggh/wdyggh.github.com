@@ -1,6 +1,6 @@
 ---
 layout: post
-category: "embedded"
+category: "opencv_python"
 title: "[P]Object Tracking with opencv-python"
 tags: ["opencv","python","tracking"]
 ---

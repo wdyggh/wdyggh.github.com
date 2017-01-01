@@ -1,6 +1,6 @@
 ---
 layout: post
-category: "分类"
+category: "embedded"
 title: "matlab中 serial 注意点"
 tags: ["serial","matlab"]
 ---

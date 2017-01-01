@@ -1,6 +1,6 @@
 ---
 layout: post
-category: "embedded"
+category: "opencv_python"
 title: "[P]opencv-python_02"
 tags: ["opencv","python","raspcam"]
 ---

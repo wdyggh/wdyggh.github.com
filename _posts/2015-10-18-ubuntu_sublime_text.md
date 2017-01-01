@@ -1,6 +1,6 @@
 ---
 layout: post
-category: "IDE"
+category: "ubuntu"
 title: "Ubuntu下安装配置Sublime Text3"
 tags: ["Ubuntu","IDE"]
 ---

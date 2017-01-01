@@ -1,6 +1,6 @@
 ---
 layout: post
-category: "embedded"
+category: "opencv_python"
 title: "[E]raspicam_tracking with opencv"
 tags: ["raspberrypi","opencv","raspcam"]
 ---
