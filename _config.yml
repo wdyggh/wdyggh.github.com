@@ -4,21 +4,34 @@
 markdown: kramdown
 kramdown:
   input: GFM
+  smart_quotes:   lsquo,rsquo,ldquo,rdquo
   extensions:
     - autolink
     - footnotes
     - smart
-  use_coderay: true
-  # syntax_highlighter: rouge
-  coderay:
-    coderay_line_numbers:  nil
-highlighter: rouge
+  use_coderay: false #true
+  #enable_coderay: false
+  syntax_highlighter:  rouge
+  syntax_highlighter_opts:
+    #default_lang: c
+    css_class: 'highlight'
+    #line_numbers: true
+    #start_line: 1
+    #inline_theme: colorful
+    wrap: true
+  #coderay:
+   # coderay_line_numbers:  nil #inline  #nil
+   # coderay_wrap: div  # div
+   # coderay_tab_width: 4
+   # coderay_bold_every: 10
+   # coderay_css: class
+#highlighter: rouge
 permalink: /:categories/:title.html
 url: "http://wdyggh.github.io"
 lsi: false
-pygments: true
+####pygments: true
 safe: false
-auto: false 
+#auto: false 
 
 paginate: 10
 paginate_path: "page:num"
