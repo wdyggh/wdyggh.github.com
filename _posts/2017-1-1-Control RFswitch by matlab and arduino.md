@@ -30,7 +30,7 @@ arduino端主要有3大部分，
 * 3是返回给matlab收到的号码。  
 
 
-~~~ c
+~~~
 /*
   1main 3slave RF_SW  test
   date:20161103
