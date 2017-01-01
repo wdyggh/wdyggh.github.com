@@ -52,7 +52,7 @@ const int E_B = 3;
 const int E_C = 4;
 
 //char HL[] = {HIGH, LOW};
-char sw_Port[][3] = {{LOW, LOW, LOW}, {HIGH, LOW, LOW}, {LOW, HIGH, LOW}, {HIGH, HIGH, LOW}, {LOW, LOW, HIGH}, {HIGH, LOW, HIGH}, {LOW, HIGH, HIGH}, {HIGH, HIGH, HIGH}};
+//char sw_Port[][3] = {{LOW, LOW, LOW}, {HIGH, LOW, LOW}, {LOW, HIGH, LOW}, {HIGH, HIGH, LOW}, {LOW, LOW, HIGH}, {HIGH, LOW, HIGH}, {LOW, HIGH, HIGH}, {HIGH, HIGH, HIGH}};
 const int sw_Pin[][3] = {{2, 3, 4}, {5, 6, 7}, {8, 9, 10}};
 const int main_sw_Pin[] = {11, 12, 13};  //5,6,7
 int i , j = 0;
