@@ -19,7 +19,7 @@ tags: ["matlab","arduino"]
 
 matlab端作为命令主控要做的就是发送端口号码，通过serial函数。
 
-~~~matlab
+~~~ matlab
 fprintf(com_num,num2str(sw_num));
 ~~~
 
@@ -30,7 +30,7 @@ arduino端主要有3大部分，
 * 3是返回给matlab收到的号码。  
 
 
-~~~c
+~~~ c
 /*
   1main 3slave RF_SW  test
   date:20161103
@@ -120,7 +120,7 @@ void loop() {
 现在测试下来的问题是，loop中cmd为2位，当matlab发送0～9的号码，arduino从收到号码—返回号码的时间大概有1秒左右，当matlab发送2位的号码，arduino从收到号码—返回号码的时间大概只有0.1秒左右。这个问题可能跟cmd的初始化和转换为int有关。  
 因为在要求中，整个switching时间却快越好，所有想出了一下解决办法。matlab改为发送hex数字。  
 
-~~~matlab
+~~~ matlab
 dec2hex(num)﻿
 ~~~
 
