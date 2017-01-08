@@ -9,7 +9,7 @@ kramdown:
     - autolink
     - footnotes
     - smart
-  use_coderay: false #true
+  enable_coderay: false #true
   #enable_coderay: false
   syntax_highlighter:  rouge
   syntax_highlighter_opts:
