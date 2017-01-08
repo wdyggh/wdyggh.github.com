@@ -48,3 +48,6 @@ config:
   js_dir:
   img_dir:
   css_dir:
+
+# Gems
+gems: [jekyll-paginate]
