@@ -34,6 +34,7 @@ From 金镇镜
 两样东西很重要，责任心和上进心。
 
 ------
+
 ### 作为url收藏记录
 * [Markdown语法](http://wowubuntu.com/markdown/basic.html)  
 * git文章收藏:  
