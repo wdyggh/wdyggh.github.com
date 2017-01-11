@@ -11,7 +11,7 @@ title: "问答：Faqs"
 
 ------
 
-### 误会
+### 오해
 손톱이 길어지면  
 우리는 손가락을   
 자르지 않고   
@@ -31,26 +31,26 @@ From 金镇镜
 
 ------
 
-记录工作中遇到的一些小问题及解决办法，以防忘记后重头再找答案。
+两样东西很重要，责任心和上进心。
 
-### 格式：
-问：Win7下 Eclipse中按"Alt+Ctrl+Down或Alt+Ctrl+Up"时，结果屏幕倒了怎么办？  
-答：是不是和其它应用的快捷键冲突了？比如Intel显卡，则可选择“图形属性”>“选项和支持”，将对应快捷键换掉。参考：http://www.2cto.com/os/201201/116412.html
-
-### 或作为url收藏记录
-* Markdown语法：<http://wowubuntu.com/markdown/basic.html>  
+------
+### 作为url收藏记录
+* [Markdown语法](http://wowubuntu.com/markdown/basic.html)  
 * git文章收藏:  
-Git分支管理策略: <http://www.ruanyifeng.com/blog/2012/07/git.html>   
-[git](http://equation85.github.io/blog/git-operation-memo/)  
-Git查看、删除、重命名远程分支和tag: <http://zengrong.net/post/1746.html>  
-* Google无障碍浏览链接：<https://github.com/greatfire/wiki>  
-* Twitter University: <http://www.bluemobi.cn/>  
+[Git分支管理策略](http://www.ruanyifeng.com/blog/2012/07/git.html)   
+[git 命令解](http://equation85.github.io/blog/git-operation-memo/)  
+* [Git查看、删除、重命名远程分支和tag](http://zengrong.net/post/1746.html)  
+* [Google无障碍浏览链接](https://github.com/greatfire/wiki)  
+* [Twitter University](http://www.bluemobi.cn/)  
 * [GFM 与 Redcarpet 的不同点](http://mazhuang.org/2015/12/05/diff-between-gfm-and-redcarpet/)  
 * [将 GitHub Pages 从 Redcarpet 切换到 kramdown](http://mazhuang.org/2016/02/04/switch-to-kramdown-from-redcarpet/)  
 * [Markdown-Cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)  
 * [kramdown和markdown较大的差异比较](http://gohom.win/2015/11/06/Kramdown-note/#fn:1)  
 * [kramdown syntax](http://kramdown.gettalong.org/syntax.html)  
-更多请看本文评论，欢迎来盖楼！  
+
+#### 更多请看本文评论，欢迎来盖楼！  
+
+---------
   
   
   
