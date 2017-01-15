@@ -13,7 +13,6 @@ title: "归档：Archives"
     <li>
         <h4><span>{{ post.date | date_to_string }}</span>&raquo;<a href="{{ post.url }}">{{ post.title }}</a>
         <div class="post-date">Viewed: <span data-hk-page="{{ site.url }}{{ post.url }}"> - </span> times 
-        <!-- Viewed: <span data-hk-page="http://127.0.0.1:4000{{ post.url }}"> - </span> times  -->
         </div>
         </h4>
     </li> 
