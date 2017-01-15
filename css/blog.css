@@ -72,7 +72,7 @@ footer {
 {
     margin: 0 auto;
     display: block;
-    height: auto;
+    width: auto;
     max-height: 400px;
 }
 .post-header .meta {
