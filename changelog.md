@@ -28,3 +28,9 @@
 ##20150209
 /css
 > 代码高亮
+
+##20170115
+> post中添加tags  
+> 添加访问次数  
+
+reference [link1](http://jerryzou.com/posts/introduction-to-hit-kounter/)  
