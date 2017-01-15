@@ -3,13 +3,26 @@ layout: default
 --- 
 <!-- Blog Post -->
 <!-- Title -->
-<h2>
-  {{ page.title }}
-  <div class="post-date"><a href="https://github.com/{{ site.github }}/{{ site.github }}.github.com/edit/master/{{ page.path }}" target="_blank">纠错</a>&nbsp;&nbsp;
-	<span class="glyphicon glyphicon-time"></span>
-	{{ page.date | date_to_string }}
-  </div>
-</h2>
+<header class="post-header">
+<h2>{{ page.title }}</h2>
+  <!-- {{page.tags}}  -->
+<p class="meta">
+  <h4>
+    {% if page.tags %}
+        {% for tag in page.tags %} 
+            <a class="label" href="{{site.baseurl}}/tags.html"><em>{{ tag }}</em></a>    <!-- <br> -->
+        {% endfor %}
+    {% endif %}
+
+    <div class="post-date">
+    Times:<span data-hk-page="current"> - </span>
+    <a href="https://github.com/{{ site.github }}/{{ site.github }}.github.com/edit/master/{{ page.path }}" target="_blank">纠错</a>&nbsp;&nbsp;
+    <span class="glyphicon glyphicon-time"></span>
+    {{ page.date | date_to_string }}
+    </div>
+  </h4>
+</p>
+</header>
 <!-- Author -->
 <hr>
 {{ content }}
