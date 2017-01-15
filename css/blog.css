@@ -74,6 +74,7 @@ footer {
     display: block;
     width: auto;
     max-height: 400px;
+    max-width: 100%;
 }
 .post-header .meta {
   font-size: 15px;
