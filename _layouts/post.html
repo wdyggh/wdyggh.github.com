@@ -15,10 +15,11 @@ layout: default
     {% endif %}
 
     <div class="post-date">
-    Times:<span data-hk-page="current"> - </span>
-    <a href="https://github.com/{{ site.github }}/{{ site.github }}.github.com/edit/master/{{ page.path }}" target="_blank">纠错</a>&nbsp;&nbsp;
+    Viewed: <span data-hk-page="current"> - </span> times 
     <span class="glyphicon glyphicon-time"></span>
-    {{ page.date | date_to_string }}
+    {{  page.date | date_to_string  }}
+    <a href="https://github.com/{{ site.github }}/{{ site.github }}.github.com/edit/master/{{ page.path }}" target="_blank"> 纠错 </a>&nbsp;&nbsp;
+    
     </div>
   </h4>
 </p>
