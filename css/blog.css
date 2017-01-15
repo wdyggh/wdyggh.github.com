@@ -68,6 +68,13 @@ footer {
     height: auto;
     max-width: 100%;
 }
+.max-height
+{
+    margin: 0 auto;
+    display: block;
+    /*height: auto;*/
+    max-height: 400px;
+}
 .post-header .meta {
   font-size: 15px;
   color: #818181;
