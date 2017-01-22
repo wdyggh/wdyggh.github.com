@@ -52,8 +52,8 @@ const int E_B = 3;
 const int E_C = 4;
 
 //char HL[] = {HIGH, LOW};
-char sw_Port[][3] = {\{0, 0, 0\}, \{HIGH, LOW, LOW\}, \{LOW, HIGH, LOW\}, \{HIGH, HIGH, LOW\}, \{LOW, LOW, HIGH\}, \{HIGH, LOW, HIGH\}, \{LOW, HIGH, HIGH\}, \{HIGH, HIGH, HIGH\}};
-const int sw_Pin[][3] = {\{2, 3, 4\}, \{5, 6, 7\}, \{8, 9, 10\}};
+char sw_Port[][3] = {\{0, 0, 0\}, \{HIGH, LOW, LOW\}, \{LOW, HIGH, LOW\}, \{HIGH, HIGH, LOW\}, \{LOW, LOW, HIGH\}, \{HIGH, LOW, HIGH\}, \{LOW, HIGH, HIGH\}, \{HIGH, HIGH, HIGH\}};   //REMOVE \
+const int sw_Pin[][3] = {\{2, 3, 4\}, \{5, 6, 7\}, \{8, 9, 10\}};   //REMOVE \
 const int main_sw_Pin[] = {11, 12, 13};  //5,6,7
 int i , j = 0;
 int sub_SW_num = 0;
@@ -127,11 +127,113 @@ dec2hex(num)﻿
 arduino中接收hex再转换成int。  
 这一步还是现在的想法，待测试完成后，贴出完整代码。
 
+### Update
+
+~~~ c
+/*
+ 1main 3sub RF_SW test
+ date:20161103
+ update:20170112
+ author:ggh
+*/
+//A B C To:
+// 0 0 0 1
+// 1 0 0 2
+// 0 1 0 3
+// 1 1 0 4
+// 0 0 1 5
+// 1 0 1 6
+// 0 1 1 7
+// 1 1 1 8
+const int E_A = 2;
+const int E_B = 3;
+const int E_C = 4;
+//char HL[] = {HIGH, LOW};
+char sw_Port[][3] = {\{LOW, LOW, LOW\}, \{HIGH, LOW, LOW\}, \{LOW, HIGH, LOW\}, \{HIGH, HIGH, LOW\}, \{LOW, LOW, HIGH\}, \{HIGH, LOW, HIGH\}, \{LOW, HIGH, HIGH\}, \{HIGH, HIGH, HIGH\}};   //REMOVE \
+const int sw_Pin[][3] = {\{2, 3, 4\}, \{5, 6, 7\}, \{8, 9, 10\}};   //REMOVE \
+const int main_sw_Pin[] = {11, 12, 13}; //5,6,7
+int i , j = 0;
+int sub_SW_num = 0;
+int sub_SW_port = 0;
+int temp = 0;
+int charsRead = 0;
+void write2pin(int sw_Num, int sw_Sta) { //sub_sw,sw_port
+    for (i = 0; i < 3; i++) {
+        digitalWrite(sw_Pin[sw_Num][i], sw_Port[sw_Sta][i]);
+    }
+}
+
+void reset_Pin() {
+    for (j = 0; j < 3; j++) {
+    for (i = 0; i < 3; i++) {
+        // pinMode(sw_Pin[j][i], OUTPUT);
+        digitalWrite(sw_Pin[j][i], LOW);
+    }
+}
+    for (i = 0; i < 3; i++) {
+        // pinMode(main_sw_Pin[i], OUTPUT);
+        digitalWrite(main_sw_Pin[i], LOW);
+    }
+}
+
+void setup() {
+    // put your setup code here, to run once:
+    Serial.begin(9600);
+    for (j = 0; j < 3; j++) {
+        for (i = 0; i < 3; i++) {
+            pinMode(sw_Pin[j][i], OUTPUT);
+            digitalWrite(sw_Pin[j][i], LOW);
+        }
+    }
+    for (i = 0; i < 3; i++) {
+        pinMode(main_sw_Pin[i], OUTPUT);
+        digitalWrite(main_sw_Pin[i], LOW);
+    }
+}
+
+void loop() {
+    char cmd[3];
+    if (Serial.available() > 0) {
+        reset_Pin();
+        charsRead = Serial.readBytesUntil('n', cmd, 3);
+        cmd[charsRead] = '\0';
+        temp = StrToHex(cmd);
+        sub_SW_num = (temp - 1) / 8 + 1; //1,2,3
+        sub_SW_port = temp - (sub_SW_num - 1) * 8;
+        Serial.println(sub_SW_port); //1~8
+        //main sw 5,6,7
+        for (i = 0; i < 3; i++) {
+            digitalWrite(main_sw_Pin[i], sw_Port[sub_SW_num + 3][i]);
+        }
+        //sub sw
+        write2pin(sub_SW_num - 1, sub_SW_port - 1);
+    }
+}
+
+int StrToHex(char str[])
+{
+    return (int) strtol(str, 0, 16);
+}
+~~~
+
+### 以下为比较结果：  
+
+使用 `char cmd[] = {' ', ' '};` 的时候  
+
+![before](http://7xifyp.com1.z0.glb.clouddn.com/RFSW_result1.png){: .center-image}
+
+使用 `HEX` 的时候  
+
+![after](http://7xifyp.com1.z0.glb.clouddn.com/RFSW_result2.png){: .center-image}
+
+之前的时间测试中故意加了0.1s的延迟，下面是 `去掉延迟` 的结果  
+
+![final](http://7xifyp.com1.z0.glb.clouddn.com/RFSW_result3.png){: .center-image}
 
 
 #### *Reference:*  
 
-1.[hex2int](http://forum.arduino.cc/index.php?topic=311875.0)  
+1.[Hex2int](http://forum.arduino.cc/index.php?topic=311875.0)  
 2.[]()  
 
 - - - 
