@@ -1,6 +1,8 @@
 ---
 layout: default
-title: "关于：About"
+title: "About"
+nav: true
+weight: 5
 ---
 
 #### Basic Info

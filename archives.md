@@ -1,6 +1,8 @@
 ---
 layout: default
-title: "归档：Archives"
+title: "归档"
+nav: true
+weight: 3
 ---
 <ul class="list-unstyled">
     {% for post in site.posts limit:100 %} 

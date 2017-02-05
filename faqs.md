@@ -1,6 +1,8 @@
 ---
 layout: default
-title: "问答：Faqs"
+title: "备忘"
+nav: true
+weight: 4
 ---
 
 ------
