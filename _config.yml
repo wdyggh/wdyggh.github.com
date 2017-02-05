@@ -49,5 +49,6 @@ config:
   img_dir:
   css_dir:
 
+baseurl: ""
 # Gems
 gems: [jekyll-paginate]
