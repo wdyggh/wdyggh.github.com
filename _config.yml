@@ -28,7 +28,7 @@ kramdown:
 #highlighter: rouge
 permalink: /:categories/:title.html
 url: "http://wdyggh.github.io"
-lsi: false
+lsi: true
 ####pygments: true
 safe: false
 #auto: false 
