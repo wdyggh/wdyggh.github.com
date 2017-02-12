@@ -46,7 +46,19 @@ layout: default
   </span>
   {%endif%}
 </div>
-<hr>
+<!-- <br> -->
+<!-- related pages using plug-in -->
+{% if site.related_posts.size >= 1 %}
+<div>
+  <h3>Related Posts</h3>
+  <ul>
+  {% for related_post in site.related_posts limit: 3 %}
+    <li><a href="{{ related_post.url }}">{{ related_post.title }}</a></li>
+  {% endfor %}
+  </ul>
+</div>
+{% endif %}
+
 <!-- Blog Comments -->
 <div class="media">
   {% include comment.html %} 

@@ -51,4 +51,7 @@ config:
 
 baseurl: ""
 # Gems
-gems: [jekyll-paginate]
+gems: 
+  - jekyll-paginate
+  - jekyll/tagging
+  - jekyll-tagging-related_posts #https://github.com/toshimaru/jekyll-tagging-related_posts

@@ -1,8 +1,8 @@
 ---
 layout: post
 category: "ubuntu"
-title: "ubuntu 小技巧"
-tags: ["ubuntu"]
+title: "Ubuntu 小技巧"
+tags: ["Ubuntu"]
 ---
 
 

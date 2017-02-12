@@ -33,4 +33,12 @@
 > post中添加tags  
 > 添加访问次数  
 
-reference [link1](http://jerryzou.com/posts/introduction-to-hit-kounter/)  
+##20170212
+> add total posts
+> add related posts
+
+
+reference  
+
+[hit counter](http://jerryzou.com/posts/introduction-to-hit-kounter/)  
+[jekyll-tagging-related_posts](https://github.com/toshimaru/jekyll-tagging-related_posts)

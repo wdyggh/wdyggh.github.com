@@ -38,7 +38,8 @@ title: "Blog Home:"
       &larr; Older
     </a>
   </li>
-  {% endif %} {% endif %} {% if paginator.next_page %}
+  {% endif %} {% endif %} 
+  {% if paginator.next_page %}
   <li class="next">
     <a href="{{ site.url }}/page{{ paginator.next_page }}">
       Older &rarr;

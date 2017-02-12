@@ -4,6 +4,9 @@ title: "归档"
 nav: true
 weight: 3
 ---
+
+<h3> 一共有<span>{{site.posts.size}}</span>篇日志啦.</h3>
+
 <ul class="list-unstyled">
     {% for post in site.posts limit:100 %} 
     {% unless post.next %} 

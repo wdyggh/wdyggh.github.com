@@ -178,9 +178,12 @@ height: auto;
 .tag_box a:hover {
   background-color: #8A2BE2;  /*purple*/
   color: #DEDEDE;   /*grey*/
-  border: 1px solid #336633;
+  border: 1px solid #8A2BE2;
 }
 .tag_box a:hover span {
+  -webkit-box-shadow: inset 0 1px 4px rgba(0, 0, 0, 0.6);
+  -moz-box-shadow: inset 0 1px 4px rgba(0, 0, 0, 0.6);
+  box-shadow: inset 0 1px 4px rgba(0, 0, 0, 0.6);
   background-color: #e1e1e1;
   border: 1px solid #DEDEDE; /*black*/
 }
