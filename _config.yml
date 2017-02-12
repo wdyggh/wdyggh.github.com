@@ -28,7 +28,7 @@ kramdown:
 #highlighter: rouge
 permalink: /:categories/:title.html
 url: "http://wdyggh.github.io"
-lsi: true
+lsi: false
 ####pygments: true
 safe: false
 #auto: false 
@@ -51,8 +51,5 @@ config:
 
 baseurl: ""
 # Gems
-gems: 
-  - jekyll-paginate
-  - jekyll/tagging
-  - jekyll-tagging-related_posts 
-  #https://github.com/toshimaru/jekyll-tagging-related_posts
+gems: [jekyll-paginate,jekyll/tagging,jekyll-tagging-related_posts]
+#https://github.com/toshimaru/jekyll-tagging-related_posts
