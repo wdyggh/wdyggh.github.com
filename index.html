@@ -24,25 +24,25 @@ title: "Blog Home:"
 <hr>
 {% endfor %}
 
-<!-- Pager indicator -->
+<!-- Pager indicator reference: https://www.w3schools.com/bootstrap/bootstrap_pager.asp-->
 <ul class="pager">
   {% if paginator.previous_page %} {% if paginator.previous_page == 1 %}
   <li class="previous">
     <a href="{{ site.url }}/">
-      &larr; Newer
+      &larr; 
     </a>
   </li>
   {% else %}
   <li class="previous">
     <a href="{{ site.url }}/page{{ paginator.previous_page }}">
-      &larr; Older
+      &larr; 
     </a>
   </li>
   {% endif %} {% endif %} 
   {% if paginator.next_page %}
   <li class="next">
     <a href="{{ site.url }}/page{{ paginator.next_page }}">
-      Older &rarr;
+       &rarr;
     </a>
   </li>
   {% endif %}
