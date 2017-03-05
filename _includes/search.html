@@ -1,13 +1,32 @@
-            <form action="https://google3.azurewebsites.net/search" method="get">
-              <div class="input-group">
-                <input type="text" name="q" class="form-control">
-				<input type="hidden" name="ie" value="UTF-8" />
-				<input type="hidden" name="sitesearch" value="{{ site.domain }}" />
-                <span class="input-group-btn">
-                  <button class="btn btn-default" type="submit">
-                    <span class="glyphicon glyphicon-search">
-                    </span>
-                  </button>
-                </span>
-              </div>
-            </form>
+<!-- <form action="https://google3.azurewebsites.net/search" method="get">
+<div class="input-group">
+  <input type="text" name="q" class="form-control">
+  <input type="hidden" name="ie" value="UTF-8" />
+  <input type="hidden" name="sitesearch" value="{{ site.domain }}" />
+  <span class="input-group-btn">
+    <button class="btn btn-default" type="submit">
+      <span class="glyphicon glyphicon-search"></span>
+    </button>
+  </span>
+</div>
+</form> -->
+
+
+
+<form method="get" action="http://www.google.com/search" target="google_window">
+  <div class="input-group">
+    <input type="text" class="form-control" value="Search..." name="query" id="search-box" onfocus="if (this.value == 'Search...') {this.value = '';}" onblur="if (this.value == '') {this.value = 'Search...';}">
+    <input type="hidden" name="ie" value="UTF-8" />
+    <input type="hidden" name="oe" value="UTF-8" />
+    <input type="hidden" name="hl" value="zh-CN" />
+    <input type="hidden" name="domains" value="{{ site.domain }}" />
+    <input type="hidden" name="sitesearch" value="{{ site.domain }}" />
+    <span class="input-group-btn">
+      <button class="btn btn-default" type="submit">
+        <span class="glyphicon glyphicon-search"></span>
+      </button>
+    </span>
+  </div>
+</form>
+
+<!-- google search reference: http://equation85.github.io/ -->
