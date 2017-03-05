@@ -15,7 +15,7 @@ tags: ["标签1","标签2"]
 
 #### *Reference:*  
 
-1. [Hex2int](http://forum.arduino.cc/index.php?topic=311875.0)  
+1. []()  
 2. []()  
 
 
