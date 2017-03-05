@@ -5,8 +5,8 @@ title: "标题"
 tags: ["标签1","标签2"]
 ---
 
-<a name="top"></a>
 ### 标题  
+{: #top}
 
 
 ![](){: .center-image}
