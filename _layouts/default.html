@@ -38,7 +38,7 @@
     <!-- Bootstrap Core JavaScript -->
     <script src="/js/bootstrap.min.js"></script>
     <!-- 添加数学公式 MathJax引擎-->
-    <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=default"></script>
+    <!-- <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=default"></script> -->
     <!-- Hit Kounter LC -->
     <script src="https://cdn1.lncld.net/static/js/av-min-1.5.0.js"></script>
     <script src="http://jerry-cdn.b0.upaiyun.com/hit-kounter/hit-kounter-lc-0.3.0.js"></script>
@@ -58,7 +58,7 @@
   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
   })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
-  ga('create', 'UA-91781695-1', 'auto');
+  ga('create', '{{ site.addson_config.analytics.google.tracking_id }}', 'auto');
   ga('send', 'pageview');
 
 </script>
