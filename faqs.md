@@ -50,6 +50,7 @@ From 金镇镜
 * [Markdown-Cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)  
 * [kramdown和markdown较大的差异比较](http://gohom.win/2015/11/06/Kramdown-note/#fn:1)  
 * [kramdown syntax](http://kramdown.gettalong.org/syntax.html)  
+* [markdown-kramdown-tips-and-tricks](https://about.gitlab.com/2016/07/19/markdown-kramdown-tips-and-tricks/)
 
 #### 更多请看本文评论，欢迎来盖楼！  
 
