@@ -59,3 +59,6 @@ addson_config:
   adsense:
     google:
       client_id: 'ca-pub-7553071169021268'
+  comment:
+    disqus:
+      shortname : 'httpwdygghgithubioindexhtml'
