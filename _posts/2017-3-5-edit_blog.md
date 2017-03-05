@@ -1,7 +1,7 @@
 ---
 layout: post
 category: "others"
-title: "博客完善"
+title: "博客补全"
 tags: ["jekyll","最近干啥","others"]
 ---
 
