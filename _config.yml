@@ -56,3 +56,6 @@ addson_config:
   analytics:
     google:
       tracking_id: 'UA-91781695-1'
+  adsense:
+    google:
+      client_id: 'ca-pub-7553071169021268'
