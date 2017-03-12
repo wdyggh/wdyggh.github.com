@@ -1,10 +1,5 @@
-              <div class="col-lg-6">
+<!--               <div class="col-lg-6">
                 <ul class="list-unstyled">
-                 <!-- <li>
-                    <a href="/categories.html#reading">
-                      阅读摘要
-                    </a>
-                  </li>	-->
                   <li>
                     <a href="/categories.html#linux">
                       Linux
@@ -28,24 +23,13 @@
                   
                 </ul>
               </div>
-              <!-- /.col-lg-6 -->
               <div class="col-lg-6">
                 <ul class="list-unstyled">
                   <li>
                     <a href="/categories.html#avr">
                       AVR
                     </a>
-                  </li>                  
-		 <!-- <li>
-                    <a href="/categories.html#cocos2d">
-                      Cocos2d开发
-                    </a>
                   </li>
-                  <li>
-                    <a href="/categories.html#web">
-                      Web开发
-                    </a>
-                  </li>  -->
                   <li>
                     <a href="/categories.html#travel">
                       旅游
@@ -58,4 +42,11 @@
                   </li>
                 </ul>
               </div>
-              <!-- /.col-lg-6 -->
+ -->
+
+<ul class="tag_box inline">
+  {% assign cate_list = site.categories %}
+    {% for cate in cate_list %} 
+      <li><a href="{{ site.url }}{{ categories.html }}#{{ cate[0] }}">{{ cate[0] }} <span>{{ cate[1].size }}</span></a></li>
+    {% endfor %}
+</ul>
