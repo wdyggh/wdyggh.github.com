@@ -44,9 +44,9 @@
               </div>
  -->
 
-<ul class="tag_box inline">
+<ul class="cate_left">
   {% assign cate_list = site.categories %}
     {% for cate in cate_list %} 
-      <li><a href="{{ site.url }}{{ categories.html }}#{{ cate[0] }}">{{ cate[0] }} <span>{{ cate[1].size }}</span></a></li>
+      <li><a href="{{ site.url }}/categories.html#{{ cate[0] }}">{{ cate[0] }} <span>{{ cate[1].size }}</span></a></li>
     {% endfor %}
 </ul>
