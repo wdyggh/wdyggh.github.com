@@ -38,7 +38,7 @@ body {
   -moz-box-shadow: rgba(0, 0, 0, 0.2) 0 0 0 1px, rgba(0, 0, 0, 0.45) 0 3px 10px;
   box-shadow: rgba(0, 0, 0, 0.2) 0 0 0 1px, rgba(0, 0, 0, 0.45) 0 3px 10px;
 }
-.row_categories{width:290px;min-height:100px}
+.row_categories{width:auto;min-height:100px}
 .rowcopyright{margin-right:-15px;margin-left:-15px}
 footer {
     margin: 20px 0;
@@ -118,20 +118,18 @@ height: auto;
 
 .cate_left{
   padding-left:0;
+  margin: auto;
   list-style:none
 }
 .cate_left li {
   display: inline-block;
   line-height: normal;
-  vertical-align: middle;
+  vertical-align: middle
 }
 .cate_left a {
-  /*background-color: #DEDEDE;*/
-  /*color: #000000;*/
   float: left;
-  /*border: 1px solid #DEDEDF;*/
-  padding: 3px 3px 2px 4px;
-  margin: 4px 2px 0px;
+  padding: 3px 6px 3px 6px;
+  margin: auto;
   text-shadow: 0 -1px 0 rgba(255, 255, 255, 0.4);
   -webkit-transition-duration: 0.2s;
   -moz-transition-duration: 0.2s;

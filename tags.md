@@ -6,7 +6,7 @@ weight: 2
 ---
 
 
-<ul class="tag_box inline">
+<ul class="tag_box ">
   {% assign tags_list = site.tags %}
     {% for tag in tags_list %} 
       <li><a href="{{ site.url }}/tags.html#{{ tag[0] }}">{{ tag[0] }} <span>{{ tag[1].size }}</span></a></li>
