@@ -6,9 +6,9 @@ tags: ["face","python","raspcam"]
 ---
 
 <a name="top"></a>
-###facerec 安装
+### facerec 安装
 
-##使用facerec要用到以下库：
+## 使用facerec要用到以下库：
 http://bytefish.de/dev/facerec/install/index.html
 - - - 
 
@@ -19,7 +19,7 @@ http://bytefish.de/dev/facerec/install/index.html
 * *cython?? (忘了到底要不要了 不行就装一下吧 不会怀的)*
 - - -
 
-##facerec 安装
+## facerec 安装
 
 从github下载
 > git clone https://github.com/bytefish/facerec.git  

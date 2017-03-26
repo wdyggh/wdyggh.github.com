@@ -7,7 +7,6 @@ kramdown:
     - footnotes
     - smart
   enable_coderay: false #true
-  #enable_coderay: false
   syntax_highlighter:  rouge
   syntax_highlighter_opts:
     #default_lang: c
