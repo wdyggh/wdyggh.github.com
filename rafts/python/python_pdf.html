@@ -1,0 +1,1474 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="python 爬虫 + PDF - wdyggh's Blog - wdy(wdyggh@gmail.com)">
+    <!-- <meta name="uyan_auth" content="e5ff762709" /> -->
+    	<!--友言 -->
+    <meta name="baidu-site-verification" content="gReLd8QyZw" />    
+    <!--baidu serach wdyggh.github.com -->
+    <meta name="baidu-site-verification" content="NFSRKxHBkA" />   
+    <!-- baidu search -->
+    <meta name="google-site-verification" content="VlQNF-rJTNvhSMZqmAfEHBca70IJ4u936QxthEeGgus" /> <!-- google zhanzhang-->
+    <link rel="icon" href="/images/icon/hbicon.jpg" mce_href="/images/icon/hbicon.jpg" type="image/x-icon">
+    <link rel="shortcut icon" href="/images/icon/hbicon.jpg" mce_href="/images/icon/hbicon.jpg" type="image/x-icon">
+     
+    <title>
+      python 爬虫 + PDF - wdyggh's Blog
+    </title>
+    <!-- Bootstrap Core CSS -->
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="/css/blog.css" rel="stylesheet">
+    <!-- pygment_trac code Highlight CSS -->
+    <link href="/css/pygment_trac.css" rel="stylesheet">
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media
+    queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file://
+    -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js">
+      </script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js">
+      </script>
+    <![endif]-->
+        <!-- jQuery Version 1.11.0 -->
+    <script src="/js/jquery-1.11.0.js"> </script>
+    <!-- Bootstrap Core JavaScript -->
+    <script src="/js/bootstrap.min.js"></script>
+    <!-- 添加数学公式 MathJax引擎-->
+    <!-- <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=default"></script> -->
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+          jax: ["input/TeX", "output/HTML-CSS"],
+          tex2jax: {
+            inlineMath: [ ['$', '$'], ],
+            displayMath: [ ['$$', '$$'], ],
+            processEscapes: true,
+            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+          }
+          //,
+          //displayAlign: "left",
+          //displayIndent: "2em"
+        });
+    </script>
+    <script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=default" type="text/javascript"></script>
+    <!-- config=TeX-AMS_HTML -->
+    <!-- Hit Kounter LC -->
+    <script src="https://cdn1.lncld.net/static/js/av-min-1.5.0.js"></script>
+    <script src="http://jerry-cdn.b0.upaiyun.com/hit-kounter/hit-kounter-lc-0.3.0.js"></script>
+    <!-- 添加百度sightmap-->
+    <script>
+	(function(){
+	    var bp = document.createElement('script');
+	    bp.src = '//push.zhanzhang.baidu.com/push.js';
+	    var s = document.getElementsByTagName("script")[0];
+	    s.parentNode.insertBefore(bp, s);
+	})();
+    </script>
+    <!-- google analytics -->
+    <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-91781695-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+  </head>
+  
+  <body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+            <span class="sr-only">
+              Toggle navigation
+            </span>
+            <span class="icon-bar">
+            </span>
+            <span class="icon-bar">
+            </span>
+            <span class="icon-bar">
+            </span>
+          </button>
+          <a class="navbar-brand" href="/index.html">
+            wdyggh's Blog
+          </a>
+        </div>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <!-- <ul class="nav navbar-nav">
+  
+    
+  
+    
+    <li>
+      <a href="/about">About</a>
+    </li>
+    
+  
+    
+    <li>
+      <a href="/archives">归档</a>
+    </li>
+    
+  
+    
+  
+    
+    <li>
+      <a href="/categories">分类</a>
+    </li>
+    
+  
+    
+    <li>
+      <a href="/faqs">备忘</a>
+    </li>
+    
+  
+    
+  
+    
+    <li>
+      <a href="/tags">Tags</a>
+    </li>
+    
+  
+    
+  
+    
+  
+    
+  
+</ul> -->
+
+
+<ul class="nav navbar-nav">
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+    <li>
+      <a  href="/categories.html">分类</a>
+    </li>
+    
+  
+  
+    <li>
+      <a  href="/tags.html">Tags</a>
+    </li>
+    
+  
+  
+    <li>
+      <a  href="/archives.html">归档</a>
+    </li>
+    
+  
+  
+    <li>
+      <a  href="/faqs.html">备忘</a>
+    </li>
+    
+  
+  
+    <li>
+      <a  href="/about.html">About</a>
+    </li>
+    
+  
+</ul>
+
+ 
+        </div>
+        <!-- /.navbar-collapse -->
+      </div>
+      <!-- /.container -->
+    </nav>
+    <!-- Page Content -->
+    <div class="container">
+      <div class="row">
+        <!-- Blog Entries Column -->
+        <div class="col-md-8">
+          <!-- Blog Post -->
+<!-- Title -->
+<header class="post-header">
+<h2>python 爬虫 + PDF</h2>
+  <!-- 爬虫PDF  -->
+<p class="meta">
+  <h4>
+    
+         
+            <a class="label" href="/tags.html"><em>爬虫</em></a>    <!-- <br> -->
+         
+            <a class="label" href="/tags.html"><em>PDF</em></a>    <!-- <br> -->
+        
+    
+
+    <div class="post-date">
+    Viewed: <span data-hk-page="current"> - </span> times 
+    <span class="glyphicon glyphicon-time"></span>
+    11 Oct 2015
+    <a href="https://github.com/wdyggh/wdyggh.github.com/edit/master/_posts/2015-10-11-python_pdf.md" target="_blank"> 纠错 </a>&nbsp;&nbsp;
+    
+    </div>
+  </h4>
+</p>
+</header>
+<!-- Author -->
+<hr>
+<h3 id="爬虫--pdf--无图片">爬虫 + PDF  (无图片)</h3>
+
+<p><a name="top"></a></p>
+
+<p>好久，前阵子跟着  <code class="highlighter-rouge">伯乐在线</code> 的教程自学了python爬虫，觉得实践还是比较少，对于爬虫也好，python的语法也是，还不是很精通。</p>
+
+<p>加上最近在网页上看文章，就想着能不能把网页上的<code class="highlighter-rouge">文字</code>和<code class="highlighter-rouge">图片</code>扒下来在kindle上看。 （在chrome上有<code class="highlighter-rouge">push to kindle</code> 能把网页直接推送到kindle 但是对于连载的网页比较不方便，因为连载的网页比较多，而且一个网页推送一次都是一个个小文件。）<br />
+对于文件格式，第一个想到的就是PDF，既能包括文字，也有图片，几乎能在所有移动设备上查看。<br />
+于是上Google搜索 <code class="highlighter-rouge">python pdf</code> 第一个看见的就是<code class="highlighter-rouge">PyPDF</code> （已出<code class="highlighter-rouge">PyPDF2</code>），继续查发现使用的例子比较少，而且好像入门也比较难。<br />
+然后在Baidu上找，发现了几篇文章。发现另一个库<code class="highlighter-rouge">reportlab</code>。<a href="#cankao">参考1</a> 给出的就是以reportlab为例子的。细看是用的<code class="highlighter-rouge">beautifulsoup</code>之前也学过一点，但是用的没那么熟悉。</p>
+
+<p>下面就贴出我的代码，是基于之前扒百度贴吧的帖子改的， 各种注释比较乱，还请见谅。<br />
+####爬取github上的文章保存为PDF，图片的问题暂时还没找到好的解决办法。有大神看到的话，欢迎指教。</p>
+
+<div class="language-python highlighter-rouge"><pre class="highlight"><code>
+<span class="c"># -*- coding:utf-8 -*-</span>
+<span class="kn">import</span> <span class="nn">urllib</span>
+<span class="kn">import</span> <span class="nn">urllib2</span>
+<span class="kn">import</span> <span class="nn">re</span>
+
+<span class="kn">import</span> <span class="nn">reportlab.rl_config</span>
+<span class="kn">from</span> <span class="nn">reportlab.pdfbase</span> <span class="kn">import</span> <span class="n">pdfmetrics</span>
+<span class="kn">from</span> <span class="nn">reportlab.pdfbase.ttfonts</span> <span class="kn">import</span> <span class="n">TTFont</span>
+<span class="kn">from</span> <span class="nn">reportlab.lib</span> <span class="kn">import</span> <span class="n">fonts</span>
+<span class="kn">import</span> <span class="nn">copy</span>
+<span class="kn">from</span> <span class="nn">reportlab.platypus</span> <span class="kn">import</span> <span class="n">Paragraph</span><span class="p">,</span> <span class="n">SimpleDocTemplate</span><span class="p">,</span><span class="n">flowables</span>
+<span class="kn">from</span> <span class="nn">reportlab.lib.styles</span> <span class="kn">import</span> <span class="n">getSampleStyleSheet</span>
+
+<span class="kn">from</span> <span class="nn">reportlab.pdfgen</span> <span class="kn">import</span> <span class="n">canvas</span>
+
+<span class="c">#处理页面标签类</span>
+<span class="k">class</span> <span class="nc">Tool</span><span class="p">:</span>
+    <span class="c">#去除img标签,7位长空格</span>
+    <span class="n">removeImg</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="nb">compile</span><span class="p">(</span><span class="s">'&lt;img.*?&gt;| {7}|'</span><span class="p">)</span>
+    <span class="c">#删除超链接标签</span>
+    <span class="n">removeAddr</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="nb">compile</span><span class="p">(</span><span class="s">'&lt;a.*?&gt;|&lt;/a&gt;'</span><span class="p">)</span>
+    <span class="c">#把换行的标签换为\n</span>
+    <span class="n">replaceLine</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="nb">compile</span><span class="p">(</span><span class="s">'&lt;tr&gt;|&lt;div&gt;|&lt;/div&gt;|&lt;/p&gt;'</span><span class="p">)</span>
+    <span class="c"># replaceLine = re.compile('&lt;tr&gt;|&lt;div&gt;|&lt;/div&gt;|&lt;/p&gt;|&lt;blockquote&gt;|&lt;/blockquote&gt;')</span>
+    <span class="c">#将表格制表&lt;td&gt;替换为\t</span>
+    <span class="n">replaceTD</span><span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="nb">compile</span><span class="p">(</span><span class="s">'&lt;td&gt;'</span><span class="p">)</span>
+    <span class="c">#把段落开头换为\n加空两格</span>
+    <span class="n">replacePara</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="nb">compile</span><span class="p">(</span><span class="s">'&lt;p.*?&gt;|&lt;p&gt;'</span><span class="p">)</span>
+    <span class="c">#将换行符或双换行符替换为\n</span>
+    <span class="n">replaceBR</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="nb">compile</span><span class="p">(</span><span class="s">'&lt;br&gt;'</span><span class="p">)</span>
+    <span class="c">#将其余标签剔除</span>
+    <span class="n">removeExtraTag</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="nb">compile</span><span class="p">(</span><span class="s">'&lt;.*?&gt;'</span><span class="p">)</span>
+    <span class="k">def</span> <span class="nf">replace</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span><span class="n">x</span><span class="p">):</span>
+        <span class="n">x</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">sub</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">removeImg</span><span class="p">,</span><span class="s">""</span><span class="p">,</span><span class="n">x</span><span class="p">)</span>
+        <span class="n">x</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">sub</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">removeAddr</span><span class="p">,</span><span class="s">""</span><span class="p">,</span><span class="n">x</span><span class="p">)</span>
+        <span class="n">x</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">sub</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">replaceLine</span><span class="p">,</span><span class="s">"</span><span class="se">\n</span><span class="s">"</span><span class="p">,</span><span class="n">x</span><span class="p">)</span>
+        <span class="n">x</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">sub</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">replaceTD</span><span class="p">,</span><span class="s">"</span><span class="se">\t</span><span class="s">"</span><span class="p">,</span><span class="n">x</span><span class="p">)</span>
+        <span class="n">x</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">sub</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">replacePara</span><span class="p">,</span><span class="s">"</span><span class="se">\n</span><span class="s">     "</span><span class="p">,</span><span class="n">x</span><span class="p">)</span>
+        <span class="n">x</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">sub</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">replaceBR</span><span class="p">,</span><span class="s">"</span><span class="se">\n</span><span class="s">"</span><span class="p">,</span><span class="n">x</span><span class="p">)</span>
+        <span class="n">x</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">sub</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">removeExtraTag</span><span class="p">,</span><span class="s">""</span><span class="p">,</span><span class="n">x</span><span class="p">)</span>
+        <span class="c">#strip()将前后多余内容删除</span>
+        <span class="k">return</span> <span class="n">x</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span>
+
+<span class="c">#爬虫+pdf类</span>
+<span class="k">class</span> <span class="nc">BDTB</span><span class="p">:</span>
+
+    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span><span class="n">baseUrl</span><span class="p">):</span>
+        <span class="c">#base链接地址</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">baseURL</span> <span class="o">=</span> <span class="n">baseUrl</span>
+        <span class="c">#是否只看楼主</span>
+        <span class="c">#self.seeLZ = '?see_lz='+str(seeLZ)</span>
+        <span class="c">#HTML标签剔除工具类对象</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">tool</span> <span class="o">=</span> <span class="n">Tool</span><span class="p">()</span>
+        <span class="c">#全局file变量，文件写入操作对象</span>
+        <span class="bp">self</span><span class="o">.</span><span class="nb">file</span> <span class="o">=</span> <span class="bp">None</span>
+        <span class="c">#楼层标号，初始为1</span>
+        <span class="c">#self.floor = 1</span>
+        <span class="c">#默认的标题，如果没有成功获取到标题的话则会用这个标题</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">defaultTitle</span> <span class="o">=</span> <span class="s">u"yufei"</span>
+        <span class="c">#是否写入楼分隔符的标记</span>
+        <span class="c">#self.floorTag = floorTag</span>
+
+    <span class="c">#传入页码，获取该页帖子的代码</span>
+    <span class="k">def</span> <span class="nf">getPage</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span><span class="n">baseURL</span><span class="p">):</span>
+        <span class="k">try</span><span class="p">:</span>
+            <span class="c">#构建URL</span>
+            <span class="c">#url = self.baseURL+ self.seeLZ + '&amp;pn=' + str(pageNum)</span>
+            <span class="n">url</span> <span class="o">=</span> <span class="n">baseURL</span>
+            <span class="n">request</span> <span class="o">=</span> <span class="n">urllib2</span><span class="o">.</span><span class="n">Request</span><span class="p">(</span><span class="n">url</span><span class="p">)</span>
+            <span class="n">response</span> <span class="o">=</span> <span class="n">urllib2</span><span class="o">.</span><span class="n">urlopen</span><span class="p">(</span><span class="n">request</span><span class="p">)</span>
+            <span class="c">#返回UTF-8格式编码内容</span>
+            <span class="k">return</span> <span class="n">response</span><span class="o">.</span><span class="n">read</span><span class="p">()</span><span class="o">.</span><span class="n">decode</span><span class="p">(</span><span class="s">'utf-8'</span><span class="p">)</span>
+        <span class="c">#无法连接，报错</span>
+        <span class="k">except</span> <span class="n">urllib2</span><span class="o">.</span><span class="n">URLError</span><span class="p">,</span> <span class="n">e</span><span class="p">:</span>
+            <span class="k">if</span> <span class="nb">hasattr</span><span class="p">(</span><span class="n">e</span><span class="p">,</span><span class="s">"reason"</span><span class="p">):</span>
+                <span class="k">print</span> <span class="s">u"连接失败,错误原因"</span><span class="p">,</span><span class="n">e</span><span class="o">.</span><span class="n">reason</span>
+                <span class="k">return</span> <span class="bp">None</span>
+
+    <span class="c">#获取帖子标题</span>
+    <span class="k">def</span> <span class="nf">getTitle</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span><span class="n">page</span><span class="p">):</span>
+        <span class="c">#得到标题的正则表达式</span>
+        <span class="n">pattern</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="nb">compile</span><span class="p">(</span><span class="s">'&lt;h1 class="headline".*?&gt;(.*?)&lt;/h1&gt;'</span><span class="p">,</span><span class="n">re</span><span class="o">.</span><span class="n">S</span><span class="p">)</span>
+        <span class="n">result</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">search</span><span class="p">(</span><span class="n">pattern</span><span class="p">,</span><span class="n">page</span><span class="p">)</span>
+        <span class="k">if</span> <span class="n">result</span><span class="p">:</span>
+            <span class="c">#如果存在，则返回标题</span>
+            <span class="c"># print result</span>
+            <span class="c"># return result</span>
+            <span class="k">return</span> <span class="n">result</span><span class="o">.</span><span class="n">group</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="k">return</span> <span class="bp">None</span>
+
+
+    <span class="c">#获取内容,传入页面内容</span>
+    <span class="k">def</span> <span class="nf">getContent</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span><span class="n">page</span><span class="p">):</span>
+        <span class="c"># pattern = re.compile('&lt;div class="article-body.*?&gt;(.*?)&lt;/p&gt;.*?&lt;p&gt;&lt;u&gt;&lt;strong&gt;&lt;a.*?&lt;/div&gt;',re.S)</span>
+        <span class="c"># pattern = re.compile('&lt;div class="article-body.*?&gt;(.*?)&lt;/div&gt;',re.S)</span>
+        <span class="c"># pattern = re.compile('&lt;h1 class="headline".*?&gt;(.*?)&lt;/h1&gt;',re.S)</span>
+        <span class="c"># pattern = re.compile('&lt;h1 class="headline".*?&gt;(.*?)&lt;/h1&gt;.*?&lt;p&gt;(.*?)&lt;/p&gt;',re.S)</span>
+        <span class="n">pattern</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="nb">compile</span><span class="p">(</span><span class="s">'&lt;article class.*?mainContentOfPage"&gt;(.*?)&lt;/article&gt;'</span><span class="p">,</span><span class="n">re</span><span class="o">.</span><span class="n">S</span><span class="p">)</span>
+        <span class="n">items</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">findall</span><span class="p">(</span><span class="n">pattern</span><span class="p">,</span><span class="n">page</span><span class="p">)</span>
+        <span class="c"># print items</span>
+        <span class="n">contents</span> <span class="o">=</span> <span class="p">[]</span>
+        <span class="k">for</span> <span class="n">item</span> <span class="ow">in</span> <span class="n">items</span><span class="p">:</span>
+            <span class="c">#将文本进行去除标签处理，同时在前后加入换行符</span>
+            <span class="n">content</span> <span class="o">=</span> <span class="s">"</span><span class="se">\n</span><span class="s">"</span><span class="o">+</span><span class="bp">self</span><span class="o">.</span><span class="n">tool</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="n">item</span><span class="p">)</span><span class="o">+</span><span class="s">"</span><span class="se">\n</span><span class="s">"</span>
+            <span class="n">contents</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">content</span><span class="o">.</span><span class="n">encode</span><span class="p">(</span><span class="s">'utf-8'</span><span class="p">))</span>
+            <span class="c"># contents.append(content.decode('utf-8','ignore').encode('gb2312','ignore') )</span>
+        <span class="c"># print contents</span>
+        <span class="k">return</span> <span class="n">contents</span>
+
+    <span class="k">def</span> <span class="nf">getAllContents</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span><span class="n">links</span><span class="p">):</span>
+        <span class="n">allarticleTitle</span><span class="o">=</span><span class="nb">list</span><span class="p">()</span>
+        <span class="n">allcontent</span> <span class="o">=</span> <span class="nb">list</span><span class="p">()</span>
+        <span class="n">i</span><span class="o">=</span><span class="mi">0</span>
+        <span class="k">for</span> <span class="n">a</span> <span class="ow">in</span> <span class="n">links</span><span class="p">:</span>
+            <span class="n">allPage</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">getPage</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
+            <span class="n">allarticleTitle</span><span class="o">.</span><span class="n">extend</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">getArticleTitle</span><span class="p">(</span><span class="n">allPage</span><span class="p">))</span>
+            <span class="n">allcontent</span><span class="o">.</span><span class="n">extend</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">getContent</span><span class="p">(</span><span class="n">allPage</span><span class="p">))</span>
+            <span class="k">print</span> <span class="n">i</span>
+            <span class="n">i</span><span class="o">=</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span>
+        <span class="c"># allPage = self.getPage(links[0])</span>
+        <span class="c"># allarticleTitle.extend(self.getArticleTitle(allPage))</span>
+        <span class="c"># allcontent.extend(self.getContent(allPage))</span>
+        <span class="c"># allPage = self.getPage(links[1])</span>
+        <span class="c"># allarticleTitle.extend(self.getArticleTitle(allPage))</span>
+        <span class="c"># allcontent.extend(self.getContent(allPage))   </span>
+        <span class="c"># print allarticleTitle[0]</span>
+        <span class="c"># for s in range(len(allarticleTitle)):</span>
+        <span class="c">#     print allarticleTitle[s]</span>
+        <span class="c">#     print allcontent[s]</span>
+        <span class="k">print</span> <span class="nb">len</span><span class="p">(</span><span class="n">links</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">write2pdf</span><span class="p">(</span><span class="n">allcontent</span><span class="p">,</span><span class="n">allarticleTitle</span><span class="p">)</span>
+
+
+    <span class="k">def</span> <span class="nf">getArticleTitle</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span><span class="n">page</span><span class="p">):</span>
+        <span class="n">pattern</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="nb">compile</span><span class="p">(</span><span class="s">'&lt;h1&gt;&lt;a id=.*?&lt;/a&gt;(.*?)&lt;/h1&gt;'</span><span class="p">,</span><span class="n">re</span><span class="o">.</span><span class="n">S</span><span class="p">)</span>
+        <span class="n">items</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">findall</span><span class="p">(</span><span class="n">pattern</span><span class="p">,</span><span class="n">page</span><span class="p">)</span>
+        <span class="n">contents</span> <span class="o">=</span> <span class="p">[]</span>
+        <span class="k">for</span> <span class="n">item</span> <span class="ow">in</span> <span class="n">items</span><span class="p">:</span>
+            <span class="c">#将文本进行去除标签处理，同时在前后加入换行符</span>
+            <span class="n">content</span> <span class="o">=</span> <span class="s">"</span><span class="se">\n</span><span class="s">"</span><span class="o">+</span><span class="bp">self</span><span class="o">.</span><span class="n">tool</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="n">item</span><span class="p">)</span><span class="o">+</span><span class="s">"</span><span class="se">\n</span><span class="s">"</span>
+            <span class="n">contents</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">content</span><span class="o">.</span><span class="n">encode</span><span class="p">(</span><span class="s">'utf-8'</span><span class="p">))</span>
+            <span class="c"># contents.append(content.decode('utf-8','ignore').encode('gb2312','ignore') )</span>
+        <span class="c"># print contents</span>
+        <span class="k">return</span> <span class="n">contents</span>
+
+
+    <span class="k">def</span> <span class="nf">getlinks</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span><span class="n">page</span><span class="p">):</span>
+        <span class="n">pattern</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="nb">compile</span><span class="p">(</span><span class="s">'&lt;li&gt;&lt;a href="/qiwsir/StarterLearningPython/blob/master/(.*?).md"&gt;.*?&lt;/a&gt;.*?&lt;/li&gt;'</span><span class="p">,</span><span class="n">re</span><span class="o">.</span><span class="n">S</span><span class="p">)</span>
+        <span class="c"># pattern = re.compile('&lt;li&gt;&lt;a href="/wdyggh/StarterLearningPython/blob/master/(.*?).md"&gt;.*?&lt;/a&gt;.*?&lt;/li&gt;',re.S)</span>
+        <span class="c"># pattern = re.compile('&lt;li&gt;&lt;a href="/wdyggh/(.*?)"&gt;.*?&lt;/a&gt;.*?&lt;/li&gt;',re.S)</span>
+        <span class="c"># pattern = re.compile('&lt;p&gt;&lt;u&gt;&lt;strong&gt;&lt;a href="(.*?)" target=.*?&lt;/a&gt;&lt;/strong&gt;&lt;/u&gt;&lt;/p&gt;',re.S)</span>
+        <span class="n">links</span> <span class="o">=</span> <span class="nb">list</span><span class="p">()</span>
+        <span class="c"># links = None</span>
+        <span class="c"># links.append(self.baseURL)</span>
+        <span class="n">links</span><span class="o">.</span><span class="n">extend</span><span class="p">(</span><span class="n">re</span><span class="o">.</span><span class="n">findall</span><span class="p">(</span><span class="n">pattern</span><span class="p">,</span><span class="n">page</span><span class="p">))</span>
+        <span class="c"># print links[0]</span>
+        <span class="k">for</span> <span class="n">a</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="nb">len</span><span class="p">(</span><span class="n">links</span><span class="p">)):</span>
+            
+            <span class="n">links</span><span class="p">[</span><span class="n">a</span><span class="p">]</span> <span class="o">=</span> <span class="s">'https://github.com/qiwsir/StarterLearningPython/blob/master/'</span><span class="o">+</span><span class="n">links</span><span class="p">[</span><span class="n">a</span><span class="p">]</span><span class="o">+</span><span class="s">'.md'</span>
+            <span class="c"># links[a] = 'https://github.com/wdyggh/StarterLearningPython/blob/master/'+links[a]+'.md'</span>
+            <span class="c"># print links[a]</span>
+            <span class="c"># links[a] = 'http://www.eefocus.com/fpga/'+links[a]+'/r0'</span>
+        <span class="c"># print links[1]</span>
+        <span class="c"># print links[2]</span>
+        <span class="k">print</span> <span class="s">"links:  "</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">links</span><span class="p">))</span>
+        <span class="k">return</span> <span class="n">links</span>
+
+    <span class="k">def</span> <span class="nf">setFileTitle</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span><span class="n">title</span><span class="p">):</span>
+        <span class="c">#如果标题不是为None，即成功获取到标题</span>
+        <span class="k">if</span> <span class="n">title</span> <span class="ow">is</span> <span class="ow">not</span> <span class="bp">None</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="nb">file</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="n">title</span> <span class="o">+</span> <span class="s">".txt"</span><span class="p">,</span><span class="s">"w+"</span><span class="p">)</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="nb">file</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">defaultTitle</span> <span class="o">+</span> <span class="s">".txt"</span><span class="p">,</span><span class="s">"w+"</span><span class="p">)</span>
+
+    <span class="k">def</span> <span class="nf">writeData</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span><span class="n">contents</span><span class="p">):</span>
+        <span class="k">for</span> <span class="n">item</span> <span class="ow">in</span> <span class="n">contents</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="nb">file</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">item</span><span class="p">)</span>
+            
+    <span class="k">def</span> <span class="nf">write2pdf</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span><span class="n">contents</span><span class="p">,</span><span class="n">articleTitle</span><span class="p">):</span>
+        <span class="n">reportlab</span><span class="o">.</span><span class="n">rl_config</span><span class="o">.</span><span class="n">warnOnMissingFontGlyphs</span> <span class="o">=</span> <span class="mi">0</span>
+        <span class="n">pdfmetrics</span><span class="o">.</span><span class="n">registerFont</span><span class="p">(</span><span class="n">TTFont</span><span class="p">(</span><span class="s">'song'</span><span class="p">,</span><span class="s">"simsun.ttc"</span><span class="p">))</span>
+        <span class="c">#字体文件  找到下载在代码的文件夹下即可</span>
+        <span class="n">pdfmetrics</span><span class="o">.</span><span class="n">registerFont</span><span class="p">(</span><span class="n">TTFont</span><span class="p">(</span><span class="s">'hei'</span><span class="p">,</span><span class="s">"msyh.ttc"</span><span class="p">))</span>
+        <span class="c">#字体文件  找到下载在代码的文件夹下即可</span>
+        <span class="n">fonts</span><span class="o">.</span><span class="n">addMapping</span><span class="p">(</span><span class="s">'song'</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="s">'song'</span><span class="p">)</span>
+        <span class="n">fonts</span><span class="o">.</span><span class="n">addMapping</span><span class="p">(</span><span class="s">'song'</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="s">'song'</span><span class="p">)</span>
+        <span class="n">fonts</span><span class="o">.</span><span class="n">addMapping</span><span class="p">(</span><span class="s">'song'</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="s">'hei'</span><span class="p">)</span>
+        <span class="n">fonts</span><span class="o">.</span><span class="n">addMapping</span><span class="p">(</span><span class="s">'song'</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="s">'hei'</span><span class="p">)</span>
+        <span class="n">stylesheet</span><span class="o">=</span><span class="n">getSampleStyleSheet</span><span class="p">()</span>
+        <span class="n">normalStyle</span> <span class="o">=</span> <span class="n">copy</span><span class="o">.</span><span class="n">deepcopy</span><span class="p">(</span><span class="n">stylesheet</span><span class="p">[</span><span class="s">'Normal'</span><span class="p">])</span>
+        <span class="n">normalStyle</span><span class="o">.</span><span class="n">fontName</span> <span class="o">=</span><span class="s">'song'</span>
+        <span class="n">normalStyle</span><span class="o">.</span><span class="n">fontSize</span> <span class="o">=</span> <span class="mi">15</span>
+        <span class="n">normalStyle</span><span class="o">.</span><span class="n">leading</span> <span class="o">=</span> <span class="mi">25</span>
+        <span class="n">normalStyle</span><span class="o">.</span><span class="n">firstLineIndent</span> <span class="o">=</span> <span class="mi">20</span>
+        <span class="n">titleStyle</span> <span class="o">=</span> <span class="n">copy</span><span class="o">.</span><span class="n">deepcopy</span><span class="p">(</span><span class="n">stylesheet</span><span class="p">[</span><span class="s">'Normal'</span><span class="p">])</span>
+        <span class="n">titleStyle</span><span class="o">.</span><span class="n">fontName</span> <span class="o">=</span><span class="s">'song'</span>
+        <span class="n">titleStyle</span><span class="o">.</span><span class="n">fontSize</span> <span class="o">=</span> <span class="mi">15</span>
+        <span class="n">titleStyle</span><span class="o">.</span><span class="n">leading</span> <span class="o">=</span> <span class="mi">20</span>
+        <span class="n">firstTitleStyle</span> <span class="o">=</span> <span class="n">copy</span><span class="o">.</span><span class="n">deepcopy</span><span class="p">(</span><span class="n">stylesheet</span><span class="p">[</span><span class="s">'Normal'</span><span class="p">])</span>
+        <span class="n">firstTitleStyle</span><span class="o">.</span><span class="n">fontName</span> <span class="o">=</span><span class="s">'song'</span>
+        <span class="n">firstTitleStyle</span><span class="o">.</span><span class="n">fontSize</span> <span class="o">=</span> <span class="mi">20</span>
+        <span class="n">firstTitleStyle</span><span class="o">.</span><span class="n">leading</span> <span class="o">=</span> <span class="mi">20</span>
+        <span class="n">firstTitleStyle</span><span class="o">.</span><span class="n">firstLineIndent</span> <span class="o">=</span> <span class="mi">50</span>
+        <span class="n">smallStyle</span> <span class="o">=</span> <span class="n">copy</span><span class="o">.</span><span class="n">deepcopy</span><span class="p">(</span><span class="n">stylesheet</span><span class="p">[</span><span class="s">'Normal'</span><span class="p">])</span>
+        <span class="n">smallStyle</span><span class="o">.</span><span class="n">fontName</span> <span class="o">=</span><span class="s">'song'</span>
+        <span class="n">smallStyle</span><span class="o">.</span><span class="n">fontSize</span> <span class="o">=</span> <span class="mi">8</span>
+        <span class="n">smallStyle</span><span class="o">.</span><span class="n">leading</span> <span class="o">=</span> <span class="mi">8</span>
+        <span class="n">story</span> <span class="o">=</span> <span class="p">[]</span>
+        <span class="c">#enter article title</span>
+        <span class="c"># for b in articleTitle:    </span>
+        <span class="c">#     story.append(Paragraph(b, firstTitleStyle))</span>
+        <span class="c">#     for item in contents:</span>
+        <span class="c">#         story.append(Paragraph(item,normalStyle))</span>
+
+        <span class="k">for</span> <span class="n">b</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">articleTitle</span><span class="p">)):</span>    
+            <span class="n">story</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">Paragraph</span><span class="p">(</span><span class="n">articleTitle</span><span class="p">[</span><span class="n">b</span><span class="p">],</span> <span class="n">firstTitleStyle</span><span class="p">))</span>
+            <span class="c"># for item in contents:</span>
+            <span class="n">story</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">Paragraph</span><span class="p">(</span><span class="n">contents</span><span class="p">[</span><span class="n">b</span><span class="p">],</span><span class="n">normalStyle</span><span class="p">))</span>
+        <span class="c"># story.append(Paragraph("&lt;b&gt;test&lt;/b&gt;".format(issue), firstTitleStyle))</span>
+
+        <span class="c"># for eachColumn in duzhe:</span>
+        <span class="c">#     story.append(Paragraph('__'*28, titleStyle))</span>
+        <span class="c">#     story.append(Paragraph('&lt;b&gt;{0}&lt;/b&gt;'.format(eachColumn), titleStyle))</span>
+        <span class="c">#     for eachArticle in duzhe[eachColumn]:</span>
+        <span class="c">#         story.append(Paragraph(eachArticle["title"],normalStyle))</span>
+
+        <span class="c"># story.append(flowables.PageBreak())</span>
+
+        <span class="c"># for eachColumn in duzhe:</span>
+        <span class="c">#     for eachArticle in duzhe[eachColumn]:</span>
+        <span class="c">#         story.append(Paragraph("&lt;b&gt;{0}&lt;/b&gt;".format(eachArticle["title"]),titleStyle))</span>
+        <span class="c">#         story.append(Paragraph(" {0}  {1}".format(eachArticle["writer"],eachArticle["from"]),smallStyle))</span>
+        <span class="c">#         para=eachArticle["context"].split("　　")</span>
+        <span class="c">#         for eachPara in para:</span>
+        <span class="c">#             story.append(Paragraph(eachPara,normalStyle))</span>
+        <span class="c">#         story.append(flowables.PageBreak())</span>
+        <span class="c"># for item in contents:</span>
+        <span class="c">#     story.append(Paragraph(item,normalStyle))</span>
+
+        <span class="c"># story.append(Paragraph(contents,normalStyle))</span>
+        <span class="n">story</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">Paragraph</span><span class="p">(</span><span class="s">"END"</span><span class="p">,</span><span class="n">firstTitleStyle</span><span class="p">))</span>
+
+        <span class="n">doc</span> <span class="o">=</span> <span class="n">SimpleDocTemplate</span><span class="p">(</span><span class="s">"StarterLearningPython.pdf"</span><span class="p">)</span>
+        <span class="k">print</span> <span class="s">"Writing PDF..."</span>
+        <span class="n">doc</span><span class="o">.</span><span class="n">build</span><span class="p">(</span><span class="n">story</span><span class="p">)</span>
+
+    <span class="k">def</span> <span class="nf">start</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="n">indexPage</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">getPage</span><span class="p">(</span><span class="n">baseURL</span><span class="p">)</span>
+        <span class="n">title</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">getTitle</span><span class="p">(</span><span class="n">indexPage</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">setFileTitle</span><span class="p">(</span><span class="n">title</span><span class="p">)</span>
+
+        <span class="k">try</span><span class="p">:</span>                
+                <span class="c">#page = self.getPage(i)</span>
+                <span class="n">page</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">getPage</span><span class="p">(</span><span class="n">baseURL</span><span class="p">)</span>
+                <span class="n">links</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">getlinks</span><span class="p">(</span><span class="n">page</span><span class="p">)</span>
+                <span class="c"># print page</span>
+                <span class="c"># articleTitle = self.getArticleTitle(page)</span>
+                <span class="c"># contents = self.getContent(page)</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">getAllContents</span><span class="p">(</span><span class="n">links</span><span class="p">)</span>
+
+                <span class="k">print</span> <span class="s">"正在写入..."</span>
+                <span class="c"># self.writeData(contents)</span>
+                <span class="c"># self.write2pdf(contents,articleTitle)</span>
+        <span class="c">#出现写入异常</span>
+        <span class="k">except</span> <span class="nb">IOError</span><span class="p">,</span><span class="n">e</span><span class="p">:</span>
+            <span class="k">print</span> <span class="s">"写入异常，原因"</span> <span class="o">+</span> <span class="n">e</span><span class="o">.</span><span class="n">message</span>
+        <span class="k">finally</span><span class="p">:</span>
+            <span class="k">print</span> <span class="s">"写入任务完成"</span>
+
+<span class="c">#baseURL = 'http://tieba.baidu.com/p/' + str(raw_input(u'http://tieba.baidu.com/p/'))</span>
+<span class="n">baseURL</span> <span class="o">=</span> <span class="s">'https://github.com/qiwsir/StarterLearningPython/blob/master/index.md'</span>
+
+<span class="n">bdtb</span> <span class="o">=</span> <span class="n">BDTB</span><span class="p">(</span><span class="n">baseURL</span><span class="p">)</span>
+<span class="n">bdtb</span><span class="o">.</span><span class="n">start</span><span class="p">()</span>
+
+</code></pre>
+</div>
+
+<p>最后找到一片将图片转换成pdf的<a href="http://www.jb51.net/article/66595.htm">文章</a></p>
+
+<p><a name="cankao"></a></p>
+
+<p>参考1：<a href="http://www.jb51.net/article/61975.htm">Python爬取读者并制作成PDF</a></p>
+
+<hr />
+
+<p>###<a href="#top">TOP</a></p>
+
+<br/>
+<div style="margin-top:10px;margin-bottom:10px">
+  
+  <span class="next">
+    Next:
+    <a href="/opencv_python/object_tracking.html">
+      [P]Object Tracking with opencv-python
+    </a>
+  </span>
+   
+  
+  <span class="prev">
+    Previous:
+    <a href="/ubuntu/ubuntu_rcconf.html">
+      Ubuntu 下设置开机启动项
+    </a>
+  </span>
+  
+</div>
+<!-- <br> -->
+
+<!-- related post  reference: https://blog.webjeda.com/jekyll-related-posts/-->
+<div class="post-header">
+
+<!-- <h4>You May Also Enjoy</h4>  -->
+
+
+
+
+
+
+  
+  
+  
+    
+      
+    
+  
+    
+      
+    
+  
+
+  
+
+  
+  
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+
+  
+
+  
+  
+  
+    
+      
+    
+  
+
+  
+
+  
+  
+  
+    
+      
+    
+  
+    
+      
+    
+  
+
+  
+
+  
+  
+  
+    
+      
+    
+  
+    
+      
+    
+  
+
+  
+
+  
+  
+  
+    
+      
+    
+  
+    
+      
+    
+  
+
+  
+
+  
+  
+  
+    
+      
+    
+  
+    
+      
+    
+  
+
+  
+
+  
+  
+  
+    
+      
+    
+  
+    
+      
+    
+  
+
+  
+
+  
+  
+  
+    
+      
+    
+  
+    
+      
+    
+  
+
+  
+
+  
+  
+  
+    
+      
+    
+  
+
+  
+
+  
+  
+  
+    
+      
+    
+  
+
+  
+
+  
+  
+  
+    
+      
+    
+  
+
+  
+
+  
+  
+  
+    
+      
+    
+  
+
+  
+
+  
+  
+  
+    
+      
+    
+  
+    
+      
+    
+  
+
+  
+
+  
+  
+  
+    
+      
+    
+  
+
+  
+
+  
+  
+  
+    
+  
+    
+  
+
+  
+
+  
+  
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+
+  
+
+  
+  
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+
+  
+
+  
+  
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+
+  
+
+  
+  
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+
+  
+
+  
+  
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+
+  
+
+  
+  
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+
+  
+
+  
+  
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+
+  
+
+  
+  
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+
+  
+
+  
+  
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+
+  
+
+  
+  
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+
+  
+
+  
+  
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+
+  
+
+  
+  
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+
+  
+
+  
+  
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+
+  
+
+  
+  
+  
+    
+      
+    
+  
+    
+      
+    
+  
+
+  
+
+  
+  
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+
+  
+
+  
+  
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+
+  
+
+  
+  
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+
+  
+
+  
+  
+  
+    
+      
+    
+  
+
+  
+
+  
+  
+  
+    
+      
+    
+  
+
+  
+
+  
+  
+  
+    
+      
+    
+  
+    
+      
+    
+  
+
+  
+
+  
+  
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+
+  
+
+  
+  
+  
+    
+      
+    
+  
+    
+      
+    
+  
+
+  
+
+  
+  
+  
+    
+      
+    
+  
+
+  
+
+  
+  
+  
+    
+      
+    
+  
+
+  
+
+
+</div>
+
+
+<!-- Blog Comments -->
+<div class="media">
+    <!-- UY BEGIN -->
+<!--  <div id="uyan_frame">
+  </div>-->
+ <!-- <script type="text/javascript" src="http://v2.uyan.cc/code/uyan.js?uid=1511840">
+  </script> -->
+  <!-- UY END -->
+<!-- JiaThis Button BEGIN -->
+<div class="jiathis_style">
+<a class="jiathis_button_qzone"></a>
+<a class="jiathis_button_tsina"></a>
+<a class="jiathis_button_renren"></a>
+<a class="jiathis_button_print"></a>
+<a class="jiathis_button_fb"></a>
+<a class="jiathis_button_googleplus"></a>
+<a class="jiathis_button_linkedin"></a>
+<a class="jiathis_button_pinterest"></a>
+<a class="jiathis_button_pdfonline"></a>
+<a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jiathis_separator jtico jtico_jiathis" target="_blank"></a>
+<a class="jiathis_counter_style"></a>
+</div>
+<script type="text/javascript" >
+var jiathis_config={
+  summary:"",
+  shortUrl:false,
+  hideMore:false
+}
+</script>
+<script type="text/javascript" src="http://v3.jiathis.com/code/jia.js" charset="utf-8"></script>
+<!-- JiaThis Button END -->
+
+  
+  <!-- UY BEGIN wdyggh's id -->  
+  <!-- <div id="uyan_frame"></div> -->
+  <!--script type="text/javascript" src="http://v2.uyan.cc/code/uyan.js?uid=2007350"></script-->
+  <!-- UY END -->
+
+  <div id="disqus_thread"></div>
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES * * */
+    var disqus_shortname = 'httpwdygghgithubioindexhtml';
+    
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+ 
+</div>
+
+        </div>
+        <!-- Blog Sidebar Widgets Column -->
+        <div class="col-md-4">
+          <!-- Blog Search Well -->
+          <div class="well">
+            <h4>
+              Blog search
+            </h4>
+            <!-- <form action="https://google3.azurewebsites.net/search" method="get">
+<div class="input-group">
+  <input type="text" name="q" class="form-control">
+  <input type="hidden" name="ie" value="UTF-8" />
+  <input type="hidden" name="sitesearch" value="wdyggh.github.io" />
+  <span class="input-group-btn">
+    <button class="btn btn-default" type="submit">
+      <span class="glyphicon glyphicon-search"></span>
+    </button>
+  </span>
+</div>
+</form> -->
+
+
+
+<form method="get" action="http://www.google.com/search" target="google_window">
+  <div class="input-group">
+    <input type="text" class="form-control" value="Search..." name="query" id="search-box" onfocus="if (this.value == 'Search...') {this.value = '';}" onblur="if (this.value == '') {this.value = 'Search...';}">
+    <input type="hidden" name="ie" value="UTF-8" />
+    <input type="hidden" name="oe" value="UTF-8" />
+    <input type="hidden" name="hl" value="zh-CN" />
+    <input type="hidden" name="domains" value="wdyggh.github.io" />
+    <input type="hidden" name="sitesearch" value="wdyggh.github.io" />
+    <span class="input-group-btn">
+      <button class="btn btn-default" type="submit">
+        <span class="glyphicon glyphicon-search"></span>
+      </button>
+    </span>
+  </div>
+</form>
+
+<!-- google search reference: http://equation85.github.io/ -->
+ 
+            <!-- /.input-group -->
+          </div>
+          <!-- Blog Categories Well -->
+          <div class="well">
+            <h4>
+              Categories
+            </h4>
+            <div class="row_categories">
+              <!--               <div class="col-lg-6">
+                <ul class="list-unstyled">
+                  <li>
+                    <a href="/categories.html#linux">
+                      Linux
+                    </a>
+                  </li>
+                  <li>
+                    <a href="/categories.html#embedded">
+                      嵌入式
+                    </a>
+                  </li>
+                  <li>
+                    <a href="/categories.html#blackberry">
+                      blackberry
+                    </a>
+                  </li>
+                  <li>
+                    <a href="/categories.html#reprint">
+                      转载
+                    </a>
+                  </li>
+                  
+                </ul>
+              </div>
+              <div class="col-lg-6">
+                <ul class="list-unstyled">
+                  <li>
+                    <a href="/categories.html#avr">
+                      AVR
+                    </a>
+                  </li>
+                  <li>
+                    <a href="/categories.html#travel">
+                      旅游
+                    </a>
+                  </li>
+                  <li>
+                    <a href="/categories.html#others">
+                      others
+                    </a>
+                  </li>
+                </ul>
+              </div>
+ -->
+
+<ul class="cate_left">
+  
+     
+      <li><a href="http://localhost:4000/categories.html#others">others <span>2</span></a></li>
+     
+      <li><a href="http://localhost:4000/categories.html#转载">转载 <span>2</span></a></li>
+     
+      <li><a href="http://localhost:4000/categories.html#blackberry">blackberry <span>3</span></a></li>
+     
+      <li><a href="http://localhost:4000/categories.html#opencv_python">opencv_python <span>18</span></a></li>
+     
+      <li><a href="http://localhost:4000/categories.html#bible">bible <span>2</span></a></li>
+     
+      <li><a href="http://localhost:4000/categories.html#python">python <span>1</span></a></li>
+     
+      <li><a href="http://localhost:4000/categories.html#ubuntu">ubuntu <span>3</span></a></li>
+     
+      <li><a href="http://localhost:4000/categories.html#embedded">embedded <span>5</span></a></li>
+     
+      <li><a href="http://localhost:4000/categories.html#PC">PC <span>1</span></a></li>
+     
+      <li><a href="http://localhost:4000/categories.html#myself">myself <span>1</span></a></li>
+     
+      <li><a href="http://localhost:4000/categories.html#RTOS">RTOS <span>2</span></a></li>
+    
+</ul> 
+            </div>
+            <!-- /.row -->
+          </div>
+          <!-- Blog Links Well -->
+          <div class="well">
+            <h4>
+              Links
+            </h4>
+                        <ul class="list-unstyled">
+              <li>
+                <a href="https://github.com/">
+                  GitHub
+                </a>
+              </li>
+              <li>
+                <a href="https://bitbucket.org/">
+                  Bitbucket.org
+                </a>
+              </li> 
+               <li>
+                <a href="https://news.ycombinator.com/">
+                  Hacker News
+                </a>
+              </li>        
+              <li>
+                <a href="http://www.stackoverflow.com/">
+                  Stack Overflow
+                </a>
+              </li>
+              <li>
+                <a href="http://developer.android.com/">
+                  Android Developer
+                </a>
+              </li>
+              <li>
+                <a href="http://www.chiphell.com/">
+                  Chiphell
+                </a>
+              </li>
+              <li>
+                <a href="http://99u.com/">
+                  99U
+                </a>
+              </li>
+              <li>
+                <a href="http://www.ruanyifeng.com/blog/">
+                  Ruanyifeng's Blog
+                </a>
+              </li>
+              <li>
+                <a href="http://www.panxw.com/">
+                  Panxw's Blog
+                </a>
+              </li>
+               <li>
+                <a href="https://github.com/greatfire/wiki/blob/master/README.md">
+                  墙内镜像
+                </a>
+              </li>
+              
+            </ul>
+ 
+          </div>
+          <!-- Side Widget Well -->
+           <div class="well">
+           <!--            <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js">
+            </script> -->
+            <!-- ArticleRa -->
+<!--            <ins class="adsbygoogle" style="display:inline-block;width:300px;height:250px"
+            data-ad-client="ca-pub-3557776493079475" data-ad-slot="3861947889">
+            </ins>
+            <script>
+              (adsbygoogle = window.adsbygoogle || []).push({});
+            </script> -->
+            
+            <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+            <!-- guanggao1 -->
+            <ins class="adsbygoogle"
+                 style="display:inline-block;width:300px;height:250px"
+                 data-ad-client="ca-pub-7553071169021268"
+                 data-ad-slot="5352576037"></ins>
+            <script>
+            (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
+ 
+          </div>
+        </div>
+      </div>
+      <!-- /.row -->
+      <hr>
+      <!-- Footer -->
+      <footer>
+        <div class="rowcopyright">
+          <div class="col-lg-12">
+                        <p align="center" bgcolor="black">
+				Copyright &copy; wdyggh.github.io, hosted on <a href="https://github.com">GitHub</a>,based on <a href="https://github.com/panxw/panxw.github.com">Panxw</a>,  powered by Jekyll. <a href="https://github.com/wdyggh/wdyggh.github.io">[source]</a>
+				<br/>
+				 <a href="/atom.xml">[Feed]</a>
+            </p>
+ 
+          </div>
+          <!-- /.col-lg-12 -->
+        </div>
+        <!-- /.row -->
+		<!-- <div style="display:none;">
+      <script src="http://s22.cnzz.com/stat.php?id=5868355&web_id=5868355" language="JavaScript">
+      </script>
+      </div>  --> 
+      
+      <!-- 站长统计 精简版-->
+<!--      <script src="http://s11.cnzz.com/z_stat.php?id=1254212004&web_id=1254212004" language="JavaScript">
+      </script> -->
+      
+      <!-- 站长统计 普通版-->
+<!--  <script type="text/javascript">
+      var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+      document.write(unescape("%3Cspan id='cnzz_stat_icon_1254212004'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s11.cnzz.com/z_stat.php%3Fid%3D1254212004' type='text/javascript'%3E%3C/script%3E"));
+      </script>   -->
+      
+      <!-- 站长统计 图标版-->
+      <div style="text-align:center;">
+            <script type="text/javascript">
+            var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+            document.write(unescape("%3Cspan id='cnzz_stat_icon_1254212004'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s11.cnzz.com/z_stat.php%3Fid%3D1254212004%26show%3Dpic2' type='text/javascript'%3E%3C/script%3E"));
+            </script>
+      </div>
+ 
+      </footer>
+    </div>
+    <!-- /.container -->
+  </body>
+
+</html>

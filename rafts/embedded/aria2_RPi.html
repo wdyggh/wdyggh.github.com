@@ -1,0 +1,1309 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Media center with raspberry pi b+ - wdyggh's Blog - wdy(wdyggh@gmail.com)">
+    <!-- <meta name="uyan_auth" content="e5ff762709" /> -->
+    	<!--友言 -->
+    <meta name="baidu-site-verification" content="gReLd8QyZw" />    
+    <!--baidu serach wdyggh.github.com -->
+    <meta name="baidu-site-verification" content="NFSRKxHBkA" />   
+    <!-- baidu search -->
+    <meta name="google-site-verification" content="VlQNF-rJTNvhSMZqmAfEHBca70IJ4u936QxthEeGgus" /> <!-- google zhanzhang-->
+    <link rel="icon" href="/images/icon/hbicon.jpg" mce_href="/images/icon/hbicon.jpg" type="image/x-icon">
+    <link rel="shortcut icon" href="/images/icon/hbicon.jpg" mce_href="/images/icon/hbicon.jpg" type="image/x-icon">
+     
+    <title>
+      Media center with raspberry pi b+ - wdyggh's Blog
+    </title>
+    <!-- Bootstrap Core CSS -->
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="/css/blog.css" rel="stylesheet">
+    <!-- pygment_trac code Highlight CSS -->
+    <link href="/css/pygment_trac.css" rel="stylesheet">
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media
+    queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file://
+    -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js">
+      </script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js">
+      </script>
+    <![endif]-->
+        <!-- jQuery Version 1.11.0 -->
+    <script src="/js/jquery-1.11.0.js"> </script>
+    <!-- Bootstrap Core JavaScript -->
+    <script src="/js/bootstrap.min.js"></script>
+    <!-- 添加数学公式 MathJax引擎-->
+    <!-- <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=default"></script> -->
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+          jax: ["input/TeX", "output/HTML-CSS"],
+          tex2jax: {
+            inlineMath: [ ['$', '$'], ],
+            displayMath: [ ['$$', '$$'], ],
+            processEscapes: true,
+            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+          }
+          //,
+          //displayAlign: "left",
+          //displayIndent: "2em"
+        });
+    </script>
+    <script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=default" type="text/javascript"></script>
+    <!-- config=TeX-AMS_HTML -->
+    <!-- Hit Kounter LC -->
+    <script src="https://cdn1.lncld.net/static/js/av-min-1.5.0.js"></script>
+    <script src="http://jerry-cdn.b0.upaiyun.com/hit-kounter/hit-kounter-lc-0.3.0.js"></script>
+    <!-- 添加百度sightmap-->
+    <script>
+	(function(){
+	    var bp = document.createElement('script');
+	    bp.src = '//push.zhanzhang.baidu.com/push.js';
+	    var s = document.getElementsByTagName("script")[0];
+	    s.parentNode.insertBefore(bp, s);
+	})();
+    </script>
+    <!-- google analytics -->
+    <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-91781695-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+  </head>
+  
+  <body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+            <span class="sr-only">
+              Toggle navigation
+            </span>
+            <span class="icon-bar">
+            </span>
+            <span class="icon-bar">
+            </span>
+            <span class="icon-bar">
+            </span>
+          </button>
+          <a class="navbar-brand" href="/index.html">
+            wdyggh's Blog
+          </a>
+        </div>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <!-- <ul class="nav navbar-nav">
+  
+    
+  
+    
+    <li>
+      <a href="/about">About</a>
+    </li>
+    
+  
+    
+    <li>
+      <a href="/archives">归档</a>
+    </li>
+    
+  
+    
+  
+    
+    <li>
+      <a href="/categories">分类</a>
+    </li>
+    
+  
+    
+    <li>
+      <a href="/faqs">备忘</a>
+    </li>
+    
+  
+    
+  
+    
+    <li>
+      <a href="/tags">Tags</a>
+    </li>
+    
+  
+    
+  
+    
+  
+    
+  
+</ul> -->
+
+
+<ul class="nav navbar-nav">
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+    <li>
+      <a  href="/categories.html">分类</a>
+    </li>
+    
+  
+  
+    <li>
+      <a  href="/tags.html">Tags</a>
+    </li>
+    
+  
+  
+    <li>
+      <a  href="/archives.html">归档</a>
+    </li>
+    
+  
+  
+    <li>
+      <a  href="/faqs.html">备忘</a>
+    </li>
+    
+  
+  
+    <li>
+      <a  href="/about.html">About</a>
+    </li>
+    
+  
+</ul>
+
+ 
+        </div>
+        <!-- /.navbar-collapse -->
+      </div>
+      <!-- /.container -->
+    </nav>
+    <!-- Page Content -->
+    <div class="container">
+      <div class="row">
+        <!-- Blog Entries Column -->
+        <div class="col-md-8">
+          <!-- Blog Post -->
+<!-- Title -->
+<header class="post-header">
+<h2>Media center with raspberry pi b+</h2>
+  <!-- aria2raspberrypi  -->
+<p class="meta">
+  <h4>
+    
+         
+            <a class="label" href="/tags.html"><em>aria2</em></a>    <!-- <br> -->
+         
+            <a class="label" href="/tags.html"><em>raspberrypi</em></a>    <!-- <br> -->
+        
+    
+
+    <div class="post-date">
+    Viewed: <span data-hk-page="current"> - </span> times 
+    <span class="glyphicon glyphicon-time"></span>
+    22 May 2016
+    <a href="https://github.com/wdyggh/wdyggh.github.com/edit/master/_posts/2016-5-22-aria2_RPi.md" target="_blank"> 纠错 </a>&nbsp;&nbsp;
+    
+    </div>
+  </h4>
+</p>
+</header>
+<!-- Author -->
+<hr>
+<h3 id="基于树莓派的影音媒体中心">基于树莓派的影音媒体中心</h3>
+
+<p><a name="top"></a></p>
+
+<p>这的媒体中心包括了，下载和播放。<br />
+主要用到的软件有 <code class="highlighter-rouge">aria2</code> <code class="highlighter-rouge">kodi</code>。<br />
+首先来说下载。<br />
+要下载就要有空间，树莓派SD卡上的那点空间还是远水解不了近渴。<br />
+所以添加U盘或硬盘作为载体。</p>
+
+<h4 id="1-添加u盘为例">1 添加U盘为例：</h4>
+<p>插上U盘后默认不会自动挂载，需要command，<br />
+先查看一下U盘有没有被识别，</p>
+
+<div class="language-bash highlighter-rouge"><pre class="highlight"><code>ls /dev/sda<span class="k">*</span>
+</code></pre>
+</div>
+
+<p>看到有 <code class="highlighter-rouge">sda1</code>的话，说明系统已识别。<br />
+接下来手动挂载一下。顺便加上卸载的。</p>
+
+<div class="language-bash highlighter-rouge"><pre class="highlight"><code>sudo mount /dev/sda1 /mnt/Upan  //需要新建Upan目录
+
+sudo umount /dev/sda1
+</code></pre>
+</div>
+
+<p>接下来是 自动挂载的一个土办法，每次登陆的时候挂载。</p>
+
+<div class="language-bash highlighter-rouge"><pre class="highlight"><code>nano /etc/profile
+sudo mount /dev/sda1 /mnt/Upan
+</code></pre>
+</div>
+
+<h4 id="2-安装配置aria2">2 安装配置Aria2</h4>
+
+<p>安装：</p>
+
+<div class="language-bash highlighter-rouge"><pre class="highlight"><code>sudo apt-get install aria2  //安装aria2
+</code></pre>
+</div>
+
+<p>接下来设置aria2.</p>
+
+<div class="language-bash highlighter-rouge"><pre class="highlight"><code>mkdir ~/.aria2
+touch ~/.aria2/aria2.session
+nano ~/.aria2/aria2.conf    //添加以下内容
+
+<span class="nv">dir</span><span class="o">=</span>/mnt/Upan
+disable-ipv6<span class="o">=</span><span class="nb">true
+enable</span>-rpc<span class="o">=</span><span class="nb">true
+</span>rpc-allow-origin-all<span class="o">=</span><span class="nb">true
+</span>rpc-listen-all<span class="o">=</span><span class="nb">true</span>
+<span class="c">#rpc-listen-port=6800</span>
+<span class="k">continue</span><span class="o">=</span><span class="nb">true
+</span>input-file<span class="o">=</span>/home/pi/.aria2/aria2.session 
+save-session<span class="o">=</span>/home/pi/.aria2/aria2.session 
+max-concurrent-downloads<span class="o">=</span>3
+
+</code></pre>
+</div>
+
+<p>保存 然后尝试已配置文件启动aria2：</p>
+
+<div class="language-bash highlighter-rouge"><pre class="highlight"><code>aria2c --conf-path<span class="o">=</span>/home/pi/.aria2/aria2.conf
+</code></pre>
+</div>
+
+<p>没出错的话 按 <code class="highlighter-rouge">CTRL+C</code> 退出。把aria2添加进系统服务</p>
+
+<div class="language-bash highlighter-rouge"><pre class="highlight"><code>sudo nano /etc/init.d/aria2c
+
+// 粘贴以下内容
+//sudo -u后面的是你正在使用的用户名，因为我用的pi，别忘记改成自己的
+<span class="c">#!/bin/sh</span>
+<span class="c">### BEGIN INIT INFO</span>
+<span class="c"># Provides:          aria2</span>
+<span class="c"># Required-Start:    $remote_fs $network</span>
+<span class="c"># Required-Stop:     $remote_fs $network</span>
+<span class="c"># Default-Start:     2 3 4 5</span>
+<span class="c"># Default-Stop:      0 1 6</span>
+<span class="c"># Short-Description: Aria2 Downloader</span>
+<span class="c">### END INIT INFO</span>
+<span class="k">case</span> <span class="s2">"</span><span class="nv">$1</span><span class="s2">"</span> <span class="k">in
+</span>start<span class="p">)</span>
+    <span class="nb">echo</span> -n <span class="s2">"Starting aria2c"</span>
+    sudo -u pi aria2c --conf-path<span class="o">=</span>/home/pi/.aria2/aria2.conf -D 
+<span class="p">;;</span>
+stop<span class="p">)</span>
+    <span class="nb">echo</span> -n <span class="s2">"Shutting down aria2c "</span>
+    killall aria2c
+<span class="p">;;</span>
+restart<span class="p">)</span>
+    killall aria2c
+    sudo -u pi aria2c --conf-path<span class="o">=</span>/home/pi/.aria2/aria2.conf -D
+<span class="p">;;</span>
+<span class="k">esac</span>
+<span class="nb">exit</span>
+</code></pre>
+</div>
+
+<p>保存后退出，然后设置这个文件的权限为755：</p>
+
+<div class="language-bash highlighter-rouge"><pre class="highlight"><code>sudo chmod 755 /etc/init.d/aria2c
+</code></pre>
+</div>
+
+<p>以进程方式应用和启动aria2：</p>
+
+<div class="language-bash highlighter-rouge"><pre class="highlight"><code>systemctl <span class="nb">enable </span>aria2c.service 
+
+systemctl start ari2c.service
+</code></pre>
+</div>
+
+<p>如果只显示 <code class="highlighter-rouge">Starting aria2c </code>，没有其他错误提示的话就说明成功了。<br />
+然后添加aria2c服务到开机启动：</p>
+
+<div class="language-bash highlighter-rouge"><pre class="highlight"><code>sudo update-rc.d aria2c defaults
+</code></pre>
+</div>
+
+<h4 id="3-安装-apache--连接aria2">3 安装 <code class="highlighter-rouge">apache</code> &amp; 连接aria2</h4>
+
+<p>由于Aria2不具备Web管理，所以需要使用第三方开源程序 <code class="highlighter-rouge">Yaaw</code> 通过Web管理下载。</p>
+
+<div class="language-bash highlighter-rouge"><pre class="highlight"><code>sudo apt-get install apache2
+</code></pre>
+</div>
+
+<p>安装完成后，下载yaaw服务</p>
+
+<div class="language-bash highlighter-rouge"><pre class="highlight"><code><span class="nb">cd</span> /var/www/html
+sudo git clone http://github.com/wzhy90/yaaw
+</code></pre>
+</div>
+
+<p>以上步骤完成后 重启系统。并登陆。
+在任意浏览器上 打开 <em>http://树莓派ip/yaaw/</em></p>
+
+<h4 id="4-推荐插件">4 推荐插件</h4>
+
+<ul>
+  <li><a href="https://chrome.google.com/webstore/detail/baiduexporter/mjaenbjdjmgolhoafkohbhhbaiedbkno">百度网盘助手</a></li>
+  <li><a href="https://chrome.google.com/webstore/detail/thunderlixianassistant/eehlmkfpnagoieibahhcghphdbjcdmen">迅雷离线助手</a></li>
+</ul>
+
+<h4 id="5-update20170115">5 update[20170115]</h4>
+
+<ul>
+  <li>添加外网访问</li>
+  <li>手机端kodi 控制 app</li>
+</ul>
+
+<p>设置外网访问，这样就走到哪都能随时添加任务，<br />
+由于我用的是openwrt路由器，这里就将openwrt作为示范。</p>
+
+<p>这里先介绍一个aria2 web 控制台，<br />
+浏览器打开 <a href="http://aria2c.com/">aria2c.com</a>。<br />
+现在局域网下配置好路径http://pi_IP:6800/jsonrpc</p>
+
+<p>现在进入正题openwrt的ui界面</p>
+
+<p>网络 &gt; 防火墙 &gt;端口转发 &gt;</p>
+
+<p><img src="http://7xifyp.com1.z0.glb.clouddn.com/aria2_add_openwrt1.png" alt="openwrt1" class="center-image" /></p>
+
+<p>&gt; 新建端口转发</p>
+
+<p><img src="http://7xifyp.com1.z0.glb.clouddn.com/aria2_add_openwrt2.png" alt="openwrt2" class="center-image" /></p>
+
+<p>到这路由器端就大概设置完成。
+接下来在<a href="http://aria2c.com/">aria2c.com</a>上配置路由端ip和端口。</p>
+
+<p><img src="http://7xifyp.com1.z0.glb.clouddn.com/aria2_add_openwrt3.png" alt="openrt3" class="max-height-image" /></p>
+
+<p>最后手机端3G网作证。</p>
+
+<p><img src="http://7xifyp.com1.z0.glb.clouddn.com/aria2_add_phone1.png" alt="phone1" class="max-height-image" /></p>
+
+<h4 id="kodi-控制-app">kodi 控制 APP</h4>
+
+<p>先简单介绍一下在pi上安装kodi吧<br />
+另外kodi上还能安装各种插件，<br />
+比如射手字幕，看电影时能手动？下载到字幕</p>
+
+<div class="language-bash highlighter-rouge"><pre class="highlight"><code>sudo apt-get update
+sudo apt-get install kodi
+</code></pre>
+</div>
+
+<p>APP 详情如下，按步骤添加pi的地址，就能抛弃键盘鼠标<br />
+手机端直接控制kodi<br />
+躺沙发看片利器</p>
+
+<p><img src="http://7xifyp.com1.z0.glb.clouddn.com/aria2_add_phone2.png" alt="phone2" class="max-height-image" /></p>
+
+<h4 id="reference"><em>Reference:</em></h4>
+
+<p>1.<a href="http://www.tuicool.com/articles/BjUNFbq">极客DIY：使用树莓派制作一套“NAS+私有云盘+下载机”</a><br />
+2.<a href="http://pagebrin.com/2014/04/raspberry-pi技术笔记之四：使用aria2打造下载利器/">Raspberry Pi技术笔记之四：使用aria2打造下载利器</a></p>
+
+<hr />
+
+<h3 id="top"><a href="#top">TOP</a></h3>
+
+<br/>
+<div style="margin-top:10px;margin-bottom:10px">
+  
+  <span class="next">
+    Next:
+    <a href="/embedded/chip01.html">
+      Introduction about C.H.I.P.
+    </a>
+  </span>
+   
+  
+  <span class="prev">
+    Previous:
+    <a href="/pc/cubePCcase.html">
+      DIY PC case
+    </a>
+  </span>
+  
+</div>
+<!-- <br> -->
+
+<!-- related post  reference: https://blog.webjeda.com/jekyll-related-posts/-->
+<div class="post-header">
+
+<!-- <h4>You May Also Enjoy</h4>  -->
+
+
+
+
+
+
+  
+  
+  
+    
+      
+    
+  
+    
+      
+    
+  
+
+  
+
+  
+  
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+
+  
+
+  
+  
+  
+    
+      
+    
+  
+
+  
+
+  
+  
+  
+    
+      
+    
+  
+    
+      
+    
+  
+
+  
+
+  
+  
+  
+    
+      
+    
+  
+    
+      
+    
+  
+
+  
+
+  
+  
+  
+    
+      
+        
+        <!--  -->
+        
+        
+      
+    
+  
+    
+      
+    
+  
+
+  
+    <!--  -->
+    
+    
+    
+      <h4>You May Also Enjoy :</h4> 
+    
+    <div>
+      <h5>
+      <!-- <a href="/embedded/mt7610wifi_pi.html">记raspberryPi上编译mt7610 wifi卡 <span>raspberrypi</span> </a> -->
+      <a href="/embedded/mt7610wifi_pi.html">记raspberryPi上编译mt7610 wifi卡</a>
+      <!-- <a class="label" href="/tags.html"> <span>raspberrypi</span> </a> -->
+      </h5>
+    </div>
+    
+  
+
+  
+  
+  
+    
+      
+    
+  
+    
+      
+    
+  
+
+  
+
+  
+  
+  
+    
+      
+    
+  
+    
+      
+    
+  
+
+  
+
+  
+  
+  
+    
+  
+    
+  
+
+  
+
+  
+  
+  
+    
+      
+    
+  
+
+  
+
+  
+  
+  
+    
+      
+    
+  
+
+  
+
+  
+  
+  
+    
+      
+    
+  
+
+  
+
+  
+  
+  
+    
+      
+    
+  
+
+  
+
+  
+  
+  
+    
+      
+    
+  
+    
+      
+    
+  
+
+  
+
+  
+  
+  
+    
+      
+    
+  
+
+  
+
+  
+  
+  
+    
+      
+    
+  
+    
+      
+    
+  
+
+  
+
+  
+  
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+
+  
+
+  
+  
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+
+  
+
+  
+  
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+
+  
+
+  
+  
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+
+  
+
+  
+  
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+
+  
+
+  
+  
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+
+  
+
+  
+  
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+
+  
+
+  
+  
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+
+  
+
+  
+  
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+
+  
+
+  
+  
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+
+  
+
+  
+  
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+
+  
+
+  
+  
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+
+  
+
+  
+  
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+
+  
+
+  
+  
+  
+    
+      
+        
+        <!--  -->
+        
+        
+      
+    
+  
+    
+      
+    
+  
+
+  
+    <!--  -->
+    
+    
+    
+    <div>
+      <h5>
+      <!-- <a href="/opencv_python/%E5%BB%B6%E6%97%B6%E6%91%84%E5%BD%B1.html">[P]picamera 延时摄影 <span>raspberrypi</span> </a> -->
+      <a href="/opencv_python/%E5%BB%B6%E6%97%B6%E6%91%84%E5%BD%B1.html">[P]picamera 延时摄影</a>
+      <!-- <a class="label" href="/tags.html"> <span>raspberrypi</span> </a> -->
+      </h5>
+    </div>
+    
+  
+
+  
+  
+  
+    
+      
+        
+        <!--  -->
+        
+        
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+
+  
+    <!--  -->
+    
+    
+    
+    <div>
+      <h5>
+      <!-- <a href="/opencv_python/%E5%AE%89%E8%A3%85opencv-python.html">[P]Install opencv-python on RaspberryPi <span>raspberrypi</span> </a> -->
+      <a href="/opencv_python/%E5%AE%89%E8%A3%85opencv-python.html">[P]Install opencv-python on RaspberryPi</a>
+      <!-- <a class="label" href="/tags.html"> <span>raspberrypi</span> </a> -->
+      </h5>
+    </div>
+    
+      
+
+</div>
+
+
+<!-- Blog Comments -->
+<div class="media">
+    <!-- UY BEGIN -->
+<!--  <div id="uyan_frame">
+  </div>-->
+ <!-- <script type="text/javascript" src="http://v2.uyan.cc/code/uyan.js?uid=1511840">
+  </script> -->
+  <!-- UY END -->
+<!-- JiaThis Button BEGIN -->
+<div class="jiathis_style">
+<a class="jiathis_button_qzone"></a>
+<a class="jiathis_button_tsina"></a>
+<a class="jiathis_button_renren"></a>
+<a class="jiathis_button_print"></a>
+<a class="jiathis_button_fb"></a>
+<a class="jiathis_button_googleplus"></a>
+<a class="jiathis_button_linkedin"></a>
+<a class="jiathis_button_pinterest"></a>
+<a class="jiathis_button_pdfonline"></a>
+<a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jiathis_separator jtico jtico_jiathis" target="_blank"></a>
+<a class="jiathis_counter_style"></a>
+</div>
+<script type="text/javascript" >
+var jiathis_config={
+  summary:"",
+  shortUrl:false,
+  hideMore:false
+}
+</script>
+<script type="text/javascript" src="http://v3.jiathis.com/code/jia.js" charset="utf-8"></script>
+<!-- JiaThis Button END -->
+
+  
+  <!-- UY BEGIN wdyggh's id -->  
+  <!-- <div id="uyan_frame"></div> -->
+  <!--script type="text/javascript" src="http://v2.uyan.cc/code/uyan.js?uid=2007350"></script-->
+  <!-- UY END -->
+
+  <div id="disqus_thread"></div>
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES * * */
+    var disqus_shortname = 'httpwdygghgithubioindexhtml';
+    
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+ 
+</div>
+
+        </div>
+        <!-- Blog Sidebar Widgets Column -->
+        <div class="col-md-4">
+          <!-- Blog Search Well -->
+          <div class="well">
+            <h4>
+              Blog search
+            </h4>
+            <!-- <form action="https://google3.azurewebsites.net/search" method="get">
+<div class="input-group">
+  <input type="text" name="q" class="form-control">
+  <input type="hidden" name="ie" value="UTF-8" />
+  <input type="hidden" name="sitesearch" value="wdyggh.github.io" />
+  <span class="input-group-btn">
+    <button class="btn btn-default" type="submit">
+      <span class="glyphicon glyphicon-search"></span>
+    </button>
+  </span>
+</div>
+</form> -->
+
+
+
+<form method="get" action="http://www.google.com/search" target="google_window">
+  <div class="input-group">
+    <input type="text" class="form-control" value="Search..." name="query" id="search-box" onfocus="if (this.value == 'Search...') {this.value = '';}" onblur="if (this.value == '') {this.value = 'Search...';}">
+    <input type="hidden" name="ie" value="UTF-8" />
+    <input type="hidden" name="oe" value="UTF-8" />
+    <input type="hidden" name="hl" value="zh-CN" />
+    <input type="hidden" name="domains" value="wdyggh.github.io" />
+    <input type="hidden" name="sitesearch" value="wdyggh.github.io" />
+    <span class="input-group-btn">
+      <button class="btn btn-default" type="submit">
+        <span class="glyphicon glyphicon-search"></span>
+      </button>
+    </span>
+  </div>
+</form>
+
+<!-- google search reference: http://equation85.github.io/ -->
+ 
+            <!-- /.input-group -->
+          </div>
+          <!-- Blog Categories Well -->
+          <div class="well">
+            <h4>
+              Categories
+            </h4>
+            <div class="row_categories">
+              <!--               <div class="col-lg-6">
+                <ul class="list-unstyled">
+                  <li>
+                    <a href="/categories.html#linux">
+                      Linux
+                    </a>
+                  </li>
+                  <li>
+                    <a href="/categories.html#embedded">
+                      嵌入式
+                    </a>
+                  </li>
+                  <li>
+                    <a href="/categories.html#blackberry">
+                      blackberry
+                    </a>
+                  </li>
+                  <li>
+                    <a href="/categories.html#reprint">
+                      转载
+                    </a>
+                  </li>
+                  
+                </ul>
+              </div>
+              <div class="col-lg-6">
+                <ul class="list-unstyled">
+                  <li>
+                    <a href="/categories.html#avr">
+                      AVR
+                    </a>
+                  </li>
+                  <li>
+                    <a href="/categories.html#travel">
+                      旅游
+                    </a>
+                  </li>
+                  <li>
+                    <a href="/categories.html#others">
+                      others
+                    </a>
+                  </li>
+                </ul>
+              </div>
+ -->
+
+<ul class="cate_left">
+  
+     
+      <li><a href="http://localhost:4000/categories.html#others">others <span>2</span></a></li>
+     
+      <li><a href="http://localhost:4000/categories.html#转载">转载 <span>2</span></a></li>
+     
+      <li><a href="http://localhost:4000/categories.html#blackberry">blackberry <span>3</span></a></li>
+     
+      <li><a href="http://localhost:4000/categories.html#opencv_python">opencv_python <span>18</span></a></li>
+     
+      <li><a href="http://localhost:4000/categories.html#bible">bible <span>2</span></a></li>
+     
+      <li><a href="http://localhost:4000/categories.html#python">python <span>1</span></a></li>
+     
+      <li><a href="http://localhost:4000/categories.html#ubuntu">ubuntu <span>3</span></a></li>
+     
+      <li><a href="http://localhost:4000/categories.html#embedded">embedded <span>5</span></a></li>
+     
+      <li><a href="http://localhost:4000/categories.html#PC">PC <span>1</span></a></li>
+     
+      <li><a href="http://localhost:4000/categories.html#myself">myself <span>1</span></a></li>
+     
+      <li><a href="http://localhost:4000/categories.html#RTOS">RTOS <span>2</span></a></li>
+    
+</ul> 
+            </div>
+            <!-- /.row -->
+          </div>
+          <!-- Blog Links Well -->
+          <div class="well">
+            <h4>
+              Links
+            </h4>
+                        <ul class="list-unstyled">
+              <li>
+                <a href="https://github.com/">
+                  GitHub
+                </a>
+              </li>
+              <li>
+                <a href="https://bitbucket.org/">
+                  Bitbucket.org
+                </a>
+              </li> 
+               <li>
+                <a href="https://news.ycombinator.com/">
+                  Hacker News
+                </a>
+              </li>        
+              <li>
+                <a href="http://www.stackoverflow.com/">
+                  Stack Overflow
+                </a>
+              </li>
+              <li>
+                <a href="http://developer.android.com/">
+                  Android Developer
+                </a>
+              </li>
+              <li>
+                <a href="http://www.chiphell.com/">
+                  Chiphell
+                </a>
+              </li>
+              <li>
+                <a href="http://99u.com/">
+                  99U
+                </a>
+              </li>
+              <li>
+                <a href="http://www.ruanyifeng.com/blog/">
+                  Ruanyifeng's Blog
+                </a>
+              </li>
+              <li>
+                <a href="http://www.panxw.com/">
+                  Panxw's Blog
+                </a>
+              </li>
+               <li>
+                <a href="https://github.com/greatfire/wiki/blob/master/README.md">
+                  墙内镜像
+                </a>
+              </li>
+              
+            </ul>
+ 
+          </div>
+          <!-- Side Widget Well -->
+           <div class="well">
+           <!--            <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js">
+            </script> -->
+            <!-- ArticleRa -->
+<!--            <ins class="adsbygoogle" style="display:inline-block;width:300px;height:250px"
+            data-ad-client="ca-pub-3557776493079475" data-ad-slot="3861947889">
+            </ins>
+            <script>
+              (adsbygoogle = window.adsbygoogle || []).push({});
+            </script> -->
+            
+            <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+            <!-- guanggao1 -->
+            <ins class="adsbygoogle"
+                 style="display:inline-block;width:300px;height:250px"
+                 data-ad-client="ca-pub-7553071169021268"
+                 data-ad-slot="5352576037"></ins>
+            <script>
+            (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
+ 
+          </div>
+        </div>
+      </div>
+      <!-- /.row -->
+      <hr>
+      <!-- Footer -->
+      <footer>
+        <div class="rowcopyright">
+          <div class="col-lg-12">
+                        <p align="center" bgcolor="black">
+				Copyright &copy; wdyggh.github.io, hosted on <a href="https://github.com">GitHub</a>,based on <a href="https://github.com/panxw/panxw.github.com">Panxw</a>,  powered by Jekyll. <a href="https://github.com/wdyggh/wdyggh.github.io">[source]</a>
+				<br/>
+				 <a href="/atom.xml">[Feed]</a>
+            </p>
+ 
+          </div>
+          <!-- /.col-lg-12 -->
+        </div>
+        <!-- /.row -->
+		<!-- <div style="display:none;">
+      <script src="http://s22.cnzz.com/stat.php?id=5868355&web_id=5868355" language="JavaScript">
+      </script>
+      </div>  --> 
+      
+      <!-- 站长统计 精简版-->
+<!--      <script src="http://s11.cnzz.com/z_stat.php?id=1254212004&web_id=1254212004" language="JavaScript">
+      </script> -->
+      
+      <!-- 站长统计 普通版-->
+<!--  <script type="text/javascript">
+      var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+      document.write(unescape("%3Cspan id='cnzz_stat_icon_1254212004'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s11.cnzz.com/z_stat.php%3Fid%3D1254212004' type='text/javascript'%3E%3C/script%3E"));
+      </script>   -->
+      
+      <!-- 站长统计 图标版-->
+      <div style="text-align:center;">
+            <script type="text/javascript">
+            var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+            document.write(unescape("%3Cspan id='cnzz_stat_icon_1254212004'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s11.cnzz.com/z_stat.php%3Fid%3D1254212004%26show%3Dpic2' type='text/javascript'%3E%3C/script%3E"));
+            </script>
+      </div>
+ 
+      </footer>
+    </div>
+    <!-- /.container -->
+  </body>
+
+</html>

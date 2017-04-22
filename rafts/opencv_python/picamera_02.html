@@ -1,0 +1,1580 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="[P]picamera_02_quickstart - wdyggh's Blog - wdy(wdyggh@gmail.com)">
+    <!-- <meta name="uyan_auth" content="e5ff762709" /> -->
+    	<!--友言 -->
+    <meta name="baidu-site-verification" content="gReLd8QyZw" />    
+    <!--baidu serach wdyggh.github.com -->
+    <meta name="baidu-site-verification" content="NFSRKxHBkA" />   
+    <!-- baidu search -->
+    <meta name="google-site-verification" content="VlQNF-rJTNvhSMZqmAfEHBca70IJ4u936QxthEeGgus" /> <!-- google zhanzhang-->
+    <link rel="icon" href="/images/icon/hbicon.jpg" mce_href="/images/icon/hbicon.jpg" type="image/x-icon">
+    <link rel="shortcut icon" href="/images/icon/hbicon.jpg" mce_href="/images/icon/hbicon.jpg" type="image/x-icon">
+     
+    <title>
+      [P]picamera_02_quickstart - wdyggh's Blog
+    </title>
+    <!-- Bootstrap Core CSS -->
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="/css/blog.css" rel="stylesheet">
+    <!-- pygment_trac code Highlight CSS -->
+    <link href="/css/pygment_trac.css" rel="stylesheet">
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media
+    queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file://
+    -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js">
+      </script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js">
+      </script>
+    <![endif]-->
+        <!-- jQuery Version 1.11.0 -->
+    <script src="/js/jquery-1.11.0.js"> </script>
+    <!-- Bootstrap Core JavaScript -->
+    <script src="/js/bootstrap.min.js"></script>
+    <!-- 添加数学公式 MathJax引擎-->
+    <!-- <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=default"></script> -->
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+          jax: ["input/TeX", "output/HTML-CSS"],
+          tex2jax: {
+            inlineMath: [ ['$', '$'], ],
+            displayMath: [ ['$$', '$$'], ],
+            processEscapes: true,
+            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+          }
+          //,
+          //displayAlign: "left",
+          //displayIndent: "2em"
+        });
+    </script>
+    <script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=default" type="text/javascript"></script>
+    <!-- config=TeX-AMS_HTML -->
+    <!-- Hit Kounter LC -->
+    <script src="https://cdn1.lncld.net/static/js/av-min-1.5.0.js"></script>
+    <script src="http://jerry-cdn.b0.upaiyun.com/hit-kounter/hit-kounter-lc-0.3.0.js"></script>
+    <!-- 添加百度sightmap-->
+    <script>
+	(function(){
+	    var bp = document.createElement('script');
+	    bp.src = '//push.zhanzhang.baidu.com/push.js';
+	    var s = document.getElementsByTagName("script")[0];
+	    s.parentNode.insertBefore(bp, s);
+	})();
+    </script>
+    <!-- google analytics -->
+    <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-91781695-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+  </head>
+  
+  <body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+            <span class="sr-only">
+              Toggle navigation
+            </span>
+            <span class="icon-bar">
+            </span>
+            <span class="icon-bar">
+            </span>
+            <span class="icon-bar">
+            </span>
+          </button>
+          <a class="navbar-brand" href="/index.html">
+            wdyggh's Blog
+          </a>
+        </div>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <!-- <ul class="nav navbar-nav">
+  
+    
+  
+    
+    <li>
+      <a href="/about">About</a>
+    </li>
+    
+  
+    
+    <li>
+      <a href="/archives">归档</a>
+    </li>
+    
+  
+    
+  
+    
+    <li>
+      <a href="/categories">分类</a>
+    </li>
+    
+  
+    
+    <li>
+      <a href="/faqs">备忘</a>
+    </li>
+    
+  
+    
+  
+    
+    <li>
+      <a href="/tags">Tags</a>
+    </li>
+    
+  
+    
+  
+    
+  
+    
+  
+</ul> -->
+
+
+<ul class="nav navbar-nav">
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+    <li>
+      <a  href="/categories.html">分类</a>
+    </li>
+    
+  
+  
+    <li>
+      <a  href="/tags.html">Tags</a>
+    </li>
+    
+  
+  
+    <li>
+      <a  href="/archives.html">归档</a>
+    </li>
+    
+  
+  
+    <li>
+      <a  href="/faqs.html">备忘</a>
+    </li>
+    
+  
+  
+    <li>
+      <a  href="/about.html">About</a>
+    </li>
+    
+  
+</ul>
+
+ 
+        </div>
+        <!-- /.navbar-collapse -->
+      </div>
+      <!-- /.container -->
+    </nav>
+    <!-- Page Content -->
+    <div class="container">
+      <div class="row">
+        <!-- Blog Entries Column -->
+        <div class="col-md-8">
+          <!-- Blog Post -->
+<!-- Title -->
+<header class="post-header">
+<h2>[P]picamera_02_quickstart</h2>
+  <!-- raspberrypipythonraspcam  -->
+<p class="meta">
+  <h4>
+    
+         
+            <a class="label" href="/tags.html"><em>raspberrypi</em></a>    <!-- <br> -->
+         
+            <a class="label" href="/tags.html"><em>python</em></a>    <!-- <br> -->
+         
+            <a class="label" href="/tags.html"><em>raspcam</em></a>    <!-- <br> -->
+        
+    
+
+    <div class="post-date">
+    Viewed: <span data-hk-page="current"> - </span> times 
+    <span class="glyphicon glyphicon-time"></span>
+    18 Mar 2015
+    <a href="https://github.com/wdyggh/wdyggh.github.com/edit/master/_posts/2015-03-18-picamera_02.md" target="_blank"> 纠错 </a>&nbsp;&nbsp;
+    
+    </div>
+  </h4>
+</p>
+</header>
+<!-- Author -->
+<hr>
+<p><a name="top"></a></p>
+<blockquote>
+  <p>capture to a file</p>
+</blockquote>
+
+<div class="language-python highlighter-rouge"><pre class="highlight"><code><span class="c"># -*- coding: utf-8 -*-</span>
+<span class="kn">import</span> <span class="nn">time</span>
+<span class="kn">import</span> <span class="nn">picamera</span>
+
+<span class="k">with</span> <span class="n">picamera</span><span class="o">.</span><span class="n">PiCamera</span><span class="p">()</span> <span class="k">as</span> <span class="n">camera</span><span class="p">:</span>
+    <span class="n">camera</span><span class="o">.</span><span class="n">resolution</span> <span class="o">=</span> <span class="p">(</span><span class="mi">1024</span><span class="p">,</span> <span class="mi">768</span><span class="p">)</span>
+    <span class="n">camera</span><span class="o">.</span><span class="n">start_preview</span><span class="p">()</span>
+    <span class="c"># Camera warm-up time 热身时间</span>
+    <span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+    <span class="n">camera</span><span class="o">.</span><span class="n">capture</span><span class="p">(</span><span class="s">'foo.jpg'</span><span class="p">)</span>
+    <span class="c">#capture()</span>
+    <span class="c">#http://picamera.readthedocs.org/en/release-1.9/api.html#picamera.PiCamera.capture</span>
+</code></pre>
+</div>
+<hr />
+<blockquote>
+  <p>test</p>
+</blockquote>
+
+<div class="language-python highlighter-rouge"><pre class="highlight"><code><span class="n">test</span>
+</code></pre>
+</div>
+<hr />
+<blockquote>
+  <p>写入照片到原有文件</p>
+</blockquote>
+
+<div class="language-python highlighter-rouge"><pre class="highlight"><code><span class="c"># -*- coding: utf-8 -*-</span>
+<span class="c">#写入照片到原有文件</span>
+<span class="kn">import</span> <span class="nn">time</span>
+<span class="kn">import</span> <span class="nn">picamera</span>
+
+<span class="c"># Explicitly open a new file called my_image.jpg</span>
+<span class="n">my_file</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s">'my_image.jpg'</span><span class="p">,</span> <span class="s">'wb'</span><span class="p">)</span>
+<span class="k">with</span> <span class="n">picamera</span><span class="o">.</span><span class="n">PiCamera</span><span class="p">()</span> <span class="k">as</span> <span class="n">camera</span><span class="p">:</span>
+    <span class="n">camera</span><span class="o">.</span><span class="n">start_preview</span><span class="p">()</span>
+    <span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+    <span class="n">camera</span><span class="o">.</span><span class="n">capture</span><span class="p">(</span><span class="n">my_file</span><span class="p">)</span>
+<span class="c"># At this point my_file.flush() has been called, but the file has</span>
+<span class="c"># not yet been closed</span>
+<span class="n">my_file</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+</code></pre>
+</div>
+<hr />
+<blockquote>
+  <p>Capturing to a PIL Image</p>
+</blockquote>
+
+<p><code class="highlighter-rouge">安装 python-dev</code></p>
+
+<div class="language-bash highlighter-rouge"><pre class="highlight"><code><span class="gp">$ </span>sudo apt-get install python-dev
+</code></pre>
+</div>
+
+<p><code class="highlighter-rouge">安装PIL(python image library)  </code></p>
+
+<p><code class="highlighter-rouge">http://www.pythonware.com/products/pil/index.htm</code></p>
+
+<div class="language-bash highlighter-rouge"><pre class="highlight"><code><span class="gp">$ </span>tar xvfz Imaging-1.1.7.tar.gz
+<span class="gp">$ </span><span class="nb">cd </span>Imaging-1.1.7
+<span class="gp">$ </span>python setup.py install
+</code></pre>
+</div>
+
+<div class="language-python highlighter-rouge"><pre class="highlight"><code><span class="c"># -*- coding: utf-8 -*-</span>
+<span class="c">#在这安装PIL http://www.pythonware.com/products/pil/index.htm</span>
+<span class="kn">import</span> <span class="nn">io</span>
+<span class="kn">import</span> <span class="nn">time</span>
+<span class="kn">import</span> <span class="nn">picamera</span>
+<span class="kn">from</span> <span class="nn">PIL</span> <span class="kn">import</span> <span class="n">Image</span>
+
+<span class="c"># Create the in-memory stream</span>
+<span class="n">stream</span> <span class="o">=</span> <span class="n">io</span><span class="o">.</span><span class="n">BytesIO</span><span class="p">()</span>
+<span class="k">with</span> <span class="n">picamera</span><span class="o">.</span><span class="n">PiCamera</span><span class="p">()</span> <span class="k">as</span> <span class="n">camera</span><span class="p">:</span>
+    <span class="n">camera</span><span class="o">.</span><span class="n">start_preview</span><span class="p">()</span>
+    <span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+    <span class="n">camera</span><span class="o">.</span><span class="n">capture</span><span class="p">(</span><span class="n">stream</span><span class="p">,</span> <span class="n">format</span><span class="o">=</span><span class="s">'jpeg'</span><span class="p">)</span>
+<span class="c"># "Rewind" the stream to the beginning so we can read its content</span>
+<span class="n">stream</span><span class="o">.</span><span class="n">seek</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
+<span class="n">image</span> <span class="o">=</span> <span class="n">Image</span><span class="o">.</span><span class="nb">open</span><span class="p">(</span><span class="n">stream</span><span class="p">)</span>
+</code></pre>
+</div>
+<hr />
+<blockquote>
+  <p>Capturing to an OpenCV object</p>
+</blockquote>
+
+<div class="language-python highlighter-rouge"><pre class="highlight"><code><span class="c"># -*- coding: utf-8 -*-</span>
+<span class="c">#This is another variation on Capturing to a stream. First we’ll capture an image to a BytesIO stream (Python’s in-memory stream class), then convert the stream to a numpy array and read the array with OpenCV:</span>
+
+<span class="kn">import</span> <span class="nn">io</span>
+<span class="kn">import</span> <span class="nn">time</span>
+<span class="kn">import</span> <span class="nn">picamera</span>
+<span class="kn">import</span> <span class="nn">cv2</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="kn">as</span> <span class="nn">np</span>
+
+<span class="c"># Create the in-memory stream</span>
+<span class="n">stream</span> <span class="o">=</span> <span class="n">io</span><span class="o">.</span><span class="n">BytesIO</span><span class="p">()</span>
+<span class="k">with</span> <span class="n">picamera</span><span class="o">.</span><span class="n">PiCamera</span><span class="p">()</span> <span class="k">as</span> <span class="n">camera</span><span class="p">:</span>
+    <span class="n">camera</span><span class="o">.</span><span class="n">start_preview</span><span class="p">()</span>
+    <span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+    <span class="n">camera</span><span class="o">.</span><span class="n">capture</span><span class="p">(</span><span class="n">stream</span><span class="p">,</span> <span class="n">format</span><span class="o">=</span><span class="s">'jpeg'</span><span class="p">)</span>
+<span class="c"># Construct a numpy array from the stream</span>
+<span class="n">data</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">fromstring</span><span class="p">(</span><span class="n">stream</span><span class="o">.</span><span class="n">getvalue</span><span class="p">(),</span> <span class="n">dtype</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">uint8</span><span class="p">)</span>
+<span class="c"># "Decode" the image from the array, preserving colour</span>
+<span class="n">image</span> <span class="o">=</span> <span class="n">cv2</span><span class="o">.</span><span class="n">imdecode</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
+<span class="c"># OpenCV returns an array with data in BGR order. If you want RGB instead</span>
+<span class="c"># use the following...</span>
+<span class="n">image</span> <span class="o">=</span> <span class="n">image</span><span class="p">[:,</span> <span class="p">:,</span> <span class="p">::</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
+</code></pre>
+</div>
+<hr />
+<blockquote>
+  <p>Capturing resized images</p>
+</blockquote>
+
+<div class="language-python highlighter-rouge"><pre class="highlight"><code><span class="c"># -*- coding: utf-8 -*-</span>
+<span class="c">#修改照片尺寸</span>
+<span class="c">#Sometimes, particularly in scripts which will perform some sort of analysis or processing on images, you may wish to capture smaller images than the current resolution of the camera. Although such resizing can be performed using libraries like PIL or OpenCV, it is considerably more efficient to have the Pi’s GPU perform the resizing when capturing the image. This can be done with the resize parameter of the capture() methods:</span>
+<span class="c">#The resize parameter can also be specified when recording video with the start_recording() method.</span>
+<span class="kn">import</span> <span class="nn">time</span>
+<span class="kn">import</span> <span class="nn">picamera</span>
+
+<span class="k">with</span> <span class="n">picamera</span><span class="o">.</span><span class="n">PiCamera</span><span class="p">()</span> <span class="k">as</span> <span class="n">camera</span><span class="p">:</span>
+    <span class="n">camera</span><span class="o">.</span><span class="n">resolution</span> <span class="o">=</span> <span class="p">(</span><span class="mi">1024</span><span class="p">,</span> <span class="mi">768</span><span class="p">)</span>
+    <span class="n">camera</span><span class="o">.</span><span class="n">start_preview</span><span class="p">()</span>
+    <span class="c"># Camera warm-up time</span>
+    <span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+    <span class="n">camera</span><span class="o">.</span><span class="n">capture</span><span class="p">(</span><span class="s">'foo.jpg'</span><span class="p">,</span> <span class="n">resize</span><span class="o">=</span><span class="p">(</span><span class="mi">320</span><span class="p">,</span> <span class="mi">240</span><span class="p">))</span>
+</code></pre>
+</div>
+<hr />
+<blockquote>
+  <p>Capturing consistent images</p>
+</blockquote>
+
+<div class="language-python highlighter-rouge"><pre class="highlight"><code><span class="c"># -*- coding: utf-8 -*-</span>
+<span class="kn">import</span> <span class="nn">time</span>
+<span class="kn">import</span> <span class="nn">picamera</span>
+
+<span class="k">with</span> <span class="n">picamera</span><span class="o">.</span><span class="n">PiCamera</span><span class="p">()</span> <span class="k">as</span> <span class="n">camera</span><span class="p">:</span>
+    <span class="n">camera</span><span class="o">.</span><span class="n">resolution</span> <span class="o">=</span> <span class="p">(</span><span class="mi">1280</span><span class="p">,</span> <span class="mi">720</span><span class="p">)</span>
+    <span class="n">camera</span><span class="o">.</span><span class="n">framerate</span> <span class="o">=</span> <span class="mi">30</span>
+    <span class="c">#camera.start_preview()</span>
+
+    <span class="c"># Wait for analog gain to settle on a higher value than 1</span>
+    <span class="k">while</span> <span class="n">camera</span><span class="o">.</span><span class="n">analog_gain</span> <span class="o">&lt;=</span> <span class="mi">1</span><span class="p">:</span>
+        <span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mf">0.1</span><span class="p">)</span>
+    <span class="c"># Now fix the values</span>
+    <span class="n">camera</span><span class="o">.</span><span class="n">shutter_speed</span> <span class="o">=</span> <span class="n">camera</span><span class="o">.</span><span class="n">exposure_speed</span>
+    <span class="n">camera</span><span class="o">.</span><span class="n">exposure_mode</span> <span class="o">=</span> <span class="s">'off'</span>
+    <span class="n">g</span> <span class="o">=</span> <span class="n">camera</span><span class="o">.</span><span class="n">awb_gains</span>
+    <span class="n">camera</span><span class="o">.</span><span class="n">awb_mode</span> <span class="o">=</span> <span class="s">'off'</span>
+    <span class="n">camera</span><span class="o">.</span><span class="n">awb_gains</span> <span class="o">=</span> <span class="n">g</span>
+    <span class="c"># Finally, take several photos with the fixed settings</span>
+    <span class="n">camera</span><span class="o">.</span><span class="n">capture_sequence</span><span class="p">([</span><span class="s">'image</span><span class="si">%02</span><span class="s">d.jpg'</span> <span class="o">%</span> <span class="n">i</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">10</span><span class="p">)])</span>
+
+<span class="c">#framerate</span>
+    <span class="c">#Retrieves or sets the framerate at which video-port based image captures, video recordings, and previews will run.</span>
+    <span class="c">#When queried, the framerate property returns the rate at which the camera’s video and preview ports will operate as a Fraction instance which can be easily converted to an int or float.</span>
+    <span class="c">#When set, the property reconfigures the camera so that the next call to recording and previewing methods will use the new framerate. The framerate can be specified as an int, float, Fraction, or a (numerator, denominator) tuple. The camera must not be closed, and no recording must be active when the property is set.</span>
+    <span class="c">#The initial value of this property can be specified with the framerate parameter in the PiCamera constructor.</span>
+<span class="c">#analog_gain</span>
+    <span class="c">#Retrieves the current analog gain of the camera.When queried, this property returns the analog gain currently being used by the camera. The value represents the analog gain of the sensor prior to digital conversion. The value is returned as a Fraction instance.</span>
+<span class="c">#shutter_speed (0 is auto)</span>
+    <span class="c">#Retrieves or sets the shutter speed of the camera in microseconds.When queried, the shutter_speed property returns the shutter speed of the camera in microseconds, or 0 which indicates that the speed will be automatically determined by the auto-exposure algorithm. Faster shutter times naturally require greater amounts of illumination and vice versa.When set, the property adjusts the shutter speed of the camera, which most obviously affects the illumination of subsequently captured images. Shutter speed can be adjusted while previews or recordings are running. The default value is 0 (auto).</span>
+<span class="c">#exposure_speed</span>
+    <span class="c">#Retrieves the current shutter speed of the camera.When queried, this property returns the shutter speed currently being used by the camera. If you have set shutter_speed to a non-zero value, then exposure_speed and shutter_speed should be equal. However, if shutter_speed is set to 0 (auto), then you can read the actual shutter speed being used from this attribute. The value is returned as an integer representing a number of microseconds. This is a read-only property.</span>
+<span class="c">#exposure_mode      情景模式</span>
+    <span class="c">#Retrieves or sets the exposure mode of the camera.When queried, the exposure_mode property returns a string representing the exposure setting of the camera. The possible values can be obtained from the PiCamera.EXPOSURE_MODES attribute, and are as follows:'off''auto''night''nightpreview''backlight''spotlight''sports''snow''beach''verylong''fixedfs''antishake''fireworks'</span>
+<span class="c">#awb_gains   白平衡</span>
+    <span class="c">#Gets or sets the auto-white-balance gains of the camera.When queried, this attribute returns a tuple of values representing the (red, blue) balance of the camera. The red and blue values are returned Fraction instances. The values will be between 0.0 and 8.0.When set, this attribute adjusts the camera’s auto-white-balance gains. The property can be specified as a single value in which case both red and blue gains will be adjusted equally, or as a (red, blue) tuple. Values can be specified as an int, float or Fraction and each gain must be between 0.0 and 8.0. Typical values for the gains are between 0.9 and 1.9. The property can be set while recordings or previews are in progress.</span>
+<span class="c">#awb_mode   白平衡模式</span>
+    <span class="c">#Retrieves or sets the auto-white-balance mode of the camera.When queried, the awb_mode property returns a string representing the auto white balance setting of the camera. The possible values can be obtained from the PiCamera.AWB_MODES attribute, and are as follows:'off''auto''sunlight''cloudy''shade''tungsten''fluorescent''incandescent''flash''horizon'</span>
+    <span class="c">#When set, the property adjusts the camera’s auto-white-balance mode. The property can be set while recordings or previews are in progress. The default value is 'auto'.</span>
+</code></pre>
+</div>
+<hr />
+<blockquote>
+  <p>Capturing timelapse sequences</p>
+</blockquote>
+
+<div class="language-python highlighter-rouge"><pre class="highlight"><code><span class="c"># -*- coding: utf-8 -*-</span>
+<span class="kn">import</span> <span class="nn">time</span>
+<span class="kn">import</span> <span class="nn">picamera</span>
+
+<span class="k">with</span> <span class="n">picamera</span><span class="o">.</span><span class="n">PiCamera</span><span class="p">()</span> <span class="k">as</span> <span class="n">camera</span><span class="p">:</span>
+    <span class="n">camera</span><span class="o">.</span><span class="n">start_preview</span><span class="p">()</span>
+    <span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+    <span class="k">for</span> <span class="n">filename</span> <span class="ow">in</span> <span class="n">camera</span><span class="o">.</span><span class="n">capture_continuous</span><span class="p">(</span><span class="s">'img{counter:03d}.jpg'</span><span class="p">):</span>
+        <span class="k">print</span><span class="p">(</span><span class="s">'Captured </span><span class="si">%</span><span class="s">s'</span> <span class="o">%</span> <span class="n">filename</span><span class="p">)</span>
+        <span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mi">300</span><span class="p">)</span> <span class="c"># wait 5 minutes</span>
+        <span class="c">#time.sleep(3) # wait 3s</span>
+
+
+<span class="s">'''
+# per hour
+import time
+import picamera
+from datetime import datetime, timedelta
+
+def wait():
+    # Calculate the delay to the start of the next hour
+    next_hour = (datetime.now() + timedelta(hour=1)).replace(
+        minute=0, second=0, microsecond=0)
+    delay = (next_hour - datetime.now()).seconds
+    time.sleep(delay)
+
+with picamera.PiCamera() as camera:
+    camera.start_preview()
+    wait()
+    for filename in camera.capture_continuous('img{timestamp:</span><span class="si">%</span><span class="s">Y-</span><span class="si">%</span><span class="s">m-</span><span class="si">%</span><span class="s">d-</span><span class="si">%</span><span class="s">H-</span><span class="si">%</span><span class="s">M}.jpg'):
+        print('Captured </span><span class="si">%</span><span class="s">s' </span><span class="si">% </span><span class="s">filename)
+        wait()
+'''</span>
+</code></pre>
+</div>
+<hr />
+<blockquote>
+  <p>Capturing in low light</p>
+</blockquote>
+
+<div class="language-python highlighter-rouge"><pre class="highlight"><code><span class="c"># -*- coding: utf-8 -*-</span>
+<span class="kn">import</span> <span class="nn">picamera</span>
+<span class="kn">from</span> <span class="nn">time</span> <span class="kn">import</span> <span class="n">sleep</span>
+<span class="kn">from</span> <span class="nn">fractions</span> <span class="kn">import</span> <span class="n">Fraction</span>
+
+<span class="k">with</span> <span class="n">picamera</span><span class="o">.</span><span class="n">PiCamera</span><span class="p">()</span> <span class="k">as</span> <span class="n">camera</span><span class="p">:</span>
+    <span class="n">camera</span><span class="o">.</span><span class="n">resolution</span> <span class="o">=</span> <span class="p">(</span><span class="mi">1280</span><span class="p">,</span> <span class="mi">720</span><span class="p">)</span>
+    <span class="c"># Set a framerate of 1/6fps, then set shutter</span>
+    <span class="c"># speed to 6s and ISO to 800</span>
+    <span class="c">#Fraction(分子，分母)</span>
+    <span class="n">camera</span><span class="o">.</span><span class="n">framerate</span> <span class="o">=</span> <span class="n">Fraction</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">6</span><span class="p">)</span>
+    <span class="n">camera</span><span class="o">.</span><span class="n">shutter_speed</span> <span class="o">=</span> <span class="mi">1000000</span>
+    <span class="n">camera</span><span class="o">.</span><span class="n">exposure_mode</span> <span class="o">=</span> <span class="s">'off'</span>
+    <span class="n">camera</span><span class="o">.</span><span class="n">iso</span> <span class="o">=</span> <span class="mi">800</span>
+    <span class="k">print</span><span class="p">(</span><span class="s">'1'</span><span class="p">)</span>
+    <span class="c"># Give the camera a good long time to measure AWB</span>
+    <span class="c"># (you may wish to use fixed AWB instead)</span>
+    <span class="n">sleep</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>
+    <span class="k">print</span><span class="p">(</span><span class="s">'2'</span><span class="p">)</span>
+    <span class="c"># Finally, capture an image with a 6s exposure. Due</span>
+    <span class="c"># to mode switching on the still port, this will take</span>
+    <span class="c"># longer than 6 seconds</span>
+    <span class="n">camera</span><span class="o">.</span><span class="n">capture</span><span class="p">(</span><span class="s">'dark.jpg'</span><span class="p">)</span>
+    <span class="k">print</span><span class="p">(</span><span class="s">'3'</span><span class="p">)</span>
+</code></pre>
+</div>
+<hr />
+<blockquote>
+  <p>Capturing to a network stream</p>
+</blockquote>
+
+<p>This is a variation of Capturing timelapse sequences. Here we have two scripts: a server (presumably on a fast machine) which listens for a connection from the Raspberry Pi, and a client which runs on the Raspberry Pi and sends a continual stream of images to the server. We’ll use a very simple protocol for communication: first the length of the image will be sent as a 32-bit integer (in Little Endian format), then this will be followed by the bytes of image data. If the length is 0, this indicates that the connection should be closed as no more images will be forthcoming. This protocol is illustrated below:</p>
+<hr />
+<p>| image length  |  image data   | image length  |  image data   |  image length  |<br />
+| :———–: | :———–: | :———–: | :———–: |  :———–: |<br />
+|  32bit        |  68702bytes   |      32bit    |  87532bytes   |  32bit(4bytes) |<br />
+Firstly the <code class="highlighter-rouge">server</code> script (which relies on PIL for reading JPEGs, but you could replace this with any other suitable graphics library, e.g. OpenCV or GraphicsMagick):</p>
+<hr />
+<div class="language-python highlighter-rouge"><pre class="highlight"><code><span class="c"># -*- coding: utf-8 -*-</span>
+<span class="kn">import</span> <span class="nn">io</span>
+<span class="kn">import</span> <span class="nn">socket</span>
+<span class="kn">import</span> <span class="nn">struct</span>
+<span class="kn">from</span> <span class="nn">PIL</span> <span class="kn">import</span> <span class="n">Image</span>
+
+<span class="c"># Start a socket listening for connections on 0.0.0.0:8000 (0.0.0.0 means</span>
+<span class="c"># all interfaces)</span>
+<span class="n">server_socket</span> <span class="o">=</span> <span class="n">socket</span><span class="o">.</span><span class="n">socket</span><span class="p">()</span>
+<span class="n">server_socket</span><span class="o">.</span><span class="n">bind</span><span class="p">((</span><span class="s">'0.0.0.0'</span><span class="p">,</span> <span class="mi">8000</span><span class="p">))</span>
+<span class="n">server_socket</span><span class="o">.</span><span class="n">listen</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
+
+<span class="c"># Accept a single connection and make a file-like object out of it</span>
+<span class="n">connection</span> <span class="o">=</span> <span class="n">server_socket</span><span class="o">.</span><span class="n">accept</span><span class="p">()[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">makefile</span><span class="p">(</span><span class="s">'rb'</span><span class="p">)</span>
+<span class="k">try</span><span class="p">:</span>
+    <span class="k">while</span> <span class="bp">True</span><span class="p">:</span>
+        <span class="c"># Read the length of the image as a 32-bit unsigned int. If the</span>
+        <span class="c"># length is zero, quit the loop</span>
+        <span class="n">image_len</span> <span class="o">=</span> <span class="n">struct</span><span class="o">.</span><span class="n">unpack</span><span class="p">(</span><span class="s">'&lt;L'</span><span class="p">,</span> <span class="n">connection</span><span class="o">.</span><span class="n">read</span><span class="p">(</span><span class="n">struct</span><span class="o">.</span><span class="n">calcsize</span><span class="p">(</span><span class="s">'&lt;L'</span><span class="p">)))[</span><span class="mi">0</span><span class="p">]</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="n">image_len</span><span class="p">:</span>
+            <span class="k">break</span>
+        <span class="c"># Construct a stream to hold the image data and read the image</span>
+        <span class="c"># data from the connection</span>
+        <span class="n">image_stream</span> <span class="o">=</span> <span class="n">io</span><span class="o">.</span><span class="n">BytesIO</span><span class="p">()</span>
+        <span class="n">image_stream</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">connection</span><span class="o">.</span><span class="n">read</span><span class="p">(</span><span class="n">image_len</span><span class="p">))</span>
+        <span class="c"># Rewind the stream, open it as an image with PIL and do some</span>
+        <span class="c"># processing on it</span>
+        <span class="n">image_stream</span><span class="o">.</span><span class="n">seek</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
+        <span class="n">image</span> <span class="o">=</span> <span class="n">Image</span><span class="o">.</span><span class="nb">open</span><span class="p">(</span><span class="n">image_stream</span><span class="p">)</span>
+        <span class="k">print</span><span class="p">(</span><span class="s">'Image is </span><span class="si">%</span><span class="s">dx</span><span class="si">%</span><span class="s">d'</span> <span class="o">%</span> <span class="n">image</span><span class="o">.</span><span class="n">size</span><span class="p">)</span>
+        <span class="n">image</span><span class="o">.</span><span class="n">verify</span><span class="p">()</span>
+        <span class="k">print</span><span class="p">(</span><span class="s">'Image is verified'</span><span class="p">)</span>
+<span class="k">finally</span><span class="p">:</span>
+    <span class="n">connection</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+    <span class="n">server_socket</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+</code></pre>
+</div>
+
+<p>Now for the <code class="highlighter-rouge">client</code> side of things, on the Raspberry Pi:</p>
+
+<div class="language-python highlighter-rouge"><pre class="highlight"><code><span class="c"># -*- coding: utf-8 -*-</span>
+<span class="kn">import</span> <span class="nn">io</span>
+<span class="kn">import</span> <span class="nn">socket</span>
+<span class="kn">import</span> <span class="nn">struct</span>
+<span class="kn">import</span> <span class="nn">time</span>
+<span class="kn">import</span> <span class="nn">picamera</span>
+
+<span class="c"># Connect a client socket to my_server:8000 (change my_server to the</span>
+<span class="c"># hostname of your server)</span>
+<span class="n">client_socket</span> <span class="o">=</span> <span class="n">socket</span><span class="o">.</span><span class="n">socket</span><span class="p">()</span>
+<span class="n">client_socket</span><span class="o">.</span><span class="n">connect</span><span class="p">((</span><span class="s">'220.69.240.4'</span><span class="p">,</span> <span class="mi">8000</span><span class="p">))</span>
+
+<span class="c"># Make a file-like object out of the connection</span>
+<span class="n">connection</span> <span class="o">=</span> <span class="n">client_socket</span><span class="o">.</span><span class="n">makefile</span><span class="p">(</span><span class="s">'wb'</span><span class="p">)</span>
+<span class="k">try</span><span class="p">:</span>
+    <span class="k">with</span> <span class="n">picamera</span><span class="o">.</span><span class="n">PiCamera</span><span class="p">()</span> <span class="k">as</span> <span class="n">camera</span><span class="p">:</span>
+        <span class="n">camera</span><span class="o">.</span><span class="n">resolution</span> <span class="o">=</span> <span class="p">(</span><span class="mi">640</span><span class="p">,</span> <span class="mi">480</span><span class="p">)</span>
+        <span class="c"># Start a preview and let the camera warm up for 2 seconds</span>
+        <span class="n">camera</span><span class="o">.</span><span class="n">start_preview</span><span class="p">()</span>
+        <span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+
+        <span class="c"># Note the start time and construct a stream to hold image data</span>
+        <span class="c"># temporarily (we could write it directly to connection but in this</span>
+        <span class="c"># case we want to find out the size of each capture first to keep</span>
+        <span class="c"># our protocol simple)</span>
+        <span class="n">start</span> <span class="o">=</span> <span class="n">time</span><span class="o">.</span><span class="n">time</span><span class="p">()</span>
+        <span class="n">stream</span> <span class="o">=</span> <span class="n">io</span><span class="o">.</span><span class="n">BytesIO</span><span class="p">()</span>
+        <span class="k">for</span> <span class="n">foo</span> <span class="ow">in</span> <span class="n">camera</span><span class="o">.</span><span class="n">capture_continuous</span><span class="p">(</span><span class="n">stream</span><span class="p">,</span> <span class="s">'jpeg'</span><span class="p">):</span>
+            <span class="c"># Write the length of the capture to the stream and flush to</span>
+            <span class="c"># ensure it actually gets sent</span>
+            <span class="n">connection</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">struct</span><span class="o">.</span><span class="n">pack</span><span class="p">(</span><span class="s">'&lt;L'</span><span class="p">,</span> <span class="n">stream</span><span class="o">.</span><span class="n">tell</span><span class="p">()))</span>
+            <span class="n">connection</span><span class="o">.</span><span class="n">flush</span><span class="p">()</span>
+            <span class="c"># Rewind the stream and send the image data over the wire</span>
+            <span class="n">stream</span><span class="o">.</span><span class="n">seek</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
+            <span class="n">connection</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">stream</span><span class="o">.</span><span class="n">read</span><span class="p">())</span>
+            <span class="c"># If we've been capturing for more than 30 seconds, quit</span>
+            <span class="k">if</span> <span class="n">time</span><span class="o">.</span><span class="n">time</span><span class="p">()</span> <span class="o">-</span> <span class="n">start</span> <span class="o">&gt;</span> <span class="mi">30</span><span class="p">:</span>
+                <span class="k">break</span>
+            <span class="c"># Reset the stream for the next capture</span>
+            <span class="n">stream</span><span class="o">.</span><span class="n">seek</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
+            <span class="n">stream</span><span class="o">.</span><span class="n">truncate</span><span class="p">()</span>
+    <span class="c"># Write a length of zero to the stream to signal we're done</span>
+    <span class="n">connection</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">struct</span><span class="o">.</span><span class="n">pack</span><span class="p">(</span><span class="s">'&lt;L'</span><span class="p">,</span> <span class="mi">0</span><span class="p">))</span>
+<span class="k">finally</span><span class="p">:</span>
+    <span class="n">connection</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+    <span class="n">client_socket</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+</code></pre>
+</div>
+<hr />
+<blockquote>
+  <p>Recording video to a file</p>
+</blockquote>
+
+<div class="language-python highlighter-rouge"><pre class="highlight"><code><span class="c"># -*- coding: utf-8 -*-</span>
+<span class="kn">import</span> <span class="nn">picamera</span>
+
+<span class="k">with</span> <span class="n">picamera</span><span class="o">.</span><span class="n">PiCamera</span><span class="p">()</span> <span class="k">as</span> <span class="n">camera</span><span class="p">:</span>
+    <span class="n">camera</span><span class="o">.</span><span class="n">resolution</span> <span class="o">=</span> <span class="p">(</span><span class="mi">640</span><span class="p">,</span> <span class="mi">480</span><span class="p">)</span>
+    <span class="n">camera</span><span class="o">.</span><span class="n">start_recording</span><span class="p">(</span><span class="s">'my_video.h264'</span><span class="p">)</span>
+    <span class="k">print</span><span class="p">(</span><span class="s">'start'</span><span class="p">)</span>
+    <span class="n">camera</span><span class="o">.</span><span class="n">wait_recording</span><span class="p">(</span><span class="mi">7</span><span class="p">)</span> 
+    <span class="c">#take a 7second video</span>
+    <span class="n">camera</span><span class="o">.</span><span class="n">stop_recording</span><span class="p">()</span>
+
+<span class="c">#Note that we use wait_recording() in the example above instead of time.sleep() which we’ve been using in the image capture recipes above. The wait_recording() method is similar in that it will pause for the number of seconds specified, but unlike time.sleep() it will continually check for recording errors (e.g. an out of disk space condition) while it is waiting. If we had used time.sleep() instead, such errors would only be raised by the stop_recording() call (which could be long after the error actually occurred).</span>
+</code></pre>
+</div>
+
+<hr />
+<blockquote>
+  <p>Recording video to a stream</p>
+</blockquote>
+
+<div class="language-python highlighter-rouge"><pre class="highlight"><code><span class="c"># -*- coding: utf-8 -*-</span>
+<span class="kn">import</span> <span class="nn">io</span>
+<span class="kn">import</span> <span class="nn">picamera</span>
+
+<span class="n">stream</span> <span class="o">=</span> <span class="n">io</span><span class="o">.</span><span class="n">BytesIO</span><span class="p">()</span>
+<span class="k">with</span> <span class="n">picamera</span><span class="o">.</span><span class="n">PiCamera</span><span class="p">()</span> <span class="k">as</span> <span class="n">camera</span><span class="p">:</span>
+    <span class="n">camera</span><span class="o">.</span><span class="n">resolution</span> <span class="o">=</span> <span class="p">(</span><span class="mi">640</span><span class="p">,</span> <span class="mi">480</span><span class="p">)</span>
+    <span class="c">#size of the video</span>
+    <span class="n">camera</span><span class="o">.</span><span class="n">start_recording</span><span class="p">(</span><span class="n">stream</span><span class="p">,</span> <span class="n">format</span><span class="o">=</span><span class="s">'h264'</span><span class="p">,</span> <span class="n">quality</span><span class="o">=</span><span class="mi">23</span><span class="p">)</span>
+    <span class="c"># stream is the output</span>
+    <span class="c">#format h264,mjpeg,yuv,rgb,rgba,bgr,bgra</span>
+    <span class="c">#quality is between 1 (highest quality) and 40 (lowest quality)</span>
+    <span class="n">camera</span><span class="o">.</span><span class="n">wait_recording</span><span class="p">(</span><span class="mi">15</span><span class="p">)</span>
+    <span class="c"># take a 15seconds video</span>
+    <span class="n">camera</span><span class="o">.</span><span class="n">stop_recording</span><span class="p">()</span>
+
+<span class="c">#Here, we’ve set the quality parameter to indicate to the encoder the level of image quality that we’d like it to try and maintain. The camera’s H.264 encoder is primarily constrained by two parameters:</span>
+
+<span class="c">#bitrate limits the encoder’s output to a certain number of bits per second. The default is 17000000 (17Mbps), and the maximum value is 25000000 (25Mbps). Higher values give the encoder more “freedom” to encode at higher qualities. You will likely find that the default doesn’t constrain the encoder at all except at higher recording resolutions.</span>
+
+<span class="c">#quality tells the encoder what level of image quality to maintain. Values can be between 1 (highest quality) and 40 (lowest quality), with typical values providing a reasonable trade-off between bandwidth and quality being between 20 and 25.</span>
+
+<span class="c">#As well as using stream classes built into Python (like BytesIO) you can also construct your own custom outputs. This is particularly useful for video recording, as discussed in the linked recipe.</span>
+</code></pre>
+</div>
+<hr />
+<blockquote>
+  <p>Recording over multiple files <br />
+一次录多个文件</p>
+</blockquote>
+
+<div class="language-python highlighter-rouge"><pre class="highlight"><code><span class="c"># -*- coding: utf-8 -*-</span>
+<span class="kn">import</span> <span class="nn">picamera</span>
+
+<span class="k">with</span> <span class="n">picamera</span><span class="o">.</span><span class="n">PiCamera</span><span class="p">()</span> <span class="k">as</span> <span class="n">camera</span><span class="p">:</span>
+    <span class="n">camera</span><span class="o">.</span><span class="n">resolution</span> <span class="o">=</span> <span class="p">(</span><span class="mi">640</span><span class="p">,</span> <span class="mi">480</span><span class="p">)</span>
+    <span class="n">camera</span><span class="o">.</span><span class="n">start_recording</span><span class="p">(</span><span class="s">'1.h264'</span><span class="p">)</span>
+    <span class="n">camera</span><span class="o">.</span><span class="n">wait_recording</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">4</span><span class="p">):</span>
+        <span class="n">camera</span><span class="o">.</span><span class="n">split_recording</span><span class="p">(</span><span class="s">'</span><span class="si">%</span><span class="s">d.h264'</span> <span class="o">%</span> <span class="n">i</span><span class="p">)</span>
+        <span class="n">camera</span><span class="o">.</span><span class="n">wait_recording</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>
+    <span class="n">camera</span><span class="o">.</span><span class="n">stop_recording</span><span class="p">()</span>
+<span class="c">#This should produce 10 video files named 1.h264, 2.h264, etc. each of which is approximately 5 seconds long (approximately because the split_recording() method will only split files at a key-frame).</span>
+
+<span class="s">'''
+import picamera
+
+with picamera.PiCamera() as camera:
+    camera.resolution = (640, 480)
+    for filename in camera.record_sequence(
+            '</span><span class="si">%</span><span class="s">d.h264' </span><span class="si">% </span><span class="s">i for i in range(1, 11)):
+        camera.wait_recording(5)
+'''</span>
+</code></pre>
+</div>
+<hr />
+<blockquote>
+  <p>Recording to a circular stream</p>
+</blockquote>
+
+<div class="language-python highlighter-rouge"><pre class="highlight"><code><span class="c"># -*- coding: utf-8 -*-</span>
+<span class="c">#循环 覆盖录像</span>
+<span class="kn">import</span> <span class="nn">io</span>
+<span class="kn">import</span> <span class="nn">random</span>
+<span class="kn">import</span> <span class="nn">picamera</span>
+
+<span class="k">def</span> <span class="nf">write_now</span><span class="p">():</span>
+    <span class="c"># Randomly return True (like a fake motion detection routine)</span>
+    <span class="k">return</span> <span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">10</span><span class="p">)</span> <span class="o">==</span> <span class="mi">0</span>
+
+<span class="k">def</span> <span class="nf">write_video</span><span class="p">(</span><span class="n">stream</span><span class="p">):</span>
+    <span class="k">print</span><span class="p">(</span><span class="s">'Writing video!'</span><span class="p">)</span>
+    <span class="k">with</span> <span class="n">stream</span><span class="o">.</span><span class="n">lock</span><span class="p">:</span>
+        <span class="c"># Find the first header frame in the video</span>
+        <span class="k">for</span> <span class="n">frame</span> <span class="ow">in</span> <span class="n">stream</span><span class="o">.</span><span class="n">frames</span><span class="p">:</span>
+            <span class="k">if</span> <span class="n">frame</span><span class="o">.</span><span class="n">frame_type</span> <span class="o">==</span> <span class="n">picamera</span><span class="o">.</span><span class="n">PiVideoFrameType</span><span class="o">.</span><span class="n">sps_header</span><span class="p">:</span>
+                <span class="n">stream</span><span class="o">.</span><span class="n">seek</span><span class="p">(</span><span class="n">frame</span><span class="o">.</span><span class="n">position</span><span class="p">)</span>
+                <span class="k">break</span>
+        <span class="c"># Write the rest of the stream to disk</span>
+        <span class="k">with</span> <span class="n">io</span><span class="o">.</span><span class="nb">open</span><span class="p">(</span><span class="s">'motion.h264'</span><span class="p">,</span> <span class="s">'wb'</span><span class="p">)</span> <span class="k">as</span> <span class="n">output</span><span class="p">:</span>
+            <span class="n">output</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">stream</span><span class="o">.</span><span class="n">read</span><span class="p">())</span>
+
+<span class="k">with</span> <span class="n">picamera</span><span class="o">.</span><span class="n">PiCamera</span><span class="p">()</span> <span class="k">as</span> <span class="n">camera</span><span class="p">:</span>
+    <span class="n">stream</span> <span class="o">=</span> <span class="n">picamera</span><span class="o">.</span><span class="n">PiCameraCircularIO</span><span class="p">(</span><span class="n">camera</span><span class="p">,</span> <span class="n">seconds</span><span class="o">=</span><span class="mi">20</span><span class="p">)</span>
+    <span class="n">camera</span><span class="o">.</span><span class="n">start_recording</span><span class="p">(</span><span class="n">stream</span><span class="p">,</span> <span class="n">format</span><span class="o">=</span><span class="s">'h264'</span><span class="p">)</span>
+    <span class="k">try</span><span class="p">:</span>
+        <span class="k">while</span> <span class="bp">True</span><span class="p">:</span>
+            <span class="k">print</span><span class="p">(</span><span class="s">'camera.wait_recording(1)'</span><span class="p">)</span>
+            <span class="c">#camera.start_preview()</span>
+            <span class="n">camera</span><span class="o">.</span><span class="n">wait_recording</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+            <span class="k">if</span> <span class="n">write_now</span><span class="p">():</span>
+                <span class="c"># Keep recording for 10 seconds and only then write the</span>
+                <span class="c"># stream to disk</span>
+                <span class="k">print</span><span class="p">(</span><span class="s">'camera.wait_recording(10)'</span><span class="p">)</span>
+                <span class="c">#camera.start_preview()</span>
+                <span class="n">camera</span><span class="o">.</span><span class="n">wait_recording</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>
+                <span class="n">write_video</span><span class="p">(</span><span class="n">stream</span><span class="p">)</span>
+    <span class="k">finally</span><span class="p">:</span>
+        <span class="n">camera</span><span class="o">.</span><span class="n">stop_recording</span><span class="p">()</span>
+
+</code></pre>
+</div>
+<hr />
+<blockquote>
+  <p>Recording to a network stream</p>
+</blockquote>
+
+<p><code class="highlighter-rouge">server:</code></p>
+
+<div class="language-python highlighter-rouge"><pre class="highlight"><code><span class="c"># -*- coding: utf-8 -*-</span>
+<span class="c">#安装 vlc</span>
+<span class="c">#sudo apt-get install vlc</span>
+
+<span class="kn">import</span> <span class="nn">socket</span>
+<span class="kn">import</span> <span class="nn">subprocess</span>
+
+<span class="c"># Start a socket listening for connections on 0.0.0.0:8000 (0.0.0.0 means</span>
+<span class="c"># all interfaces)</span>
+<span class="n">server_socket</span> <span class="o">=</span> <span class="n">socket</span><span class="o">.</span><span class="n">socket</span><span class="p">()</span>
+<span class="n">server_socket</span><span class="o">.</span><span class="n">bind</span><span class="p">((</span><span class="s">'0.0.0.0'</span><span class="p">,</span> <span class="mi">8000</span><span class="p">))</span>
+<span class="n">server_socket</span><span class="o">.</span><span class="n">listen</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
+
+<span class="c"># Accept a single connection and make a file-like object out of it</span>
+<span class="n">connection</span> <span class="o">=</span> <span class="n">server_socket</span><span class="o">.</span><span class="n">accept</span><span class="p">()[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">makefile</span><span class="p">(</span><span class="s">'rb'</span><span class="p">)</span>
+<span class="k">try</span><span class="p">:</span>
+    <span class="c"># Run a viewer with an appropriate command line. Uncomment the mplayer</span>
+    <span class="c"># version if you would prefer to use mplayer instead of VLC</span>
+    <span class="n">cmdline</span> <span class="o">=</span> <span class="p">[</span><span class="s">'vlc'</span><span class="p">,</span> <span class="s">'--demux'</span><span class="p">,</span> <span class="s">'h264'</span><span class="p">,</span> <span class="s">'-'</span><span class="p">]</span>
+    <span class="c">#cmdline = ['mplayer', '-fps', '25', '-cache', '1024', '-']</span>
+    <span class="n">player</span> <span class="o">=</span> <span class="n">subprocess</span><span class="o">.</span><span class="n">Popen</span><span class="p">(</span><span class="n">cmdline</span><span class="p">,</span> <span class="n">stdin</span><span class="o">=</span><span class="n">subprocess</span><span class="o">.</span><span class="n">PIPE</span><span class="p">)</span>
+    <span class="k">while</span> <span class="bp">True</span><span class="p">:</span>
+        <span class="c"># Repeatedly read 1k of data from the connection and write it to</span>
+        <span class="c"># the media player's stdin</span>
+        <span class="n">data</span> <span class="o">=</span> <span class="n">connection</span><span class="o">.</span><span class="n">read</span><span class="p">(</span><span class="mi">1024</span><span class="p">)</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="n">data</span><span class="p">:</span>
+            <span class="k">break</span>
+        <span class="n">player</span><span class="o">.</span><span class="n">stdin</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
+<span class="k">finally</span><span class="p">:</span>
+    <span class="n">connection</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+    <span class="n">server_socket</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+    <span class="n">player</span><span class="o">.</span><span class="n">terminate</span><span class="p">()</span>
+</code></pre>
+</div>
+<hr />
+<p><code class="highlighter-rouge">client:</code></p>
+
+<div class="language-python highlighter-rouge"><pre class="highlight"><code><span class="c"># -*- coding: utf-8 -*-</span>
+<span class="kn">import</span> <span class="nn">socket</span>
+<span class="kn">import</span> <span class="nn">time</span>
+<span class="kn">import</span> <span class="nn">picamera</span>
+
+<span class="c"># Connect a client socket to my_server:8000 (change my_server to the</span>
+<span class="c"># hostname of your server)</span>
+<span class="n">client_socket</span> <span class="o">=</span> <span class="n">socket</span><span class="o">.</span><span class="n">socket</span><span class="p">()</span>
+<span class="n">client_socket</span><span class="o">.</span><span class="n">connect</span><span class="p">((</span><span class="s">'220.69.240.4'</span><span class="p">,</span> <span class="mi">8000</span><span class="p">))</span>
+
+<span class="c"># Make a file-like object out of the connection</span>
+<span class="n">connection</span> <span class="o">=</span> <span class="n">client_socket</span><span class="o">.</span><span class="n">makefile</span><span class="p">(</span><span class="s">'wb'</span><span class="p">)</span>
+<span class="k">try</span><span class="p">:</span>
+    <span class="k">with</span> <span class="n">picamera</span><span class="o">.</span><span class="n">PiCamera</span><span class="p">()</span> <span class="k">as</span> <span class="n">camera</span><span class="p">:</span>
+        <span class="n">camera</span><span class="o">.</span><span class="n">resolution</span> <span class="o">=</span> <span class="p">(</span><span class="mi">640</span><span class="p">,</span> <span class="mi">480</span><span class="p">)</span>
+        <span class="n">camera</span><span class="o">.</span><span class="n">framerate</span> <span class="o">=</span> <span class="mi">24</span>
+        <span class="c"># Start a preview and let the camera warm up for 2 seconds</span>
+        <span class="c">#camera.start_preview()</span>
+        <span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+        <span class="c"># Start recording, sending the output to the connection for 60</span>
+        <span class="c"># seconds, then stop</span>
+        <span class="n">camera</span><span class="o">.</span><span class="n">start_recording</span><span class="p">(</span><span class="n">connection</span><span class="p">,</span> <span class="n">format</span><span class="o">=</span><span class="s">'h264'</span><span class="p">)</span>
+        <span class="n">camera</span><span class="o">.</span><span class="n">wait_recording</span><span class="p">(</span><span class="mi">60</span><span class="p">)</span>
+        <span class="n">camera</span><span class="o">.</span><span class="n">stop_recording</span><span class="p">()</span>
+<span class="k">finally</span><span class="p">:</span>
+    <span class="n">connection</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+    <span class="n">client_socket</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+</code></pre>
+</div>
+<hr />
+<blockquote>
+  <p>Recording to a network stream simple</p>
+</blockquote>
+
+<p><code class="highlighter-rouge">server:</code></p>
+
+<div class="language-python highlighter-rouge"><pre class="highlight"><code><span class="c"># -*- coding: utf-8 -*-</span>
+<span class="kn">import</span> <span class="nn">socket</span>
+<span class="kn">import</span> <span class="nn">time</span>
+<span class="kn">import</span> <span class="nn">picamera</span>
+
+<span class="k">with</span> <span class="n">picamera</span><span class="o">.</span><span class="n">PiCamera</span><span class="p">()</span> <span class="k">as</span> <span class="n">camera</span><span class="p">:</span>
+    <span class="n">camera</span><span class="o">.</span><span class="n">resolution</span> <span class="o">=</span> <span class="p">(</span><span class="mi">640</span><span class="p">,</span> <span class="mi">480</span><span class="p">)</span>
+    <span class="n">camera</span><span class="o">.</span><span class="n">framerate</span> <span class="o">=</span> <span class="mi">24</span>
+
+    <span class="n">server_socket</span> <span class="o">=</span> <span class="n">socket</span><span class="o">.</span><span class="n">socket</span><span class="p">()</span>
+    <span class="n">server_socket</span><span class="o">.</span><span class="n">bind</span><span class="p">((</span><span class="s">'0.0.0.0'</span><span class="p">,</span> <span class="mi">8000</span><span class="p">))</span>
+    <span class="n">server_socket</span><span class="o">.</span><span class="n">listen</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
+
+    <span class="c"># Accept a single connection and make a file-like object out of it</span>
+    <span class="n">connection</span> <span class="o">=</span> <span class="n">server_socket</span><span class="o">.</span><span class="n">accept</span><span class="p">()[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">makefile</span><span class="p">(</span><span class="s">'wb'</span><span class="p">)</span>
+    <span class="k">try</span><span class="p">:</span>
+        <span class="n">camera</span><span class="o">.</span><span class="n">start_recording</span><span class="p">(</span><span class="n">connection</span><span class="p">,</span> <span class="n">format</span><span class="o">=</span><span class="s">'h264'</span><span class="p">)</span>
+        <span class="n">camera</span><span class="o">.</span><span class="n">wait_recording</span><span class="p">(</span><span class="mi">60</span><span class="p">)</span>
+        <span class="c">#持续60秒</span>
+        <span class="n">camera</span><span class="o">.</span><span class="n">stop_recording</span><span class="p">()</span>
+    <span class="k">finally</span><span class="p">:</span>
+        <span class="n">connection</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+        <span class="n">server_socket</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+</code></pre>
+</div>
+<p><code class="highlighter-rouge">client:</code></p>
+
+<div class="language-bash highlighter-rouge"><pre class="highlight"><code><span class="c">#client vlc tcp/h264://my_pi_address:8000/</span>
+</code></pre>
+</div>
+
+<blockquote>
+  <p>Overlaying images on the preview</p>
+</blockquote>
+
+<div class="language-python highlighter-rouge"><pre class="highlight"><code><span class="c"># -*- coding: utf-8 -*-</span>
+<span class="c">#在画面上添加十字线</span>
+<span class="kn">import</span> <span class="nn">time</span>
+<span class="kn">import</span> <span class="nn">picamera</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="kn">as</span> <span class="nn">np</span>
+
+<span class="c"># Create an array representing a 1280x720 image of</span>
+<span class="c"># a cross through the center of the display. The shape of</span>
+<span class="c"># the array must be of the form (height, width, color)</span>
+<span class="n">a</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">((</span><span class="mi">720</span><span class="p">,</span> <span class="mi">1280</span><span class="p">,</span> <span class="mi">3</span><span class="p">),</span> <span class="n">dtype</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">uint8</span><span class="p">)</span>
+<span class="n">a</span><span class="p">[</span><span class="mi">360</span><span class="p">,</span> <span class="p">:,</span> <span class="p">:]</span> <span class="o">=</span> <span class="mh">0xff</span>
+<span class="c"># x 坐标</span>
+<span class="n">a</span><span class="p">[:,</span> <span class="mi">640</span><span class="p">,</span> <span class="p">:]</span> <span class="o">=</span> <span class="mh">0xff</span>
+<span class="c"># y 坐标</span>
+<span class="k">with</span> <span class="n">picamera</span><span class="o">.</span><span class="n">PiCamera</span><span class="p">()</span> <span class="k">as</span> <span class="n">camera</span><span class="p">:</span>
+    <span class="n">camera</span><span class="o">.</span><span class="n">resolution</span> <span class="o">=</span> <span class="p">(</span><span class="mi">1280</span><span class="p">,</span> <span class="mi">720</span><span class="p">)</span>
+    <span class="n">camera</span><span class="o">.</span><span class="n">framerate</span> <span class="o">=</span> <span class="mi">24</span>
+    <span class="n">camera</span><span class="o">.</span><span class="n">start_preview</span><span class="p">()</span>
+    <span class="c"># Add the overlay directly into layer 3 with transparency;</span>
+    <span class="c"># we can omit the size parameter of add_overlay as the</span>
+    <span class="c"># size is the same as the camera's resolution</span>
+    <span class="n">o</span> <span class="o">=</span> <span class="n">camera</span><span class="o">.</span><span class="n">add_overlay</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">getbuffer</span><span class="p">(</span><span class="n">a</span><span class="p">),</span> <span class="n">layer</span><span class="o">=</span><span class="mi">3</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mi">64</span><span class="p">)</span>
+    <span class="k">try</span><span class="p">:</span>
+        <span class="c"># Wait indefinitely until the user terminates the script</span>
+        <span class="k">while</span> <span class="bp">True</span><span class="p">:</span>
+            <span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+    <span class="k">finally</span><span class="p">:</span>
+        <span class="n">camera</span><span class="o">.</span><span class="n">remove_overlay</span><span class="p">(</span><span class="n">o</span><span class="p">)</span>
+</code></pre>
+</div>
+
+<blockquote>
+  <p>Overlaying text on the output</p>
+</blockquote>
+
+<div class="language-python highlighter-rouge"><pre class="highlight"><code><span class="c"># -*- coding: utf-8 -*-</span>
+<span class="kn">import</span> <span class="nn">picamera</span>
+<span class="kn">import</span> <span class="nn">time</span>
+
+<span class="k">with</span> <span class="n">picamera</span><span class="o">.</span><span class="n">PiCamera</span><span class="p">()</span> <span class="k">as</span> <span class="n">camera</span><span class="p">:</span>
+    <span class="n">camera</span><span class="o">.</span><span class="n">resolution</span> <span class="o">=</span> <span class="p">(</span><span class="mi">640</span><span class="p">,</span> <span class="mi">480</span><span class="p">)</span>
+    <span class="n">camera</span><span class="o">.</span><span class="n">framerate</span> <span class="o">=</span> <span class="mi">24</span>
+    <span class="n">camera</span><span class="o">.</span><span class="n">start_preview</span><span class="p">()</span>
+    <span class="n">camera</span><span class="o">.</span><span class="n">annotate_text</span> <span class="o">=</span> <span class="s">'Hello world!'</span>
+    <span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+    <span class="c"># Take a picture including the annotation</span>
+    <span class="n">camera</span><span class="o">.</span><span class="n">capture</span><span class="p">(</span><span class="s">'foo.jpg'</span><span class="p">)</span>
+</code></pre>
+</div>
+<blockquote>
+  <p>滚动字幕</p>
+</blockquote>
+
+<div class="language-python highlighter-rouge"><pre class="highlight"><code><span class="c"># -*- coding: utf-8 -*-</span>
+<span class="kn">import</span> <span class="nn">picamera</span>
+<span class="kn">import</span> <span class="nn">time</span>
+<span class="kn">import</span> <span class="nn">itertools</span>
+
+<span class="n">s</span> <span class="o">=</span> <span class="s">"This message would be far too long to display normally..."</span>
+
+<span class="k">with</span> <span class="n">picamera</span><span class="o">.</span><span class="n">PiCamera</span><span class="p">()</span> <span class="k">as</span> <span class="n">camera</span><span class="p">:</span>
+    <span class="n">camera</span><span class="o">.</span><span class="n">resolution</span> <span class="o">=</span> <span class="p">(</span><span class="mi">640</span><span class="p">,</span> <span class="mi">480</span><span class="p">)</span>
+    <span class="n">camera</span><span class="o">.</span><span class="n">framerate</span> <span class="o">=</span> <span class="mi">24</span>
+    <span class="n">camera</span><span class="o">.</span><span class="n">start_preview</span><span class="p">()</span>
+    <span class="n">camera</span><span class="o">.</span><span class="n">annotate_text</span> <span class="o">=</span> <span class="s">' '</span> <span class="o">*</span> <span class="mi">31</span>
+    <span class="c"># 31 决定显示的格数</span>
+    <span class="k">for</span> <span class="n">c</span> <span class="ow">in</span> <span class="n">itertools</span><span class="o">.</span><span class="n">cycle</span><span class="p">(</span><span class="n">s</span><span class="p">):</span>
+        <span class="n">camera</span><span class="o">.</span><span class="n">annotate_text</span> <span class="o">=</span> <span class="n">camera</span><span class="o">.</span><span class="n">annotate_text</span><span class="p">[</span><span class="mi">1</span><span class="p">:</span><span class="mi">31</span><span class="p">]</span> <span class="o">+</span> <span class="n">c</span>
+        <span class="c">#print c</span>
+        <span class="k">print</span> <span class="n">camera</span><span class="o">.</span><span class="n">annotate_text</span>
+        <span class="c"># [1:31] 屏幕中显示的字数</span>
+        <span class="s">'''
+        c = T
+        c = h
+        c = i
+        c = s
+        c =  
+        c = m
+
+        '''</span>
+        <span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mf">0.1</span><span class="p">)</span>
+</code></pre>
+</div>
+
+<blockquote>
+  <p>显示实时时间</p>
+</blockquote>
+
+<div class="language-python highlighter-rouge"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">picamera</span>
+<span class="kn">import</span> <span class="nn">datetime</span> <span class="kn">as</span> <span class="nn">dt</span>
+
+<span class="k">with</span> <span class="n">picamera</span><span class="o">.</span><span class="n">PiCamera</span><span class="p">()</span> <span class="k">as</span> <span class="n">camera</span><span class="p">:</span>
+    <span class="n">camera</span><span class="o">.</span><span class="n">resolution</span> <span class="o">=</span> <span class="p">(</span><span class="mi">1280</span><span class="p">,</span> <span class="mi">720</span><span class="p">)</span>
+    <span class="n">camera</span><span class="o">.</span><span class="n">framerate</span> <span class="o">=</span> <span class="mi">24</span>
+    <span class="n">camera</span><span class="o">.</span><span class="n">start_preview</span><span class="p">()</span>
+    <span class="n">camera</span><span class="o">.</span><span class="n">annotate_background</span> <span class="o">=</span> <span class="bp">True</span>
+    <span class="c"># 添加黑色背景</span>
+    <span class="n">camera</span><span class="o">.</span><span class="n">annotate_text</span> <span class="o">=</span> <span class="n">dt</span><span class="o">.</span><span class="n">datetime</span><span class="o">.</span><span class="n">now</span><span class="p">()</span><span class="o">.</span><span class="n">strftime</span><span class="p">(</span><span class="s">'</span><span class="si">%</span><span class="s">Y-</span><span class="si">%</span><span class="s">m-</span><span class="si">%</span><span class="s">d </span><span class="si">%</span><span class="s">H:</span><span class="si">%</span><span class="s">M:</span><span class="si">%</span><span class="s">S'</span><span class="p">)</span>
+    <span class="n">camera</span><span class="o">.</span><span class="n">start_recording</span><span class="p">(</span><span class="s">'timestamped.h264'</span><span class="p">)</span>
+    <span class="n">start</span> <span class="o">=</span> <span class="n">dt</span><span class="o">.</span><span class="n">datetime</span><span class="o">.</span><span class="n">now</span><span class="p">()</span>
+    <span class="k">while</span> <span class="p">(</span><span class="n">dt</span><span class="o">.</span><span class="n">datetime</span><span class="o">.</span><span class="n">now</span><span class="p">()</span> <span class="o">-</span> <span class="n">start</span><span class="p">)</span><span class="o">.</span><span class="n">seconds</span> <span class="o">&lt;</span> <span class="mi">30</span><span class="p">:</span>
+        <span class="n">camera</span><span class="o">.</span><span class="n">annotate_text</span> <span class="o">=</span> <span class="n">dt</span><span class="o">.</span><span class="n">datetime</span><span class="o">.</span><span class="n">now</span><span class="p">()</span><span class="o">.</span><span class="n">strftime</span><span class="p">(</span><span class="s">'</span><span class="si">%</span><span class="s">Y-</span><span class="si">%</span><span class="s">m-</span><span class="si">%</span><span class="s">d </span><span class="si">%</span><span class="s">H:</span><span class="si">%</span><span class="s">M:</span><span class="si">%</span><span class="s">S'</span><span class="p">)</span>
+        <span class="n">camera</span><span class="o">.</span><span class="n">wait_recording</span><span class="p">(</span><span class="mf">0.2</span><span class="p">)</span>
+    <span class="n">camera</span><span class="o">.</span><span class="n">stop_recording</span><span class="p">()</span>
+</code></pre>
+</div>
+<hr />
+<blockquote>
+  <p>control the led</p>
+</blockquote>
+
+<div class="language-python highlighter-rouge"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">picamera</span>
+
+<span class="k">with</span> <span class="n">picamera</span><span class="o">.</span><span class="n">PiCamera</span><span class="p">()</span> <span class="k">as</span> <span class="n">camera</span><span class="p">:</span>
+    <span class="c"># Turn the camera's LED off</span>
+    <span class="n">camera</span><span class="o">.</span><span class="n">led</span> <span class="o">=</span> <span class="bp">False</span>
+    <span class="c"># Take a picture while the LED remains off</span>
+    <span class="n">camera</span><span class="o">.</span><span class="n">capture</span><span class="p">(</span><span class="s">'foo.jpg'</span><span class="p">)</span>
+</code></pre>
+</div>
+<hr />
+
+<p>###<a href="#top">TOP</a></p>
+
+<br/>
+<div style="margin-top:10px;margin-bottom:10px">
+  
+  <span class="next">
+    Next:
+    <a href="/opencv_python/picamera_01.html">
+      [P]picamera_01_quickstart
+    </a>
+  </span>
+   
+  
+  <span class="prev">
+    Previous:
+    <a href="/opencv_python/%E5%AE%89%E8%A3%85opencv-python.html">
+      [P]Install opencv-python on RaspberryPi
+    </a>
+  </span>
+  
+</div>
+<!-- <br> -->
+
+<!-- related post  reference: https://blog.webjeda.com/jekyll-related-posts/-->
+<div class="post-header">
+
+<!-- <h4>You May Also Enjoy</h4>  -->
+
+
+
+
+
+
+  
+  
+  
+    
+      
+    
+  
+    
+      
+    
+  
+
+  
+
+  
+  
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+
+  
+
+  
+  
+  
+    
+      
+    
+  
+
+  
+
+  
+  
+  
+    
+      
+    
+  
+    
+      
+    
+  
+
+  
+
+  
+  
+  
+    
+      
+    
+  
+    
+      
+    
+  
+
+  
+
+  
+  
+  
+    
+      
+        
+        <!--  -->
+        
+        
+      
+    
+  
+    
+      
+    
+  
+
+  
+    <!--  -->
+    
+    
+    
+      <h4>You May Also Enjoy :</h4> 
+    
+    <div>
+      <h5>
+      <!-- <a href="/embedded/mt7610wifi_pi.html">记raspberryPi上编译mt7610 wifi卡 <span>raspberrypi</span> </a> -->
+      <a href="/embedded/mt7610wifi_pi.html">记raspberryPi上编译mt7610 wifi卡</a>
+      <!-- <a class="label" href="/tags.html"> <span>raspberrypi</span> </a> -->
+      </h5>
+    </div>
+    
+  
+
+  
+  
+  
+    
+      
+    
+  
+    
+      
+    
+  
+
+  
+
+  
+  
+  
+    
+      
+    
+  
+    
+      
+    
+  
+
+  
+
+  
+  
+  
+    
+      
+    
+  
+    
+      
+        
+        <!--  -->
+        
+        
+      
+    
+  
+
+  
+    <!--  -->
+    
+    
+    
+    <div>
+      <h5>
+      <!-- <a href="/embedded/aria2_RPi.html">Media center with raspberry pi b+ <span>raspberrypi</span> </a> -->
+      <a href="/embedded/aria2_RPi.html">Media center with raspberry pi b+</a>
+      <!-- <a class="label" href="/tags.html"> <span>raspberrypi</span> </a> -->
+      </h5>
+    </div>
+    
+  
+
+  
+  
+  
+    
+      
+    
+  
+
+  
+
+  
+  
+  
+    
+      
+    
+  
+
+  
+
+  
+  
+  
+    
+      
+    
+  
+
+  
+
+  
+  
+  
+    
+      
+    
+  
+
+  
+
+  
+  
+  
+    
+      
+    
+  
+    
+      
+    
+  
+
+  
+
+  
+  
+  
+    
+      
+    
+  
+
+  
+
+  
+  
+  
+    
+      
+    
+  
+    
+      
+    
+  
+
+  
+
+  
+  
+  
+    
+      
+    
+  
+    
+      
+        
+        <!--  -->
+        
+        
+      
+    
+  
+    
+      
+    
+  
+
+  
+    <!--  -->
+    
+    
+    
+    <div>
+      <h5>
+      <!-- <a href="/opencv_python/object_tracking.html">[P]Object Tracking with opencv-python <span>python</span> </a> -->
+      <a href="/opencv_python/object_tracking.html">[P]Object Tracking with opencv-python</a>
+      <!-- <a class="label" href="/tags.html"> <span>python</span> </a> -->
+      </h5>
+    </div>
+    
+      
+
+</div>
+
+
+<!-- Blog Comments -->
+<div class="media">
+    <!-- UY BEGIN -->
+<!--  <div id="uyan_frame">
+  </div>-->
+ <!-- <script type="text/javascript" src="http://v2.uyan.cc/code/uyan.js?uid=1511840">
+  </script> -->
+  <!-- UY END -->
+<!-- JiaThis Button BEGIN -->
+<div class="jiathis_style">
+<a class="jiathis_button_qzone"></a>
+<a class="jiathis_button_tsina"></a>
+<a class="jiathis_button_renren"></a>
+<a class="jiathis_button_print"></a>
+<a class="jiathis_button_fb"></a>
+<a class="jiathis_button_googleplus"></a>
+<a class="jiathis_button_linkedin"></a>
+<a class="jiathis_button_pinterest"></a>
+<a class="jiathis_button_pdfonline"></a>
+<a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jiathis_separator jtico jtico_jiathis" target="_blank"></a>
+<a class="jiathis_counter_style"></a>
+</div>
+<script type="text/javascript" >
+var jiathis_config={
+  summary:"",
+  shortUrl:false,
+  hideMore:false
+}
+</script>
+<script type="text/javascript" src="http://v3.jiathis.com/code/jia.js" charset="utf-8"></script>
+<!-- JiaThis Button END -->
+
+  
+  <!-- UY BEGIN wdyggh's id -->  
+  <!-- <div id="uyan_frame"></div> -->
+  <!--script type="text/javascript" src="http://v2.uyan.cc/code/uyan.js?uid=2007350"></script-->
+  <!-- UY END -->
+
+  <div id="disqus_thread"></div>
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES * * */
+    var disqus_shortname = 'httpwdygghgithubioindexhtml';
+    
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+ 
+</div>
+
+        </div>
+        <!-- Blog Sidebar Widgets Column -->
+        <div class="col-md-4">
+          <!-- Blog Search Well -->
+          <div class="well">
+            <h4>
+              Blog search
+            </h4>
+            <!-- <form action="https://google3.azurewebsites.net/search" method="get">
+<div class="input-group">
+  <input type="text" name="q" class="form-control">
+  <input type="hidden" name="ie" value="UTF-8" />
+  <input type="hidden" name="sitesearch" value="wdyggh.github.io" />
+  <span class="input-group-btn">
+    <button class="btn btn-default" type="submit">
+      <span class="glyphicon glyphicon-search"></span>
+    </button>
+  </span>
+</div>
+</form> -->
+
+
+
+<form method="get" action="http://www.google.com/search" target="google_window">
+  <div class="input-group">
+    <input type="text" class="form-control" value="Search..." name="query" id="search-box" onfocus="if (this.value == 'Search...') {this.value = '';}" onblur="if (this.value == '') {this.value = 'Search...';}">
+    <input type="hidden" name="ie" value="UTF-8" />
+    <input type="hidden" name="oe" value="UTF-8" />
+    <input type="hidden" name="hl" value="zh-CN" />
+    <input type="hidden" name="domains" value="wdyggh.github.io" />
+    <input type="hidden" name="sitesearch" value="wdyggh.github.io" />
+    <span class="input-group-btn">
+      <button class="btn btn-default" type="submit">
+        <span class="glyphicon glyphicon-search"></span>
+      </button>
+    </span>
+  </div>
+</form>
+
+<!-- google search reference: http://equation85.github.io/ -->
+ 
+            <!-- /.input-group -->
+          </div>
+          <!-- Blog Categories Well -->
+          <div class="well">
+            <h4>
+              Categories
+            </h4>
+            <div class="row_categories">
+              <!--               <div class="col-lg-6">
+                <ul class="list-unstyled">
+                  <li>
+                    <a href="/categories.html#linux">
+                      Linux
+                    </a>
+                  </li>
+                  <li>
+                    <a href="/categories.html#embedded">
+                      嵌入式
+                    </a>
+                  </li>
+                  <li>
+                    <a href="/categories.html#blackberry">
+                      blackberry
+                    </a>
+                  </li>
+                  <li>
+                    <a href="/categories.html#reprint">
+                      转载
+                    </a>
+                  </li>
+                  
+                </ul>
+              </div>
+              <div class="col-lg-6">
+                <ul class="list-unstyled">
+                  <li>
+                    <a href="/categories.html#avr">
+                      AVR
+                    </a>
+                  </li>
+                  <li>
+                    <a href="/categories.html#travel">
+                      旅游
+                    </a>
+                  </li>
+                  <li>
+                    <a href="/categories.html#others">
+                      others
+                    </a>
+                  </li>
+                </ul>
+              </div>
+ -->
+
+<ul class="cate_left">
+  
+     
+      <li><a href="http://localhost:4000/categories.html#others">others <span>2</span></a></li>
+     
+      <li><a href="http://localhost:4000/categories.html#转载">转载 <span>2</span></a></li>
+     
+      <li><a href="http://localhost:4000/categories.html#blackberry">blackberry <span>3</span></a></li>
+     
+      <li><a href="http://localhost:4000/categories.html#opencv_python">opencv_python <span>18</span></a></li>
+     
+      <li><a href="http://localhost:4000/categories.html#bible">bible <span>2</span></a></li>
+     
+      <li><a href="http://localhost:4000/categories.html#python">python <span>1</span></a></li>
+     
+      <li><a href="http://localhost:4000/categories.html#ubuntu">ubuntu <span>3</span></a></li>
+     
+      <li><a href="http://localhost:4000/categories.html#embedded">embedded <span>5</span></a></li>
+     
+      <li><a href="http://localhost:4000/categories.html#PC">PC <span>1</span></a></li>
+     
+      <li><a href="http://localhost:4000/categories.html#myself">myself <span>1</span></a></li>
+     
+      <li><a href="http://localhost:4000/categories.html#RTOS">RTOS <span>2</span></a></li>
+    
+</ul> 
+            </div>
+            <!-- /.row -->
+          </div>
+          <!-- Blog Links Well -->
+          <div class="well">
+            <h4>
+              Links
+            </h4>
+                        <ul class="list-unstyled">
+              <li>
+                <a href="https://github.com/">
+                  GitHub
+                </a>
+              </li>
+              <li>
+                <a href="https://bitbucket.org/">
+                  Bitbucket.org
+                </a>
+              </li> 
+               <li>
+                <a href="https://news.ycombinator.com/">
+                  Hacker News
+                </a>
+              </li>        
+              <li>
+                <a href="http://www.stackoverflow.com/">
+                  Stack Overflow
+                </a>
+              </li>
+              <li>
+                <a href="http://developer.android.com/">
+                  Android Developer
+                </a>
+              </li>
+              <li>
+                <a href="http://www.chiphell.com/">
+                  Chiphell
+                </a>
+              </li>
+              <li>
+                <a href="http://99u.com/">
+                  99U
+                </a>
+              </li>
+              <li>
+                <a href="http://www.ruanyifeng.com/blog/">
+                  Ruanyifeng's Blog
+                </a>
+              </li>
+              <li>
+                <a href="http://www.panxw.com/">
+                  Panxw's Blog
+                </a>
+              </li>
+               <li>
+                <a href="https://github.com/greatfire/wiki/blob/master/README.md">
+                  墙内镜像
+                </a>
+              </li>
+              
+            </ul>
+ 
+          </div>
+          <!-- Side Widget Well -->
+           <div class="well">
+           <!--            <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js">
+            </script> -->
+            <!-- ArticleRa -->
+<!--            <ins class="adsbygoogle" style="display:inline-block;width:300px;height:250px"
+            data-ad-client="ca-pub-3557776493079475" data-ad-slot="3861947889">
+            </ins>
+            <script>
+              (adsbygoogle = window.adsbygoogle || []).push({});
+            </script> -->
+            
+            <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+            <!-- guanggao1 -->
+            <ins class="adsbygoogle"
+                 style="display:inline-block;width:300px;height:250px"
+                 data-ad-client="ca-pub-7553071169021268"
+                 data-ad-slot="5352576037"></ins>
+            <script>
+            (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
+ 
+          </div>
+        </div>
+      </div>
+      <!-- /.row -->
+      <hr>
+      <!-- Footer -->
+      <footer>
+        <div class="rowcopyright">
+          <div class="col-lg-12">
+                        <p align="center" bgcolor="black">
+				Copyright &copy; wdyggh.github.io, hosted on <a href="https://github.com">GitHub</a>,based on <a href="https://github.com/panxw/panxw.github.com">Panxw</a>,  powered by Jekyll. <a href="https://github.com/wdyggh/wdyggh.github.io">[source]</a>
+				<br/>
+				 <a href="/atom.xml">[Feed]</a>
+            </p>
+ 
+          </div>
+          <!-- /.col-lg-12 -->
+        </div>
+        <!-- /.row -->
+		<!-- <div style="display:none;">
+      <script src="http://s22.cnzz.com/stat.php?id=5868355&web_id=5868355" language="JavaScript">
+      </script>
+      </div>  --> 
+      
+      <!-- 站长统计 精简版-->
+<!--      <script src="http://s11.cnzz.com/z_stat.php?id=1254212004&web_id=1254212004" language="JavaScript">
+      </script> -->
+      
+      <!-- 站长统计 普通版-->
+<!--  <script type="text/javascript">
+      var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+      document.write(unescape("%3Cspan id='cnzz_stat_icon_1254212004'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s11.cnzz.com/z_stat.php%3Fid%3D1254212004' type='text/javascript'%3E%3C/script%3E"));
+      </script>   -->
+      
+      <!-- 站长统计 图标版-->
+      <div style="text-align:center;">
+            <script type="text/javascript">
+            var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+            document.write(unescape("%3Cspan id='cnzz_stat_icon_1254212004'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s11.cnzz.com/z_stat.php%3Fid%3D1254212004%26show%3Dpic2' type='text/javascript'%3E%3C/script%3E"));
+            </script>
+      </div>
+ 
+      </footer>
+    </div>
+    <!-- /.container -->
+  </body>
+
+</html>
