@@ -1,12 +1,12 @@
 ---
 layout: post
 category: "embedded"
-title: "Control RFswitch by matlab and arduino"
+title: "Control RF switch by matlab and arduino"
 tags: ["matlab","arduino"]
 ---
 
 
-### Control RFswitch by matlab and arduino  
+### Control RF switch by matlab and arduino  
 
 <a name="top"></a>
 
