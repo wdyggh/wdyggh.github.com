@@ -246,7 +246,22 @@ height: auto;
 .div_tag{
   clear: left;
 }
-
+.video_container{
+  width: auto;
+  margin: 0px 10px 0px 10px;
+  /*width:100%; */
+  /*height: auto;*/
+  /*align:center;*/
+  /*min-height:400px; */
+  
+}
+.video_container iframe{
+  display: block; /*center*/
+  /*width: auto;*/
+  width: 100%;
+  min-height:400px; 
+  
+}
 /*.tag_box:before,
 .tag_box:after,
 .tag_box:after,
