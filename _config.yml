@@ -35,7 +35,7 @@ paginate_path: "page:num"
 # presonal config
 domain: wdyggh.github.io
 title: wdyggh's Blog
-description: c, avr, embedded, Linux, python ...
+description: Python, Linux, embedded, FPGA   ...
 author: wdy
 email: wdyggh@gmail.com
 github: wdyggh
