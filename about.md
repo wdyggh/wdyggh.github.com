@@ -20,7 +20,8 @@ weight: 5
 --------
 
 
-#### Links
+#### Projects
 
-GitHub: <https://github.com/{{ site.github }}>  
+[GitHub](https://github.com/{{ site.github }})  
 
+[DSP_notebook](https://wdyggh.github.io/DSP_notebook/)  
