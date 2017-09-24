@@ -41,13 +41,22 @@ In the last blog, becasuse of the bad SATA power cable, I can't use the SSD yet.
 I received JST cable [^5] both 4pin for SATA power and 2pin for speaker connector. After solding wire with power connectors [^7], including SSD driver all of them work fine.  
 Next, I will plan how to deal with laptop case. I have print the same size of board on A4 page already. I'm looking for another wireless keyboard with a larger and good performance touchpad [^8].  
 
+**UPDATE 170924**  
+I'm a lazy man, this update is after 3 months. During the almost 4 months, I just did a little things.  
+![udoo_x86_2_2](http://7xifyp.com1.z0.glb.clouddn.com/udoo_x86_2_2.jpg){: .max-height-image}  
+Due to the thickness of laptop cover, the RJ45 socket was removed by a 10 pin adapter cable, then the adapter cable will connect to a RJ45 board [^9] on the laptop's RJ45 position. And the SATA data socket also was extended by a 20cm cable. After these changes, I connected my 60G SATA SSD, the board operates good.  
+![udoo_x86_2_3](http://7xifyp.com1.z0.glb.clouddn.com/udoo_x86_2_3.jpg){: .max-height-image}  
+![udoo_x86_2_4](http://7xifyp.com1.z0.glb.clouddn.com/udoo_x86_2_4.jpg){: .max-height-image}  
+
+On the other hand, I deal with the T450 C,D case, remove some parts which is block the board. And drill a square that the higest PICE socket can through it to close the C,D case. But, after what I think the limit I did, I get a conclusion, the case is very difficult to close. So, I change my mind, I will design a 3D printed D case to fit the UDOO x86 board, which can has a comfortable space to fix and conveient to extend the IO port(HDMI, USB, DP++, power, etc.). Actually, this blog [3d-printed-laptop-case](https://all3dp.com/3d-printed-laptop-case/) gives me some inspiration. I will design the bone of the D case, to make sure the lowest height needed in this situaion. This is the first step I will go.  
+Recently, I saw a lot of people viewed this article, I will do this project as fast as I can.
 
 *If you have something to say, please leave the comment.*  
 
 
 #### *Reference:*  
 
-1. []()  
+1. [3d-printed-laptop-case](https://all3dp.com/3d-printed-laptop-case/)  
 2. []()  
 
 [^1]: [aliexpress-T450 cover](https://www.aliexpress.com/wholesale?SearchText=T450+cover&opensearch=true)  
@@ -58,7 +67,7 @@ Next, I will plan how to deal with laptop case. I have print the same size of bo
 [^6]: Rii RT-MWK12+ US_layout
 [^7]: [wiki-Serial_ATA_Power_connectors](https://en.wikipedia.org/wiki/Serial_ATA#Power_connectors)
 [^8]: [aliexpress-Rii keyboard](https://www.aliexpress.com/item/Genuine-New-Rii-K18-Large-Size-2-4GHz-Wireless-Multimedia-Mini-Keyboard-Touchpad-Air-Mouse-For/32760251941.html?spm=2114.01020208.3.134.TYPsbH&s=p&ws_ab_test=searchweb0_0,searchweb201602_2_10152_10065_10151_10068_10084_10083_10080_10082_10081_10110_10136_10137_10157_10175_10111_10060_10138_10112_10113_10155_10062_10114_10156_10154_10056_10181_10055_10054_10182_10059_10099_10078_10079_10103_10073_10102_10096_10070_10123_10052_10053_10142_10107_10050_10051,searchweb201603_4,ppcSwitch_3_ppcChannel&btsid=5ed271fd-01bc-4111-853d-60fe9fd55420)
-
+[^9]: [aliexpress rj45+board](https://www.aliexpress.com/wholesale?catId=0&initiative_id=SB_20170924005751&SearchText=rj45+board)
 
 - - - 
 
