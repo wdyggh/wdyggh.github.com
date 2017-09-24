@@ -23,7 +23,7 @@ kramdown:
    # coderay_css: class
 #highlighter: rouge
 permalink: /:categories/:title.html
-url: "https://wdyggh.github.io"
+url: "wdyggh.github.io"
 lsi: false
 ####pygments: true
 safe: false
