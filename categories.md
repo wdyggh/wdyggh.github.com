@@ -12,7 +12,9 @@ weight: 1
      {% for post in cat[1] %} 
     <li><h4>
     <span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a>
-        <div class="post-date">Viewed: <span data-hk-page="{{ site.url }}{{ post.url }}"> - </span> times 
+        <div class="post-date">
+          Viewed: <span data-hk-page="{{ post.url | prepend: site.url }}"> - </span> times 
+          <!-- {{ post.url | prepend: site.url }} -->
         </div>
     </h4></li>
 

@@ -17,7 +17,7 @@ weight: 3
     {% endunless %} 
     <li>
         <h4><span>{{ post.date | date_to_string }}</span>&raquo;<a href="{{ post.url }}">{{ post.title }}</a>
-        <div class="post-date">Viewed: <span data-hk-page="{{ site.url }}{{ post.url }}"> - </span> times 
+        <div class="post-date">Viewed: <span data-hk-page="{{ post.url | prepend: site.url }}"> - </span> times 
         </div>
         </h4>
     </li> 
