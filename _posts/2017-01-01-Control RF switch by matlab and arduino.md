@@ -15,7 +15,7 @@ tags: ["matlab","arduino"]
 控制要求是23个端口中，同一时间内只能开启一个。  
 概图如下：  
 
-![rfswitch1](http://7xifyp.com1.z0.glb.clouddn.com/rfswitch1.png){: .center-image }
+![rfswitch1](https://bloggggh-1258159712.cos.ap-hongkong.myqcloud.com/rfswitch1.png){: .center-image }
 
 matlab端作为命令主控要做的就是发送端口号码，通过serial函数。
 
@@ -220,15 +220,15 @@ int StrToHex(char str[])
 
 使用 `char cmd[] = {' ', ' '};` 的时候  
 
-![before](http://7xifyp.com1.z0.glb.clouddn.com/RFSW_result1.png){: .center-image}
+![before](https://bloggggh-1258159712.cos.ap-hongkong.myqcloud.com/RFSW_result1.png){: .center-image}
 
 使用 `HEX` 的时候  
 
-![after](http://7xifyp.com1.z0.glb.clouddn.com/RFSW_result2.png){: .center-image}
+![after](https://bloggggh-1258159712.cos.ap-hongkong.myqcloud.com/RFSW_result2.png){: .center-image}
 
 之前的时间测试中故意加了0.1s的延迟，下面是 `去掉延迟` 的结果  
 
-![final](http://7xifyp.com1.z0.glb.clouddn.com/RFSW_result3.png){: .center-image}
+![final](https://bloggggh-1258159712.cos.ap-hongkong.myqcloud.com/RFSW_result3.png){: .center-image}
 
 
 #### *Reference:*  

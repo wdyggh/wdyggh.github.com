@@ -133,11 +133,11 @@ while(1):
 cv2.destroyAllWindows() 
 ```
 
-![objecttracking_trackbar](http://7xifyp.com1.z0.glb.clouddn.com/objecttracking_trackbar.JPG){: .center-image }
+![objecttracking_trackbar](https://bloggggh-1258159712.cos.ap-hongkong.myqcloud.com/objecttracking_trackbar.JPG){: .center-image }
 
-![objecttracking_res](http://7xifyp.com1.z0.glb.clouddn.com/objecttracking_res.JPG){: .center-image }
+![objecttracking_res](https://bloggggh-1258159712.cos.ap-hongkong.myqcloud.com/objecttracking_res.JPG){: .center-image }
 
-![objecttracking_frame](http://7xifyp.com1.z0.glb.clouddn.com/objecttracking_frame.JPG){: .center-image }
+![objecttracking_frame](https://bloggggh-1258159712.cos.ap-hongkong.myqcloud.com/objecttracking_frame.JPG){: .center-image }
 
 
 - - - 

@@ -16,7 +16,7 @@ Many hackers built laptop based on Raspberry pi, with screen keyboard, battery, 
 
 In my previous article I received my UDOO board with 32G emmc. 
 And I installed Ubuntu and tested the wifi card, all of them wordk fine. In my idea, I will use the exited laptop case(like Thinkpad T450, you can find in aliexpress or ebay). This is my finished case and I did a test with raspberry Pi which I used to watch movies on [Kodi](http://wdyggh.github.io/embedded/aria2_RPi.html). I tesed the frame, lcd, interface board, and all of them work well. The only thing I pay a lot of attention is the thickness. Due to the PCI-E slot, the board approach to 2.2cm.  
-![udoo_x86_2_1.jpg](http://7xifyp.com1.z0.glb.clouddn.com/udoo_x86_2_1.jpg){: .max-height-image}  
+![udoo_x86_2_1.jpg](https://bloggggh-1258159712.cos.ap-hongkong.myqcloud.com/udoo_x86_2_1.jpg){: .max-height-image}  
 
 
 Until now, I prepared something that need:  
@@ -43,10 +43,10 @@ Next, I will plan how to deal with laptop case. I have print the same size of bo
 
 **UPDATE 170924**  
 I'm a lazy man, this update is after 3 months. During the almost 4 months, I just did a little things.  
-![udoo_x86_2_2](http://7xifyp.com1.z0.glb.clouddn.com/udoo_x86_2_2.jpg){: .max-height-image}  
+![udoo_x86_2_2](https://bloggggh-1258159712.cos.ap-hongkong.myqcloud.com/udoo_x86_2_2.jpg){: .max-height-image}  
 Due to the thickness of laptop cover, the RJ45 socket was removed by a 10 pin adapter cable, then the adapter cable will connect to a RJ45 board [^9] on the laptop's RJ45 position. And the SATA data socket also was extended by a 20cm cable. After these changes, I connected my 60G SATA SSD, the board operates good.  
-![udoo_x86_2_3](http://7xifyp.com1.z0.glb.clouddn.com/udoo_x86_2_3.jpg){: .max-height-image}  
-![udoo_x86_2_4](http://7xifyp.com1.z0.glb.clouddn.com/udoo_x86_2_4.jpg){: .max-height-image}  
+![udoo_x86_2_3](https://bloggggh-1258159712.cos.ap-hongkong.myqcloud.com/udoo_x86_2_3.jpg){: .max-height-image}  
+![udoo_x86_2_4](https://bloggggh-1258159712.cos.ap-hongkong.myqcloud.com/udoo_x86_2_4.jpg){: .max-height-image}  
 
 On the other hand, I deal with the T450 C,D case, remove some parts which is block the board. And drill a square that the higest PICE socket can through it to close the C,D case. But, after what I think the limit I did, I get a conclusion, the case is very difficult to close. So, I change my mind, I will design a 3D printed D case to fit the UDOO x86 board, which can has a comfortable space to fix and conveient to extend the IO port(HDMI, USB, DP++, power, etc.). Actually, this blog [3d-printed-laptop-case](https://all3dp.com/3d-printed-laptop-case/) gives me some inspiration. I will design the bone of the D case, to make sure the lowest height needed in this situaion. This is the first step I will go.  
 Recently, I saw a lot of people viewed this article, I will do this project as fast as I can.

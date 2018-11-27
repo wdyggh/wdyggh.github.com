@@ -40,7 +40,7 @@ Back to `Momentics IDE` I click the `.run`file but nothing happened.Next I find 
 go to the `bbndk` by the terminal, and try `./qde`  
 
 and then it will show like this   
-![bb10_require_device_connect.png](http://7xifyp.com1.z0.glb.clouddn.com/bb10_require_device_connect.png){: .center-image }   
+![bb10_require_device_connect.png](https://bloggggh-1258159712.cos.ap-hongkong.myqcloud.com/bb10_require_device_connect.png){: .center-image }   
   
 needed to connect a BB10 device  
 
@@ -56,11 +56,11 @@ so here is the method how to connect to `Momentics IDE` via `wifi`
 
 
 if connected it wii show like below:  
-![momenticside_device_connected.png](http://7xifyp.com1.z0.glb.clouddn.com/momenticside_device_connected.png){: .center-image }
+![momenticside_device_connected.png](https://bloggggh-1258159712.cos.ap-hongkong.myqcloud.com/momenticside_device_connected.png){: .center-image }
 
 
 so next i wiil follow the [Guide](https://developer.blackberry.com/native/documentation/getting_started/first_app/index.html) or open in Momentics IDE   
-![help_contents.png](http://7xifyp.com1.z0.glb.clouddn.com/help_contents.png){: .center-image }
+![help_contents.png](https://bloggggh-1258159712.cos.ap-hongkong.myqcloud.com/help_contents.png){: .center-image }
 
 Have a good luck.
 
@@ -70,11 +70,11 @@ Have a good luck.
 
 Here is [ID token](https://www.blackberry.com/SignedKeys/codesigning.html)
 
-![blackberryIDToken1.png](http://7xifyp.com1.z0.glb.clouddn.com/blackberryIDToken1.png){: .center-image }
+![blackberryIDToken1.png](https://bloggggh-1258159712.cos.ap-hongkong.myqcloud.com/blackberryIDToken1.png){: .center-image }
 
-![blackberryIDToken2.png](http://7xifyp.com1.z0.glb.clouddn.com/blackberryIDToken2.png){: .center-image }
+![blackberryIDToken2.png](https://bloggggh-1258159712.cos.ap-hongkong.myqcloud.com/blackberryIDToken2.png){: .center-image }
 
-![blackberryIDToken3.png](http://7xifyp.com1.z0.glb.clouddn.com/blackberryIDToken3.png){: .center-image }
+![blackberryIDToken3.png](https://bloggggh-1258159712.cos.ap-hongkong.myqcloud.com/blackberryIDToken3.png){: .center-image }
 
 ### How to get debug token
 
@@ -90,7 +90,7 @@ That's all
 when you connect device with computer via usb, it will show a `wired connection`on the internet zone  
 Then, edit the `wired connection` like below:  
 
-![usb_connect_to_IDE1.png](http://7xifyp.com1.z0.glb.clouddn.com/usb_connect_to_IDE1.png){: .center-image }  
+![usb_connect_to_IDE1.png](https://bloggggh-1258159712.cos.ap-hongkong.myqcloud.com/usb_connect_to_IDE1.png){: .center-image }  
 
 * connection method : manual  
 * address: 169.254.0.2  
@@ -98,7 +98,7 @@ Then, edit the `wired connection` like below:
 * gateway: 169.254.0.1  
 
 Last, pair your device in `device manager`
-![usb_connect_to_IDE2.png](http://7xifyp.com1.z0.glb.clouddn.com/usb_connect_to_IDE2.png){: .center-image }  
+![usb_connect_to_IDE2.png](https://bloggggh-1258159712.cos.ap-hongkong.myqcloud.com/usb_connect_to_IDE2.png){: .center-image }  
 
 
 

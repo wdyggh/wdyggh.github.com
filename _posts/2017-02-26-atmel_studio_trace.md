@@ -17,7 +17,7 @@ tags: ["RTOS"]
 	* Debug > percepio trace > trace settings  
 	here the Frequency is the freq of your MCU clock.  
 
-	![trace setting](http://7xifyp.com1.z0.glb.clouddn.com/traceSetting.JPG){: .center-image}  
+	![trace setting](https://bloggggh-1258159712.cos.ap-hongkong.myqcloud.com/traceSetting.JPG){: .center-image}  
 
 	* Debug > percepio trace > enable trace  
 
@@ -25,32 +25,32 @@ tags: ["RTOS"]
 
 	Start debuging and make sure Trace was enabled.
 
-	![trace_enable](http://7xifyp.com1.z0.glb.clouddn.com/trace_enable.png){: .max-height-image}
+	![trace_enable](https://bloggggh-1258159712.cos.ap-hongkong.myqcloud.com/trace_enable.png){: .max-height-image}
 
 	when the Debug started the Trace bar will look like below and were selectable.
 
-	![trace_started](http://7xifyp.com1.z0.glb.clouddn.com/trace_started.png){: .max-height-image}
+	![trace_started](https://bloggggh-1258159712.cos.ap-hongkong.myqcloud.com/trace_started.png){: .max-height-image}
 
 	The Profiling contains sampling functions.
 
-	![trace_profiling](http://7xifyp.com1.z0.glb.clouddn.com/trace_profiling.png){: .max-height-image}
+	![trace_profiling](https://bloggggh-1258159712.cos.ap-hongkong.myqcloud.com/trace_profiling.png){: .max-height-image}
 
 	* `Profiling`  
 	Then let us set a breakpoint and the chart of sampling and Control-Flow will be showen  
 	It shows the time of each function taken.
 
-	![trace_PC](http://7xifyp.com1.z0.glb.clouddn.com/trace_PC.png){: .max-height-image}
+	![trace_PC](https://bloggggh-1258159712.cos.ap-hongkong.myqcloud.com/trace_PC.png){: .max-height-image}
 
 	* `Control-Flow`
 
-	![trace_Flow](http://7xifyp.com1.z0.glb.clouddn.com/trace_Flow.png){: .max-height-image}
+	![trace_Flow](https://bloggggh-1258159712.cos.ap-hongkong.myqcloud.com/trace_Flow.png){: .max-height-image}
 
 	* `Data Plot`  
 	Next let us look at Data Plot.  
 	In the code page select a variable and right click check `add data plot`  
 	and start Debug the Data Plot will show the figure of the variable.  
 
-	![http://7xifyp.com1.z0.glb.clouddn.com/trace_DataPlot.png](http://7xifyp.com1.z0.glb.clouddn.com/trace_DataPlot.png){: .max-height-image}
+	![http://7xifyp.com1.z0.glb.clouddn.com/trace_DataPlot.png](https://bloggggh-1258159712.cos.ap-hongkong.myqcloud.com/trace_DataPlot.png){: .max-height-image}
 
 	Here the Data Plot just can show the 1D variable, I'm looking for method to plot 1D array variable.  
 	If you know, please leave message to me.  

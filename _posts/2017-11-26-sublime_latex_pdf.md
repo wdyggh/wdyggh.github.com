@@ -6,6 +6,7 @@ tags: ["sublime","latex","PDF","IDE"]
 ---
 
 ### 安装sublime text3
+
 {: #top}
 
 如果使用ubuntu，可以参考我之前写的文章[ubuntu_sublime_text](http://wdyggh.github.io/ubuntu/ubuntu_sublime_text.html)。  
@@ -28,7 +29,7 @@ SumatraPDF [^2] ,下载安装 并添加安装路径到 `PATH` 。
 
 > "C:\Program Files\Sublime Text 3\sublime_text.exe" "%f:%l"
 
-![sumatraPDF_Setting](http://7xifyp.com1.z0.glb.clouddn.com/sumatraPDF_Setting.PNG){: .max-height-image}  
+![sumatraPDF_Setting](https://bloggggh-1258159712.cos.ap-hongkong.myqcloud.com/sumatraPDF_Setting.PNG){: .max-height-image}  
 
 ### 安装 `imagemagic` 和 `ghostscript`
 
@@ -78,7 +79,7 @@ $$
 \end{document}  
 ```
 
-![sublime math preview](http://7xifyp.com1.z0.glb.clouddn.com/sublime_math_preview.PNG){: .max-height-image}
+![sublime math preview](https://bloggggh-1258159712.cos.ap-hongkong.myqcloud.com/sublime_math_preview.PNG){: .max-height-image}
 
 
 
